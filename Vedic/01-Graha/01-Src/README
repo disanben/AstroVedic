@@ -1,0 +1,106 @@
+====================================
+              README
+====================================
+Progetto:      Vedic Calculator v.01
+                          16.10.2024
+====================================
+
+Il progetto si propone di analizzare la posizione dei pianeti creando la carta natale e le principali relazioni tra i pianeti, in particolare:
+
+- Dignità Planetaria:
+    -Esaltazione
+    -Debilitazione
+    -Domicilio
+    -Moolatrikona
+
++----------------------------+
+| 1. Inserimento dei dati    |
++----------------------------+
+   L'inserimento dei dati planetari viene effettuato attraverso la lettura di un file .txt in cui sono presenti le posizioni dei pianeti.
+   Queste informazioni vengono recuperate attraverso il software deva.guru o simili indicando data, ora e località di nascita.
+   Il file di input ha il seguente formato:
+
+   0        1         2         3         4         5         6
+   123456789012345678901234567890123456789012345678901234567890
+   As| 1|Lagna  | - |Cp|10|11.5048|Sravana       |22|Mo|1|
+
+   Pos  1- 2 Nome Abbreviato del Graha
+   Pos  4- 5 Progressivo del Graha
+   Pos  7-13 Nome del Graha in sanscrito
+   Pos 15-17 Tipo di AtmaKaraka
+   Pos 19-20 Nome abbreviato del Rasi
+   Pos 22-23 Progressivo del Rasi
+   Pos 25-31 Longitudine del Graha
+   Pos 33-46 Nome della Nakshatra in sanscrito
+   Pos 48-49 Progressivo della Nakshatra
+   Pos 51-52 Reggente della Nakshatra
+   Pos 54    Pada della Nakshatra
+
+
+
+   Dal file di Input si istanziano le classi dei vari pianeti creando gli oggetti necessari per i calcoli
+
+
+   1.1 Architettura del progetto: UML Class
+   --------------------------------------------
+   https://realpython.com/python-interface/
+
+
+      +------------------------------------------------------+
+      |                       GRAHA                          |
+      +------------------------------------------------------+
+      |                    <<interface>>                     |
+      +------------------------------------------------------+
+      | getGrahaDefaultProps(szGrahaDefaultFileName)         |
+      |     Metodo che carica le proprietà di base del Graha |
+      |      - Dignita planetaria                            |
+      |      - Nomi ed abbreviazioni                         |
+      |                                                      |
+      | setAkType(szAk)                                      |
+      | setRasiProgr(iRasiProg)                              |
+      | setGrahaLon(fLon)                                    |
+      | setNakProgr(iNakProg)                                |
+      | setNakPada(iNakPada)                                 |
+      | getIsDomic()                                         |
+      | getIsExsalt()                                        |
+      | getIsDebil()                                         |
+      | getIsMool()                                          |
+      | getRasiExsalt()                                      |
+      | getRasiDomic()                                       |
+      | getRasiDebil()                                       |
+      | getRasiMool()                                        |
+      +------------------------------------------------------+
+
+
+
+
+
+      | setAscRasiProgr(iRasiProg)
+
+
+
+
+
+
+
+
++------------------------------+
+| 2. Funzionalità principali   |
++------------------------------+
+
+   Grazie alla modellazione in classi della posizione dei pianeti nel cielo al momento della nascita, è possibile effettuare vari calcoli per semplificare l'analisi del Tema Natale.
+   Verranno quindi analizzati i seguenti aspetti:
+   - Case occupate dai pianeti secondo il metodo della Cuspide dell'Ascendente o del segno pieno
+   - Dignità Planetaria: Ovvero se vi sono pianeti in Domicilio, Esaltazione, Moolatrikona o in Debilitazione
+   - Segni occupati dai pianeti, se di Terra, Fuoco, Aria, Acqua
+   - Se in Luna crescente o calante
+
+   Inoltre verranno anche analizzati aspetti più avanzati come:
+   - vari Yoga
+   - AtmaKaraka
+   - Naisargika Karaka
+
+
+
+2.1 Dignità Planetaria
+-----------------------
