@@ -72,24 +72,13 @@ Il progetto si propone di analizzare la posizione dei pianeti creando la carta n
       +------------------------------------------------------+
 
 
-
-
-
-      | setAscRasiProgr(iRasiProg)
-
-
-
-
-
-
-
-
 +------------------------------+
 | 2. Funzionalità principali   |
 +------------------------------+
 
-   Grazie alla modellazione in classi della posizione dei pianeti nel cielo al momento della nascita, è possibile effettuare vari calcoli per semplificare l'analisi del Tema Natale.
+   Grazie alla modellazione in classi della posizione dei pianeti (Graha) nel cielo al momento della nascita, è possibile effettuare vari calcoli per semplificare l'analisi del Tema Natale.
    Verranno quindi analizzati i seguenti aspetti:
+
    - Case occupate dai pianeti secondo il metodo della Cuspide dell'Ascendente o del segno pieno
    - Dignità Planetaria: Ovvero se vi sono pianeti in Domicilio, Esaltazione, Moolatrikona o in Debilitazione
    - Segni occupati dai pianeti, se di Terra, Fuoco, Aria, Acqua
@@ -104,3 +93,39 @@ Il progetto si propone di analizzare la posizione dei pianeti creando la carta n
 
 2.1 Dignità Planetaria
 -----------------------
+   Per dignità planetaria si intende la loro situazione in base ai segni (Rasi) occupati
+
+
+
+
++--------------------------+
+| 11. Diagramma UML        |
++--------------------------+
+
+
+Diagramma UML per inizializzazione dei Graha con lettura dal file [Nome].txt
+
++-------------+ +-----------+  +-----------+
+| CartaNatale | | LoadGraha |  |   Graha   |
++-------------+ +-----------+  +-----------+
+       |
+       +---1--+      |               |
+       |      |      |               |
+       |<-----+      |               |
+       |             |               |
+       +------2----->|               |
+       |             |               |
+       |             +-------3------>|
+       |             |               |
+       |             |               |
+       |             |               |
+       |             |               |
+       +---4--+      |               |
+       |      |      |               |
+       |<-----+
+
+
+1. Verifica presenza del file inizializzazione [Nome].txt
+2. Richiesta a LoadGraha di inizializzare i Graha con i dati del file
+3. Istanziamento dei pianeti passando i dati letti dal file
+4. Stampa riassuntiva della carta

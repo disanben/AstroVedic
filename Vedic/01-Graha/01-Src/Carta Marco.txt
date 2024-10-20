@@ -1,0 +1,125 @@
+Log Carta Marco.txt inizializzato il: 2024-10-20 22:59:42.373777 con priorita = 0
+
+
+2024-10-20 22:59:42.373908 - ***********************************
+2024-10-20 22:59:42.373979 - ***        Graha di Marco       ***
+2024-10-20 22:59:42.374047 - ***********************************
+2024-10-20 22:59:42.374161 -          -- Carta Natale --
+2024-10-20 22:59:42.374274 - ***********************************
+2024-10-20 22:59:42.374366 - Load Graha - istanziata con file di input: Marco.txt
+2024-10-20 22:59:42.374672 - Load Graha - Caricamento Graha presenti in Marco.txt --> PASSED
+2024-10-20 22:59:42.374745 - Inizio caricamento Graha
+2024-10-20 22:59:42.374820 - 
+
+
+2024-10-20 22:59:42.374885 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.374952 - Graha - Parametri iniziali: graha=0, rasi=10, longitudine=11.5048
+2024-10-20 22:59:42.375252 - 
+
+
+2024-10-20 22:59:42.375316 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.375381 - Graha - Parametri iniziali: graha=1, rasi= 9, longitudine=24.1227
+2024-10-20 22:59:42.375599 - 
+
+
+2024-10-20 22:59:42.375658 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.375723 - Graha - Parametri iniziali: graha=2, rasi= 2, longitudine=14.3545
+2024-10-20 22:59:42.375939 - 
+
+
+2024-10-20 22:59:42.376000 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.376065 - Graha - Parametri iniziali: graha=3, rasi= 9, longitudine=15.5270
+2024-10-20 22:59:42.376307 - 
+
+
+2024-10-20 22:59:42.376348 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.376384 - Graha - Parametri iniziali: graha=4, rasi=10, longitudine=12.4639
+2024-10-20 22:59:42.376513 - 
+
+
+2024-10-20 22:59:42.376549 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.376583 - Graha - Parametri iniziali: graha=5, rasi=10, longitudine= 6.3916
+2024-10-20 22:59:42.376700 - 
+
+
+2024-10-20 22:59:42.376736 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.376770 - Graha - Parametri iniziali: graha=6, rasi=11, longitudine=11.1120
+2024-10-20 22:59:42.376889 - 
+
+
+2024-10-20 22:59:42.376924 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.376958 - Graha - Parametri iniziali: graha=7, rasi= 5, longitudine=27.4437
+2024-10-20 22:59:42.377088 - 
+
+
+2024-10-20 22:59:42.377141 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.377191 - Graha - Parametri iniziali: graha=8, rasi=10, longitudine=16.3613
+2024-10-20 22:59:42.377378 - 
+
+
+2024-10-20 22:59:42.377428 - Graha - istanziata con file di input: GrahaConf.txt e RasiConf.txt
+2024-10-20 22:59:42.377477 - Graha - Parametri iniziali: graha=9, rasi= 4, longitudine=16.3613
+2024-10-20 22:59:42.377669 - Graha - +----------+
+2024-10-20 22:59:42.377744 - Graha - |Cp        |
+2024-10-20 22:59:42.377799 - Graha - |   AS     |
+2024-10-20 22:59:42.377849 - Graha - |   11.5048|
+2024-10-20 22:59:42.377896 - Graha - +----------+
+2024-10-20 22:59:42.377947 - Graha - 
+
+2024-10-20 22:59:42.377998 - Graha - +----------+
+2024-10-20 22:59:42.378051 - Graha - |Sg        |
+2024-10-20 22:59:42.378109 - Graha - |   Su     |
+2024-10-20 22:59:42.378147 - Graha - |   24.1227|
+2024-10-20 22:59:42.378181 - Graha - +----------+
+2024-10-20 22:59:42.378216 - Graha - 
+
+2024-10-20 22:59:42.378250 - Graha - +----------+
+2024-10-20 22:59:42.378285 - Graha - |Ta        |
+2024-10-20 22:59:42.378318 - Graha - |   Mo     |
+2024-10-20 22:59:42.378351 - Graha - |   14.3545|
+2024-10-20 22:59:42.378384 - Graha - +----------+
+2024-10-20 22:59:42.378417 - Graha -  ESALTAZIONE
+2024-10-20 22:59:42.378450 - Graha - 
+
+2024-10-20 22:59:42.378484 - Graha - +----------+
+2024-10-20 22:59:42.378519 - Graha - |Sg        |
+2024-10-20 22:59:42.378552 - Graha - |   Ma     |
+2024-10-20 22:59:42.378585 - Graha - |   15.5270|
+2024-10-20 22:59:42.378617 - Graha - +----------+
+2024-10-20 22:59:42.378651 - Graha - 
+
+2024-10-20 22:59:42.378684 - Graha - +----------+
+2024-10-20 22:59:42.378730 - Graha - |Cp        |
+2024-10-20 22:59:42.378763 - Graha - |   Me     |
+2024-10-20 22:59:42.378794 - Graha - |   12.4639|
+2024-10-20 22:59:42.378824 - Graha - +----------+
+2024-10-20 22:59:42.378856 - Graha - 
+
+2024-10-20 22:59:42.378888 - Graha - +----------+
+2024-10-20 22:59:42.378919 - Graha - |Cp        |
+2024-10-20 22:59:42.378951 - Graha - |   Jp     |
+2024-10-20 22:59:42.378982 - Graha - |    6.3916|
+2024-10-20 22:59:42.379012 - Graha - +----------+
+2024-10-20 22:59:42.379043 - Graha -  DEBILITAZIONE
+2024-10-20 22:59:42.379087 - Graha - 
+
+2024-10-20 22:59:42.379126 - Graha - +----------+
+2024-10-20 22:59:42.379159 - Graha - |Aq        |
+2024-10-20 22:59:42.379190 - Graha - |   Ve     |
+2024-10-20 22:59:42.379221 - Graha - |   11.1120|
+2024-10-20 22:59:42.379251 - Graha - +----------+
+2024-10-20 22:59:42.379283 - Graha - 
+
+2024-10-20 22:59:42.379314 - Graha - +----------+
+2024-10-20 22:59:42.379346 - Graha - |Cp        |
+2024-10-20 22:59:42.379377 - Graha - |   Ra     |
+2024-10-20 22:59:42.379408 - Graha - |   16.3613|
+2024-10-20 22:59:42.379438 - Graha - +----------+
+2024-10-20 22:59:42.379469 - Graha - 
+
+2024-10-20 22:59:42.379500 - Graha - +----------+
+2024-10-20 22:59:42.379533 - Graha - |Cn        |
+2024-10-20 22:59:42.379564 - Graha - |   Ke     |
+2024-10-20 22:59:42.379595 - Graha - |   16.3613|
+2024-10-20 22:59:42.379625 - Graha - +----------+
+2024-10-20 22:59:42.379656 - Graha - 
