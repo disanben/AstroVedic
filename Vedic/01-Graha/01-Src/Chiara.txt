@@ -1,0 +1,10 @@
+As| 1|Lagna   | - |Pi|12| 5.1349|Uttarabhadra  |26|Sa|1|
+Su| 2|Surya   | AK|Cn| 4|29.0711|Aslesa        | 9|Me|4|
+Mo| 3|Chandra | GK|Cp|10|10.2841|Sravana       |22|Mo|1|
+Ma| 4|Mangala | MK|Cn| 4|24.5138|Aslesa        | 9|Me|3|
+Me| 5|Budha   | BK|Le| 5|26.2907|Purvaphalguni |11|Ve|4|
+Jp| 6|Guru    | DK|Li| 7|06.3445|Citra         |14|Ma|4|
+Ve| 7|Sukra   | PK|Vi| 6|14.2740|Hasta         |13|Mo|2|
+Sa| 8|Sani    |AmK|Ar| 1|28.5037|Krttika       | 3|Su|1|
+Ra| 9|Rahu    |PiK|Aq|11|09.5045|Satabhisaj    |24|Ra|1|
+Ke|10|Ketu    | - |Le| 5|09.5045|Magha         |10|Ke|3|

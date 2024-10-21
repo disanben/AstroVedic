@@ -3,6 +3,7 @@ from logCartaNatale import LogCartaNatale
 class Graha:
     "La classe Graha"
 
+    szNote = ""
     szConfGrahaFileName   = ""
     szConfRasiFileName    = ""
     szGrahaSmall     = ""
@@ -92,6 +93,7 @@ class Graha:
                 self.fLonMoolTo       = line_content[9]
             i=i+1
         file_input.close()
+        self.createNote()
 
     def loadRasiFile(self):
     #"Carica sia le liste dei graha che i parametri di default del graha"
@@ -113,41 +115,46 @@ class Graha:
 
     def showGraha(self):
         szGrahaNameInSans = self.getRasiGrahaInSansc(self.iRasiProgr)
-        self.Log.scriviLog(2, self.szMsgPrefix + "*********************************************")
-        self.Log.scriviLog(2, self.szMsgPrefix + "****  Graha " + self.szGrahaSansc + "(" + self.szGrahaSmall + ")  Show")
-        self.Log.scriviLog(2, self.szMsgPrefix + "********************************************")
-        self.Log.scriviLog(2, self.szMsgPrefix + "Nome graha breve: " + self.szGrahaSmall)
-        self.Log.scriviLog(2, self.szMsgPrefix + "Nome graha in sanscrito: " + self.szGrahaSansc)
-        self.Log.scriviLog(2, self.szMsgPrefix + "Nel segno: (" + str(self.iRasiProgr) + "): " + self.getRasiSmall(self.iRasiProgr) + " con longitudine: " + str(self.fGrahaLon))
-        self.Log.scriviLog(2, self.szMsgPrefix + "Rasi di esaltazione = " + self.getRasiGrahaInSansc(self.iRasiGrahaExalt) + "(" + self.iRasiGrahaExalt + ")")
-        self.Log.scriviLog(2, self.szMsgPrefix + "Rasi di debilitazione = " + self.getRasiGrahaInSansc(self.iRasiGrahaDebil) + "(" + self.iRasiGrahaDebil + ")")
-        self.Log.scriviLog(2, self.szMsgPrefix + "Rasi di domicilio 1 = " + self.getRasiGrahaInSansc(self.iRasiGrahaDomic1) + "(" + self.iRasiGrahaDomic1 + ")")
-        self.Log.scriviLog(2, self.szMsgPrefix + "Rasi di domicilio 2 = " + self.getRasiGrahaInSansc(self.iRasiGrahaDomic2) + "(" + self.iRasiGrahaDomic2 + ")")
-        self.Log.scriviLog(2, self.szMsgPrefix + "Rasi Moolatrikona = " + self.getRasiGrahaInSansc(self.iRasiGrahaMool) + "(" + self.iRasiGrahaMool + ")")
-        self.Log.scriviLog(2, self.szMsgPrefix + "Longitudine di partenza Moolatrikona = " + self.fLonMoolFrom)
-        self.Log.scriviLog(2, self.szMsgPrefix + "Longitudine di fine Moolatrikona =" + self.fLonMoolTo)
+        self.Log.scriviLog(9, self.szMsgPrefix + "*********************************************")
+        self.Log.scriviLog(9, self.szMsgPrefix + "****  Graha " + self.szGrahaSansc + "(" + self.szGrahaSmall + ")  Show")
+        self.Log.scriviLog(9, self.szMsgPrefix + "********************************************")
+        self.Log.scriviLog(9, self.szMsgPrefix + "Nome graha breve: " + self.szGrahaSmall)
+        self.Log.scriviLog(9, self.szMsgPrefix + "Nome graha in sanscrito: " + self.szGrahaSansc)
+        self.Log.scriviLog(9, self.szMsgPrefix + "Nel segno: (" + str(self.iRasiProgr) + "): " + self.getRasiSmall(self.iRasiProgr) + " con longitudine: " + str(self.fGrahaLon))
+        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di esaltazione = " + self.getRasiGrahaInSansc(self.iRasiGrahaExalt) + "(" + self.iRasiGrahaExalt + ")")
+        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di debilitazione = " + self.getRasiGrahaInSansc(self.iRasiGrahaDebil) + "(" + self.iRasiGrahaDebil + ")")
+        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di domicilio 1 = " + self.getRasiGrahaInSansc(self.iRasiGrahaDomic1) + "(" + self.iRasiGrahaDomic1 + ")")
+        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di domicilio 2 = " + self.getRasiGrahaInSansc(self.iRasiGrahaDomic2) + "(" + self.iRasiGrahaDomic2 + ")")
+        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi Moolatrikona = " + self.getRasiGrahaInSansc(self.iRasiGrahaMool) + "(" + self.iRasiGrahaMool + ")")
+        self.Log.scriviLog(9, self.szMsgPrefix + "Longitudine di partenza Moolatrikona = " + self.fLonMoolFrom)
+        self.Log.scriviLog(9, self.szMsgPrefix + "Longitudine di fine Moolatrikona =" + self.fLonMoolTo)
         self.showGrahaPict()
 
     def showGrahaPict(self):
-        self.Log.scriviLog(2, self.szMsgPrefix + "+----------+")
-        self.Log.scriviLog(2, self.szMsgPrefix + "|" + self.getRasiSmall(self.iRasiProgr) + "        |")
-        self.Log.scriviLog(2, self.szMsgPrefix + "|   " + self.szGrahaSmall + "     |")
-        self.Log.scriviLog(2, self.szMsgPrefix + "|   " + self.fGrahaLon + "|")
-        self.Log.scriviLog(2, self.szMsgPrefix + "+----------+")
+        self.Log.scriviLog(9, self.szMsgPrefix + "+----------+")
+        self.Log.scriviLog(9, self.szMsgPrefix + "|" + self.getRasiSmall(self.iRasiProgr) + "        |")
+        self.Log.scriviLog(9, self.szMsgPrefix + "|   " + self.szGrahaSmall + "     |")
+        self.Log.scriviLog(9, self.szMsgPrefix + "|   " + self.fGrahaLon + "|")
+        self.Log.scriviLog(9, self.szMsgPrefix + "+----------+")
+        self.Log.scriviLog(9, self.szMsgPrefix + self.getNote())
+        self.Log.scriviLog(9, self.szMsgPrefix + "\n")
+
+    def createNote(self):
         if(self.iRasiProgr == self.iRasiGrahaExalt):
-            self.Log.scriviLog(2, self.szMsgPrefix + " ESALTAZIONE")
+            self.Log.scriviLog(9, self.szMsgPrefix + " ESALTAZIONE")
+            self.szNote = self.szNote + " IN ESALTAZIONE"
 
         if(self.iRasiProgr == self.iRasiGrahaDebil):
-            self.Log.scriviLog(2, self.szMsgPrefix + " DEBILITAZIONE")
+            self.Log.scriviLog(9, self.szMsgPrefix + " DEBILITAZIONE")
+            self.szNote = self.szNote + " IN DEBILITAZIONE"
 
         if(self.iRasiProgr == self.iRasiGrahaDomic1 or self.iRasiProgr == self.iRasiGrahaDomic2):
-            self.Log.scriviLog(2, self.szMsgPrefix + " DOMICILIO")
-
-        self.Log.scriviLog(2, self.szMsgPrefix + "\n")
+            self.Log.scriviLog(9, self.szMsgPrefix + " DOMICILIO")
+            self.szNote = self.szNote + " IN DOMICILIO"
 
     def getGrahaSmall(self):
         return self.szGrahaSmall
-        self.Log.scriviLog(2, self.szMsgPrefix + self.szGrahaSmall)
+        #self.Log.scriviLog(2, self.szMsgPrefix + self.szGrahaSmall)
 
     def getGrahaProgr(self):
         return self.iGrahaProgr
@@ -189,3 +196,13 @@ class Graha:
             return self.lstRasiSmall[int(iRasi)-1]
         else:
             return "NONE"
+
+    def getRasi(self):
+        return self.iRasiProgr
+
+
+    def getLongitude(self):
+        return self.fGrahaLon
+
+    def getNote(self):
+        return self.szNote

@@ -96,6 +96,26 @@ Il progetto si propone di analizzare la posizione dei pianeti creando la carta n
    Per dignità planetaria si intende la loro situazione in base ai segni (Rasi) occupati
 
 
++--------------------------+
+| 3. La Carta Natale       |
++--------------------------+
+
+La carta Natale viene memorizzata in un array di liste:
+
+
+lstCartaNatale[Rasi][Graha1][Lon1]
+                    [Graha2][Lon2]
+                    [Graha3][Lon3]
+                    [Graha4][Lon4]
+
+
+
+
+
+
+
+
+
 
 
 +--------------------------+
