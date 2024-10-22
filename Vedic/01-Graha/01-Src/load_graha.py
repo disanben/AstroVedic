@@ -16,12 +16,20 @@ class LoadGraha:
     lstNakReg = []
     lstNakPada = []
 
+    szName = ""
+    szCitta = ""
+    szData = ""
+    szCittaLat=""
+    szCittaLon=""
+    szOra = ""
+
+    bAsc = True
+
     Log = LogCartaNatale
     szMsgPrefix = "Load Graha"
 
 
     def __init__ (self, passLog, szInputFileName):
-        print("Classe LoadGraha istanziata")
         self.inputFileName = szInputFileName
         self.Log = passLog
         print("Nome del file di input: " + self.inputFileName)
@@ -30,6 +38,25 @@ class LoadGraha:
     def loadGrahaFile(self):
 
         file_input = open(self.inputFileName, "r", encoding='utf-8')
+
+        #Benedetto|10.06.1966|01:35|Catania|37.4716N|14.8473E|
+        header=file_input.readline()
+        header_content=header.split("|")
+
+        self.szName     = header_content[0]
+        self.szData     = header_content[1]
+        self.szOra      = header_content[2]
+        self.szCitta    = header_content[3]
+        self.szCittaLat = header_content[4]
+        self.szCittaLon = header_content[5]
+
+        self.Log.scriviLog(9, self.szMsgPrefix + "\n\n")
+        self.Log.scriviLog(9, self.szMsgPrefix + "-----------------------------------------------------------------------------------------")
+        self.Log.scriviLog(9, self.szMsgPrefix + " -                    Lettura dati di nascita di: " + self.szName)
+        self.Log.scriviLog(9, self.szMsgPrefix + " -     Nato il: " + self.szData + " alle ore: " + self.szOra + " a " + self.szCitta + " (" + self.szCittaLat + " - " + self.szCittaLon + ")")
+        self.Log.scriviLog(9, self.szMsgPrefix + "-----------------------------------------------------------------------------------------")
+
+
         i = 1
         for line in file_input.readlines():
             #print("-------------------------------------------")
@@ -44,13 +71,26 @@ class LoadGraha:
             self.lstRasiSmall.append(line_content[4])
             self.lstRasiProgr.append(line_content[5])
             self.lstGrahaLng.append(line_content[6])
-            self.lstNakName.append(line_content[7])
-            self.lstNakProgr.append(line_content[8])
-            self.lstNakReg.append(line_content[9])
-            self.lstNakPada.append(line_content[10])
+            #self.lstNakName.append(line_content[7])
+            self.lstNakProgr.append(line_content[7])
+            #self.lstNakReg.append(line_content[9])
+            self.lstNakPada.append(line_content[8])
             i=i+1
         file_input.close()
         self.Log.scriviLog(2, self.szMsgPrefix + " - Caricamento Graha presenti in " + self.inputFileName + " --> PASSED")
+
+        if(self.szOra == "XX:XX"):
+            self.Log.scriviLog(9, self.szMsgPrefix + " - Ora di nascita ignota - Ascendente e Case non calcolate")
+            self.lstRasiSmall[0]=" - "
+            self.lstRasiProgr[0]=" - "
+            self.lstGrahaLng[0]=" - "
+            #self.lstNakName.append(line_content[7])
+            self.lstNakProgr[0]=" - "
+            #self.lstNakReg.append(line_content[9])
+            self.lstNakPada[0]=" - "
+            self.bAsc=False
+
+
 
     def getLstGrahaSmall(self):
         return self.lstGrahaSmall
@@ -143,4 +183,5 @@ class LoadGraha:
         return self.lstRasiProgr[0]
     def getAscLong(self):
         return self.lstGrahaLng[0]
-
+    def getAscTrue(self):
+        return self.bAsc

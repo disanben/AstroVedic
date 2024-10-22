@@ -9,7 +9,7 @@ class LogCartaNatale:
 
     def __init__ (self, logFile, iPriorita):
         self.szLogFile = logFile
-        self.iPri = iPriorita
+        self.iPri = int(iPriorita)
 
         fileToLog=open(self.szLogFile, "w")
         oraCorrente = datetime.datetime.now()
@@ -22,4 +22,3 @@ class LogCartaNatale:
             fileToLog.write("\n" + str(datetime.datetime.now()) + " - " + szMess)
             fileToLog.close()
             print(szMess)
-

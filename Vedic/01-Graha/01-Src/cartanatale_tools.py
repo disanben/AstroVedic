@@ -4,6 +4,8 @@ from load_graha import LoadGraha
 from graha import Graha
 from logCartaNatale import LogCartaNatale
 
+from termcolor import colored
+
 lstMesa = []
 lstVrsabha = []
 lstMithuna = []
@@ -266,7 +268,11 @@ def showGrahaDetail(Log,
     Log.scriviLog(9, "+-----------------------+")
     Log.scriviLog(9, "\n")
 
-    szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " in " + "(" + GrahaAsc.getRasi() + ")" + GrahaAsc.getRasiGrahaInSansc(GrahaAsc.getRasi()) + " Lat.: " + GrahaAsc.getLongitude() + " - " + GrahaAsc.getNote()
+    if(GrahaAsc.getRasi() != " - "):
+        szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " in " + "(" + GrahaAsc.getRasi() + ")" + GrahaAsc.getRasiGrahaInSansc(GrahaAsc.getRasi()) + " Lat.: " + GrahaAsc.getLongitude() + " - " + GrahaAsc.getNote()
+    else:
+        szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " ** NON CALCOLABILE **"
+
     szLine02 = "(" + GrahaSun.getGrahaSmall() + ")" + GrahaSun.getGrahaSansc() + " in " + "(" + GrahaSun.getRasi() + ")" + GrahaSun.getRasiGrahaInSansc(GrahaSun.getRasi()) + " Lat.: " + GrahaSun.getLongitude() + " - " + GrahaSun.getNote()
     szLine03 = "(" + GrahaMoon.getGrahaSmall() + ")" + GrahaMoon.getGrahaSansc() + " in " + "(" + GrahaMoon.getRasi() + ")" + GrahaMoon.getRasiGrahaInSansc(GrahaMoon.getRasi()) + " Lat.: " + GrahaMoon.getLongitude() + " - " + GrahaMoon.getNote()
     szLine04 = "(" + GrahaMars.getGrahaSmall() + ")" + GrahaMars.getGrahaSansc() + " in " + "(" + GrahaMars.getRasi() + ")" + GrahaMars.getRasiGrahaInSansc(GrahaMars.getRasi()) + " Lat.: " + GrahaMars.getLongitude() + " - " + GrahaMars.getNote()
