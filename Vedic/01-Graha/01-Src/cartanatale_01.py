@@ -1,7 +1,7 @@
 import os
 import sys
 from termcolor import colored
-from colorama import Fore, Back, Style
+from colorama import init, Fore, Back, Style
 
 from load_graha import LoadGraha
 from graha import Graha
@@ -27,13 +27,17 @@ from cartanatale_tools import *
 #help_utente()
 
 '''
+init()
 print(colored("hello", "red"), colored("world", "green"))
 print(Fore.RED + 'some red text')
-print(Back.GREEN + 'and with a green background')
+print(Fore.RED + Back.GREEN + 'and with a green background')
 print(Style.DIM + 'and in dim text')
 print(Style.RESET_ALL)
 print('back to normal now')
 '''
+
+#print(Fore.RED + Back.GREEN + 'and with a green background')
+#print(Style.RESET_ALL)
 
 iPrioLog = 0
 lstCartaNatale = []
@@ -170,11 +174,13 @@ print("   Lista lstNakPada", LoadGrahaCarta.getLstNakPada())
 Log.scriviLog(5, "Inizio caricamento Graha")
 
 #if(LoadGrahaCarta.getAscTrue()):
+#Fore.RED + Back.GREEN + Style.RESET_ALL
 LoadGrahaCarta.getAscLong()
 GrahaAsc = Graha(Log, confGrahaFileName, confRasiFileName, 0, LoadGrahaCarta.getAscRasi(), LoadGrahaCarta.getAscLong())
 
 if(LoadGrahaCarta.getAscTrue()):
     lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaAsc.getGrahaSmall(), GrahaAsc.getRasi(), GrahaAsc.getLongitude())
+    #lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Fore.RED + Back.GREEN + GrahaAsc.getGrahaSmall() + Fore.WHITE + Back.BLACK, GrahaAsc.getRasi(), GrahaAsc.getLongitude())
 
 LoadGrahaCarta.getSunLong()
 GrahaSun = Graha(Log, confGrahaFileName, confRasiFileName, 1, LoadGrahaCarta.getSunRasi(), LoadGrahaCarta.getSunLong())

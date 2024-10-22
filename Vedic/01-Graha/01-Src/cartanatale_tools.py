@@ -1,8 +1,11 @@
 import os
 import sys
+from colorama import init, Fore, Back, Style
+
 from load_graha import LoadGraha
 from graha import Graha
 from logCartaNatale import LogCartaNatale
+
 
 from termcolor import colored
 
@@ -30,8 +33,9 @@ def help_utente():
 
 def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
 
-    Log.scriviLog(5, "Inizio caricamento Carta Natale")
+    init()
 
+    Log.scriviLog(5, "Inizio caricamento Carta Natale")
     Log.scriviLog(2, str(lstCartaNatale))
 
     szMesaGrahaSmall = ""
@@ -68,6 +72,7 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
                 case 1:
                     szMesaGrahaSmall = szMesaGrahaSmall + graha[0] + " "
                     szMesaGrahaLon  = szMesaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+			  #print(Style.RESET_ALL)
                     Log.scriviLog(2, "      Aggiunto in Mesa: " + szMesaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Mesa: " + szMesaGrahaLon)
                 case 2:
