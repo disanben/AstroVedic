@@ -1,0 +1,11 @@
+Sarah Di Sano|20.06.2002|14:25|Milano|45.4642N|9.1895E|
+As| 1|Lagna   |	- |Vi| 6|16.4147|Hasta     |13|Mo|3|
+Su| 2|Surya   | DK|Ge| 3| 5.0759|Mrgasira  | 5|Ma|4|
+Mo| 3|Chandra | PK|Li| 7| 8.1929|Svati     |15|Ra|1|
+Ma| 4|Mangala | BK|Ge| 3|21.1122|Punarvasu | 7|Jp|1|
+Me| 5|Budha   |PiK|Ta| 2|12.4237|Rohini    | 4|Mo|1|
+Jp| 6|Guru    | AK|Ge| 3|26.4649|Punarvasu | 7|Jp|3|
+Ve| 7|Sukra   | MK|Cn| 4|12.4521|Pusya     | 8|Sa|3|
+Sa| 8|Sani    |AmK|Ta| 2|26.0049|Mrgasira  | 5|Ma|1|
+Ra| 9|Rahu    | GK|Ta| 2|23.2714|Mrgasira  | 5|Ma|1|
+Ke|10|Ketu    |	- |Sc| 8|23.2714|Jyestha   |18|Me|3|

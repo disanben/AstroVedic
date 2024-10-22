@@ -1,0 +1,11 @@
+Milena Este|02.08.1950|XX:XX|Brescia|45.7064N|10.3356E|
+As| 1|Lagna   | - |Ta| 2| 6.1933| 3|3|
+Su| 2|Surya   | MK|Cn| 4|15.5650| 8|4|
+Mo| 3|Chandra | GK|Pi|12| 2.3817|25|4|
+Ma| 4|Mangala | DK|Li| 7| 1.4159|14|3|
+Me| 5|Budha   | PK|Le| 5| 6.3605|10|2|
+Jp| 6|Guru    |PiK|Aq|11|12.1844|24|2|
+Ve| 7|Sukra   | BK|Ge| 3|19.0705| 6|4|
+Sa| 8|Sani    | AK|Le| 5|24.0936|11|4|
+Ra| 9|Rahu    |AmK|Pi|12| 7.4110|26|2|
+Ke|10|Ketu    | - |Vi| 6| 7.4110|12|4|

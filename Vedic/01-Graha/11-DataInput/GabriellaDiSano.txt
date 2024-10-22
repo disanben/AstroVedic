@@ -1,0 +1,11 @@
+Gabriella Di Sano|20.09.1967|XX:XX|Catania|37.4716N|14.8473E|
+As| 1|Lagna   |	- |Ge| 3| 8.4654| 6|1|
+Su| 2|Surya   | GK|Vi| 6| 2.5301|12|2|
+Mo| 3|Chandra | MK|Pi|12|16.1245|26|4|
+Ma| 4|Mangala |PiK|Sc| 8|13.1011|17|3|
+Me| 5|Budha   |AmK|Vi| 6|22.3652|13|4|
+Jp| 6|Guru    | DK|Le| 5| 1.0912|10|1|
+Ve| 7|Sukra   | PK|Le| 5| 4.1525|10|2|
+Sa| 8|Sani    | BK|Pi|12|16.3816|26|4|
+Ra| 9|Rahu    | AK|Ar| 1| 6.0403| 1|2|
+Ke|10|Ketu    |	- |Li| 7| 6.0403|14|4|

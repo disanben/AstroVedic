@@ -1,0 +1,11 @@
+Francesco Fagioli|24.01.1974|XX:XX|Milano|45.4642N|9.1895E|
+As| 1|Lagna   | - |Vi| 6|26.5746|14|2|
+Su| 2|Surya   | PK|Cp|10|10.0512|22|1|
+Mo| 3|Chandra |PiK|Cp|10|15.3027|22|2|
+Ma| 4|Mangala | MK|Ar| 1|18.4145| 2|2|
+Me| 5|Budha   | BK|Cp|10|19.4939|22|3|
+Jp| 6|Guru    |AmK|Cp|10|26.0858|23|1|
+Ve| 7|Sukra   | GK|Cp|10| 9.5822|21|4|
+Sa| 8|Sani    | DK|Ge| 3| 5.2355| 5|4|
+Ra| 9|Rahu    | AK|Sg| 9| 3.1326|19|1|
+Ke|10|Ketu    | - |Ge| 3| 3.1326| 5|3|		

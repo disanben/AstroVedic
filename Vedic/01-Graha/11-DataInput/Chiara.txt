@@ -1,0 +1,11 @@
+Chiara Fagioli|15.08.1970|21:45|Milano|45.4642N|9.1895E|
+As| 1|Lagna   | - |Pi|12| 5.1349|26|1|
+Su| 2|Surya   | AK|Cn| 4|29.0711| 9|4|
+Mo| 3|Chandra | GK|Cp|10|10.2841|22|1|
+Ma| 4|Mangala | MK|Cn| 4|24.5138| 9|3|
+Me| 5|Budha   | BK|Le| 5|26.2907|11|4|
+Jp| 6|Guru    | DK|Li| 7|06.3445|14|4|
+Ve| 7|Sukra   | PK|Vi| 6|14.2740|13|2|
+Sa| 8|Sani    |AmK|Ar| 1|28.5037| 3|1|
+Ra| 9|Rahu    |PiK|Aq|11|09.5045|24|1|
+Ke|10|Ketu    | - |Le| 5|09.5045|10|3|

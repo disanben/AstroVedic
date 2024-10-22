@@ -1,0 +1,11 @@
+Roberto Fagioli|05.07.1951|XX:XX|Lodi|45.2963N|9.5285E|
+As| 1|Lagna   | - |Pi|12|19.4056|27|1|
+Su| 2|Surya   | MK|Ge| 3|18.5833| 6|4|
+Mo| 3|Chandra |AmK|Ge| 3|25.5357| 7|2|
+Ma| 4|Mangala | PK|Ge| 3| 7.2918| 6|1|
+Me| 5|Budha   | AK|Ge| 3|29.4911| 7|3|
+Jp| 6|Guru    | BK|Pi|12|19.3249|27|1|
+Ve| 7|Sukra   | GK|Le| 5| 4.0231|10|2|
+Sa| 8|Sani    | DK|Vi| 6| 3.2957|12|3|
+Ra| 9|Rahu    |PiK|Aq|11|19.4930|24|4|
+Ke|10|Ketu    | - |Le| 5|19.4930|11|2|

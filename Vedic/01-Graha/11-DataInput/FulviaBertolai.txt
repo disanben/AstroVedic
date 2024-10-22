@@ -1,0 +1,11 @@
+Fulvia Bertolai|01.09.1954|XX:XX|Vicenza|45.5467N|11.4500E|
+As| 1|Lagna   | - |Ge| 3| 8.5724| 6|1|
+Su| 2|Surya   | MK|Le| 5|14.4638|11|1|
+Mo| 3|Chandra |AmK|Vi| 6|24.5511|14|1|
+Ma| 4|Mangala | GK|Sg| 9| 9.2514|19|3|
+Me| 5|Budha   | BK|Le| 5|24.0936|11|4|
+Jp| 6|Guru    | AK|Ge| 3|28.2756| 7|3|
+Ve| 7|Sukra   | DK|Li| 7| 0.5318|14|3|
+Sa| 8|Sani    |PiK|Li| 7|11.5319|15|2|
+Ra| 9|Rahu    | PK|Sg| 9|18.4038|20|2|
+Ke|10|Ketu    | - |Ge| 3|18.4038| 6|4|

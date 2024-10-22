@@ -1,0 +1,11 @@
+Benedetto|10.06.1966|01:35|Catania|37.4716N|14.8473E|
+As| 1|Lagna   | - |Pi|12| 1.1455|25|4|
+Su| 2|Surya   |AmK|Ta| 2|25.1730| 5|1|
+Mo| 3|Chandra | PK|Aq|11|11.5415|24|2|
+Ma| 4|Mangala | MK|Ta| 2|15.0931| 4|2|
+Me| 5|Budha   | GK|Ge| 3|10.5014| 6|2|
+Jp| 6|Guru    |PiK|Ge| 3|13.5839| 6|3|
+Ve| 7|Sukra   | BK|Ar| 1|17.1824| 2|2|
+Sa| 8|Sani    | DK|Pi|12| 5.2932|26|1|
+Ra| 9|Rahu    | AK|Ta| 2| 0.4811| 3|2|
+Ke|10|Ketu    | - |Sc| 8| 0.4811|16|4|
