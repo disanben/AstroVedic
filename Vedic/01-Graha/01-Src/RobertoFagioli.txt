@@ -1,0 +1,12 @@
+As| 1|Lagna   | - |Vi| 6|12.1541|Hasta         |13|Mo| 1|
+Su| 2|Surya   |AmK|Ge| 3|19.2799|Ardra         | 6|Ra| 4|
+Mo| 3|Chandra | GK|Cn| 4| 1.5117|Punarvasu     | 7|Jp| 4|
+Ma| 4|Mangala | MK|Ge| 3| 7.4932|Ardra         | 6|Ra| 1|
+Me| 5|Budha   | DK|Cn| 4| 0.4855|Punarvasu     | 7|Jp| 4|
+Jp| 6|Guru    | AK|Pi|12|19.3536|Revati        |27|Me| 1|
+Ve| 7|Sukra   |PiK|Le| 5| 4.2844|Magha         |10|Ke| 2|
+Sa| 8|Sani    | PK|Vi| 6| 3.3145|Uttaraphalguni|12|Su| 3|
+Ra| 9|Rahu    | BK|Aq|11|19.4755|Satabhisaj    |24|Ra| 4|
+Ke|10|Ketu    | - |Le| 5|19.4755|Purvaphalguni |11|Ve| 2|
+
+

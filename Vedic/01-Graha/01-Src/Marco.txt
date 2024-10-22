@@ -1,10 +1,10 @@
-As|1|Lagna   | - |Cp|10|11.5048|Sravana       |22|Mo|1|
-Su|2|Surya   |AmK|Sg| 9|24.1227|Purvasadha    |20|Ve|4|
-Mo|3|Chandra | MK|Ta| 2|14.3545|Rohini        | 4|Mo|2|
-Ma|4|Mangala | BK|Sg| 9|15.5270|Purvasadha    |20|Ve|1|
-Me|5|Budha   | PK|Cp|10|12.4639|Sravana       |22|Mo|1|
-Jp|6|Guru    | DK|Cp|10| 6.3916|Uttarasadha   |21|Su|3|
-Ve|7|Sukra   | GK|Aq|11|11.1120|Satabhisaj    |24|Ra|2|
-Sa|8|Sani    | AK|Le| 5|27.4437|Uttaraphalguni|12|Su|1|
-Ra|9|Rahu    |PiK|Cp|10|16.3613|Sravana       |22|Mo|2|
-Ke|10|Ketu   | - |Cn| 4|16.3613|Pusya         | 8|Sa|4|
+As| 1|Lagna   | - |Cp|10|11.5048|Sravana       |22|Mo|1|
+Su| 2|Surya   |AmK|Sg| 9|24.1227|Purvasadha    |20|Ve|4|
+Mo| 3|Chandra | MK|Ta| 2|14.3545|Rohini        | 4|Mo|2|
+Ma| 4|Mangala | BK|Sg| 9|15.5270|Purvasadha    |20|Ve|1|
+Me| 5|Budha   | PK|Cp|10|12.4639|Sravana       |22|Mo|1|
+Jp| 6|Guru    | DK|Cp|10| 6.3916|Uttarasadha   |21|Su|3|
+Ve| 7|Sukra   | GK|Aq|11|11.1120|Satabhisaj    |24|Ra|2|
+Sa| 8|Sani    | AK|Le| 5|27.4437|Uttaraphalguni|12|Su|1|
+Ra| 9|Rahu    |PiK|Cp|10|16.3613|Sravana       |22|Mo|2|
+Ke|10|Ketu    | - |Cn| 4|16.3613|Pusya         | 8|Sa|4|

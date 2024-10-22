@@ -1,10 +1,10 @@
-As| 1|Lagna   | - |Pi|12| 5.1349|Uttarabhadra  |26|Sa|1|
-Su| 2|Surya   | AK|Cn| 4|29.0711|Aslesa        | 9|Me|4|
-Mo| 3|Chandra | GK|Cp|10|10.2841|Sravana       |22|Mo|1|
-Ma| 4|Mangala | MK|Cn| 4|24.5138|Aslesa        | 9|Me|3|
-Me| 5|Budha   | BK|Le| 5|26.2907|Purvaphalguni |11|Ve|4|
-Jp| 6|Guru    | DK|Li| 7|06.3445|Citra         |14|Ma|4|
-Ve| 7|Sukra   | PK|Vi| 6|14.2740|Hasta         |13|Mo|2|
-Sa| 8|Sani    |AmK|Ar| 1|28.5037|Krttika       | 3|Su|1|
-Ra| 9|Rahu    |PiK|Aq|11|09.5045|Satabhisaj    |24|Ra|1|
-Ke|10|Ketu    | - |Le| 5|09.5045|Magha         |10|Ke|3|
+As| 1|Lagna   | - |Pi|12| 1.1455|Purvabhadra |25|Jp|4|
+Su| 2|Surya   |AmK|Ta| 2|25.1730|Mrgasira    | 5|Ma|1|
+Mo| 3|Chandra | PK|Aq|11|11.5415|Satabhisaj  |24|Ra|2|
+Ma| 4|Mangala | MK|Ta| 2|15.0931|Rohini      | 4|Mo|2|
+Me| 5|Budha   | GK|Ge| 3|10.5014|Ardra       | 6|Ra|2|
+Jp| 6|Guru    |PiK|Ge| 3|13.5839|Ardra       | 6|Ra|3|
+Ve| 7|Sukra   | BK|Ar| 1|17.1824|Bharani     | 2|Ve|2|
+Sa| 8|Sani    | DK|Pi|12| 5.2932|Uttarabhadra|26|Sa|1|
+Ra| 9|Rahu    | AK|Ta| 2| 0.4811|Krttika     | 3|Su|2|
+Ke|10|Ketu    | - |Sc| 8| 0.4811|Visakha     |16|Jp|4|

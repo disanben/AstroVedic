@@ -23,11 +23,11 @@ from cartanatale_tools import *
 
 #help_utente()
 
-iPrioLog = 2
+iPrioLog = 9
 lstCartaNatale = []
 
 print ("\n\n***********************************")
-print ("    ELABORAZIONE GRAHA MARCO")
+print ("    ELABORAZIONE GRAHA " + sys.argv[1] )
 print ("***********************************")
 
 print("Lista argomenti passati", sys.argv)
@@ -75,7 +75,7 @@ Log = LogCartaNatale(outFileName, iPrioLog)
 
 
 Log.scriviLog(9, "***********************************")
-Log.scriviLog(9, "***        Graha di Marco       ***")
+Log.scriviLog(9, "***  Graha di " + inputCartaNatale + " ***")
 Log.scriviLog(9, "***********************************")
 Log.scriviLog(9, "         -- Carta Natale --")
 Log.scriviLog(9, "***********************************")

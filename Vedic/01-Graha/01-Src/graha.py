@@ -141,16 +141,21 @@ class Graha:
 
     def createNote(self):
         if(self.iRasiProgr == self.iRasiGrahaExalt):
-            self.Log.scriviLog(9, self.szMsgPrefix + " ESALTAZIONE")
+            self.Log.scriviLog(2, self.szMsgPrefix + " ESALTAZIONE")
             self.szNote = self.szNote + " IN ESALTAZIONE"
 
         if(self.iRasiProgr == self.iRasiGrahaDebil):
-            self.Log.scriviLog(9, self.szMsgPrefix + " DEBILITAZIONE")
+            self.Log.scriviLog(2, self.szMsgPrefix + " DEBILITAZIONE")
             self.szNote = self.szNote + " IN DEBILITAZIONE"
 
         if(self.iRasiProgr == self.iRasiGrahaDomic1 or self.iRasiProgr == self.iRasiGrahaDomic2):
-            self.Log.scriviLog(9, self.szMsgPrefix + " DOMICILIO")
+            self.Log.scriviLog(2, self.szMsgPrefix + " DOMICILIO")
             self.szNote = self.szNote + " IN DOMICILIO"
+
+        if(self.iRasiProgr == self.iRasiGrahaMool):
+            if(self.fGrahaLon >= self.fLonMoolFrom and self.fGrahaLon <= self.fLonMoolTo):
+                self.Log.scriviLog(2, self.szMsgPrefix + " MOOLATRIKONA")
+                self.szNote = self.szNote + " IN MOOLATRIKONA"
 
     def getGrahaSmall(self):
         return self.szGrahaSmall
