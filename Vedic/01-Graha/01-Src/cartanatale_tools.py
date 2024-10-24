@@ -274,19 +274,19 @@ def showGrahaDetail(Log,
     Log.scriviLog(9, "\n")
 
     if(GrahaAsc.getRasi() != " - "):
-        szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " in " + "(" + GrahaAsc.getRasi() + ")" + GrahaAsc.getRasiGrahaInSansc(GrahaAsc.getRasi()) + " Lat.: " + GrahaAsc.getLongitude() + " - " + GrahaAsc.getNote()
+        szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " in " + "(" + GrahaAsc.getRasi() + ")" + GrahaAsc.getRasiGrahaInSansc(GrahaAsc.getRasi()) + " Lat.: " + GrahaAsc.getLongitude() + " - " + GrahaAsc.getLongitudeAssolute() + " - " + GrahaAsc.getNote()
     else:
         szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " ** NON CALCOLABILE **"
 
-    szLine02 = "(" + GrahaSun.getGrahaSmall() + ")" + GrahaSun.getGrahaSansc() + " in " + "(" + GrahaSun.getRasi() + ")" + GrahaSun.getRasiGrahaInSansc(GrahaSun.getRasi()) + " Lat.: " + GrahaSun.getLongitude() + " - " + GrahaSun.getNote()
-    szLine03 = "(" + GrahaMoon.getGrahaSmall() + ")" + GrahaMoon.getGrahaSansc() + " in " + "(" + GrahaMoon.getRasi() + ")" + GrahaMoon.getRasiGrahaInSansc(GrahaMoon.getRasi()) + " Lat.: " + GrahaMoon.getLongitude() + " - " + GrahaMoon.getNote()
-    szLine04 = "(" + GrahaMars.getGrahaSmall() + ")" + GrahaMars.getGrahaSansc() + " in " + "(" + GrahaMars.getRasi() + ")" + GrahaMars.getRasiGrahaInSansc(GrahaMars.getRasi()) + " Lat.: " + GrahaMars.getLongitude() + " - " + GrahaMars.getNote()
-    szLine05 = "(" + GrahaMercury.getGrahaSmall() + ")" + GrahaMercury.getGrahaSansc() + " in " + "(" + GrahaMercury.getRasi() + ")" + GrahaMercury.getRasiGrahaInSansc(GrahaMercury.getRasi()) + " Lat.: " + GrahaMercury.getLongitude() + " - " + GrahaMercury.getNote()
-    szLine06 = "(" + GrahaJupiter.getGrahaSmall() + ")" + GrahaJupiter.getGrahaSansc() + " in " + "(" + GrahaJupiter.getRasi() + ")" + GrahaJupiter.getRasiGrahaInSansc(GrahaJupiter.getRasi()) + " Lat.: " + GrahaJupiter.getLongitude() + " - " + GrahaJupiter.getNote()
-    szLine07 = "(" + GrahaVenus.getGrahaSmall() + ")" + GrahaVenus.getGrahaSansc() + " in " + "(" + GrahaVenus.getRasi() + ")" + GrahaVenus.getRasiGrahaInSansc(GrahaVenus.getRasi()) + " Lat.: " + GrahaVenus.getLongitude() + " - " + GrahaVenus.getNote()
-    szLine08 = "(" + GrahaSaturn.getGrahaSmall() + ")" + GrahaSaturn.getGrahaSansc() + " in " + "(" + GrahaSaturn.getRasi() + ")" + GrahaSaturn.getRasiGrahaInSansc(GrahaSaturn.getRasi()) + " Lat.: " + GrahaSaturn.getLongitude() + " - " + GrahaSaturn.getNote()
-    szLine09 = "(" + GrahaRahu.getGrahaSmall() + ")" + GrahaRahu.getGrahaSansc() + " in " + "(" + GrahaRahu.getRasi() + ")" + GrahaRahu.getRasiGrahaInSansc(GrahaRahu.getRasi()) + " Lat.: " + GrahaRahu.getLongitude() + " - " + GrahaRahu.getNote()
-    szLine10 = "(" + GrahaKetu.getGrahaSmall() + ")" + GrahaKetu.getGrahaSansc() + " in " + "(" + GrahaKetu.getRasi() + ")" + GrahaKetu.getRasiGrahaInSansc(GrahaKetu.getRasi()) + " Lat.: " + GrahaKetu.getLongitude() + " - " + GrahaKetu.getNote()
+    szLine02 = "(" + GrahaSun.getGrahaSmall() + ")" + GrahaSun.getGrahaSansc() + " in " + "(" + GrahaSun.getRasi() + ")" + GrahaSun.getRasiGrahaInSansc(GrahaSun.getRasi()) + " Lat.: " + GrahaSun.getLongitude() + " - " + GrahaSun.getLongitudeAssolute() + " - " + GrahaSun.getNote()
+    szLine03 = "(" + GrahaMoon.getGrahaSmall() + ")" + GrahaMoon.getGrahaSansc() + " in " + "(" + GrahaMoon.getRasi() + ")" + GrahaMoon.getRasiGrahaInSansc(GrahaMoon.getRasi()) + " Lat.: " + GrahaMoon.getLongitude() + " - " + GrahaMoon.getLongitudeAssolute() + " - " + GrahaMoon.getNote()
+    szLine04 = "(" + GrahaMars.getGrahaSmall() + ")" + GrahaMars.getGrahaSansc() + " in " + "(" + GrahaMars.getRasi() + ")" + GrahaMars.getRasiGrahaInSansc(GrahaMars.getRasi()) + " Lat.: " + GrahaMars.getLongitude() + " - " + GrahaMars.getLongitudeAssolute() + " - " + GrahaMars.getNote()
+    szLine05 = "(" + GrahaMercury.getGrahaSmall() + ")" + GrahaMercury.getGrahaSansc() + " in " + "(" + GrahaMercury.getRasi() + ")" + GrahaMercury.getRasiGrahaInSansc(GrahaMercury.getRasi()) + " Lat.: "  + GrahaMercury.getLongitude() + " - " + GrahaMercury.getLongitudeAssolute() + " - " + GrahaMercury.getNote()
+    szLine06 = "(" + GrahaJupiter.getGrahaSmall() + ")" + GrahaJupiter.getGrahaSansc() + " in " + "(" + GrahaJupiter.getRasi() + ")" + GrahaJupiter.getRasiGrahaInSansc(GrahaJupiter.getRasi()) + " Lat.: "  + GrahaJupiter.getLongitude() + " - " + GrahaJupiter.getLongitudeAssolute() + " - " + GrahaJupiter.getNote()
+    szLine07 = "(" + GrahaVenus.getGrahaSmall() + ")" + GrahaVenus.getGrahaSansc() + " in " + "(" + GrahaVenus.getRasi() + ")" + GrahaVenus.getRasiGrahaInSansc(GrahaVenus.getRasi()) + " Lat.: "  + GrahaVenus.getLongitude() + " - " + GrahaVenus.getLongitudeAssolute() + " - " + GrahaVenus.getNote()
+    szLine08 = "(" + GrahaSaturn.getGrahaSmall() + ")" + GrahaSaturn.getGrahaSansc() + " in " + "(" + GrahaSaturn.getRasi() + ")" + GrahaSaturn.getRasiGrahaInSansc(GrahaSaturn.getRasi()) + " Lat.: "  + GrahaSaturn.getLongitude() + " - " + GrahaSaturn.getLongitudeAssolute() + " - " + GrahaSaturn.getNote()
+    szLine09 = "(" + GrahaRahu.getGrahaSmall() + ")" + GrahaRahu.getGrahaSansc() + " in " + "(" + GrahaRahu.getRasi() + ")" + GrahaRahu.getRasiGrahaInSansc(GrahaRahu.getRasi()) + " Lat.: "  + GrahaRahu.getLongitude() + " - " + GrahaRahu.getLongitudeAssolute() + " - " + GrahaRahu.getNote()
+    szLine10 = "(" + GrahaKetu.getGrahaSmall() + ")" + GrahaKetu.getGrahaSansc() + " in " + "(" + GrahaKetu.getRasi() + ")" + GrahaKetu.getRasiGrahaInSansc(GrahaKetu.getRasi()) + " Lat.: "  + GrahaKetu.getLongitude() + " - " + GrahaKetu.getLongitudeAssolute() + " - " + GrahaKetu.getNote()
 
 
 

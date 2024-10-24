@@ -107,6 +107,11 @@ Il progetto si propone di analizzare la posizione dei pianeti creando la carta n
 -----------------------
    Per dignità planetaria si intende la loro situazione in base ai segni (Rasi) occupati
 
+2.2 Pianeti in combustione
+---------------------------
+    La tabella dei pianeti in combustione (combustion.cfg) indica i gradi di longitudine per cui un pianeta viene definito combusto dal sole.
+Per far questo occorre calcolare anche la longitudine assoluta del pianeta e non solo indicare quella relativa che si legge dalla carta natale
+(vedi modifica per calcolo posizione assoluta)
 
 +--------------------------+
 | 3. La Carta Natale       |
@@ -161,3 +166,23 @@ Diagramma UML per inizializzazione dei Graha con lettura dal file [Nome].txt
 2. Richiesta a LoadGraha di inizializzare i Graha con i dati del file
 3. Istanziamento dei pianeti passando i dati letti dal file
 4. Stampa riassuntiva della carta
+
+
+
++--------------------------+
+| 21. Funzionalita'        |
++--------------------------+
+
+21.1 Calcolo longitudine assoluta (LonAss)
+------------------------------------------
+
+Viene indicata nel report della carta natale a fianco della longitudine del graha nel summary, per esempio:
+
+(Me)Budha   in ( 3)Mithuna Lat.: 10.5014 - 70.5014 -  IN DOMICILIO
+
+In questo caso essendo Mercurio in Gemelli, terzo segno quindi fatti 2 pieni ed una parte (10.5014) nel Gemelli, il calcolo è (3-1)x30+10.5014
+La funzione sarà quindi:
+
+    (iRasiProgr-1)*30 + fGrahaLon
+
+

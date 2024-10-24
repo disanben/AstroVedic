@@ -10,6 +10,7 @@ class Graha:
     iGrahaProgr      = 0
     iRasiProgr       = 0
     fGrahaLon        = 0.0
+    fGrahaLonAss    = 0.0
     szGrahaSansc    = ""
     iRasiGrahaExalt  = 0
     iRasiGrahaDebil  = 0
@@ -208,6 +209,11 @@ class Graha:
 
     def getLongitude(self):
         return self.fGrahaLon
+
+    def getLongitudeAssolute(self):
+        self.fGrahaLonAss=str(((float(self.iRasiProgr)-1)*30+float(self.fGrahaLon))).rjust(8)
+        return self.fGrahaLonAss
+
 
     def getNote(self):
         return self.szNote
