@@ -1,5 +1,7 @@
 import os
 import sys
+from pickle import FALSE
+
 from colorama import init, Fore, Back, Style
 
 from load_graha import LoadGraha
@@ -30,11 +32,15 @@ def help_utente():
     print("|      Manuale utente     |")
     print("+-------------------------+")
 
+def checkFilePresence(Log, szFileName, iErr):
+    if not os.path.isfile(szFileName):
+        Log.scriviLog(9, "File " + szFileName + " non trovato!")
+        return True
+    return False
+
 
 def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
-
     init()
-
     Log.scriviLog(5, "Inizio caricamento Carta Natale")
     Log.scriviLog(2, str(lstCartaNatale))
 

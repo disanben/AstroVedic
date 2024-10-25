@@ -15,6 +15,7 @@ class LoadGraha:
     lstNakProgr = []
     lstNakReg = []
     lstNakPada = []
+    lstRetrogade  = []
 
     szName = ""
     szCitta = ""
@@ -59,8 +60,8 @@ class LoadGraha:
 
         i = 1
         for line in file_input.readlines():
-            #print("-------------------------------------------")
-            #print("Riga " + str(i) + ": " + line)
+            self.Log.scriviLog(2, self.szMsgPrefix + "--------- Input File ------------")
+            self.Log.scriviLog(2, self.szMsgPrefix + "Riga " + str(i) + ": " + line)
             line_content = line.split("|")
             #print(line_content)
             #Caricamento lista GrahaSmall
@@ -75,6 +76,9 @@ class LoadGraha:
             self.lstNakProgr.append(line_content[7])
             #self.lstNakReg.append(line_content[9])
             self.lstNakPada.append(line_content[8])
+            self.lstRetrogade.append(line_content[9])
+
+
             i=i+1
         file_input.close()
         self.Log.scriviLog(2, self.szMsgPrefix + " - Caricamento Graha presenti in " + self.inputFileName + " --> PASSED")
@@ -130,53 +134,71 @@ class LoadGraha:
         return self.lstRasiProgr[1]
     def getSunLong(self):
         return self.lstGrahaLng[1]
+    def getSunRetro(self):
+        return self.lstRetrogade[1]
 #Moon
     def getMoonRasi(self):
         return self.lstRasiProgr[2]
     def getMoonLong(self):
         return self.lstGrahaLng[2]
+    def getMoonRetro(self):
+        return self.lstRetrogade[2]
 
 #Mars
     def getMarsRasi(self):
         return self.lstRasiProgr[3]
     def getMarsLong(self):
         return self.lstGrahaLng[3]
+    def getMarsRetro(self):
+        return self.lstRetrogade[3]
 
 #Mercury
     def getMercuryRasi(self):
         return self.lstRasiProgr[4]
     def getMercuryLong(self):
         return self.lstGrahaLng[4]
+    def getMercuryRetro(self):
+        return self.lstRetrogade[4]
 
 #Jupiter
     def getJupiterRasi(self):
         return self.lstRasiProgr[5]
     def getJupiterLong(self):
         return self.lstGrahaLng[5]
+    def getJupiterRetro(self):
+        return self.lstRetrogade[5]
 
 #Venus
     def getVenusRasi(self):
         return self.lstRasiProgr[6]
     def getVenusLong(self):
         return self.lstGrahaLng[6]
+    def getVenusRetro(self):
+        return self.lstRetrogade[6]
 
 #Saturn
     def getSaturnRasi(self):
         return self.lstRasiProgr[7]
     def getSaturnLong(self):
         return self.lstGrahaLng[7]
+    def getSaturnRetro(self):
+        return self.lstRetrogade[7]
 
 #Rahu
     def getRahuRasi(self):
         return self.lstRasiProgr[8]
     def getRahuLong(self):
         return self.lstGrahaLng[8]
+    def getRahuRetro(self):
+        return self.lstRetrogade[8]
 
 #Ketu
     def getKetuRasi(self):
         return self.lstRasiProgr[9]
     def getKetuLong(self):
         return self.lstGrahaLng[9]
+    def getKetuRetro(self):
+        return self.lstRetrogade[9]
 
 #Asc
     def getAscRasi(self):
