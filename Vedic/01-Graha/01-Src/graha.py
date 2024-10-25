@@ -8,6 +8,7 @@ class Graha:
     szConfRasiFileName    = ""
     szConfKopaFileName      = ""
     szGrahaSmall     = ""
+    szRetro          = ""
     iGrahaProgr      = 0
     iRasiProgr       = 0
     fGrahaLon        = 0.0
@@ -22,7 +23,9 @@ class Graha:
     fLonMoolTo       = 0.0
     fKopaStd         = 0.0
     fKopaRetr        = 0.0
+    fKobaDiff        = 0.0
     bRetrogade       = False
+    bKoba            = False
 
     lstGrahaSmall      = []
     lstGrahaProgr      = []
@@ -38,27 +41,24 @@ class Graha:
     lstRasiProgr       = []
     lstRasiSansc       = []
 
-    lstKopaGrahaSmall       = []
-    lstKopaGrahaProgr       = []
-    lstKopaGrahaSansc       = []
     lstKopaGrahaStd         = []
     lstKopaGrahaRetro       = []
 
     Log = LogCartaNatale
     szMsgPrefix = "Graha - "
 
-    def __init__ (self, passLog, confGrahaFileName, confRasiFileName, confKopaFileName, graha, rasi, lon, retro ):
+    def __init__ (self, passLog, confGrahaFileName, confRasiFileName, graha, rasi, lon, retro ):
         self.Log = passLog
         self.szConfGrahaFileName = confGrahaFileName
         self.szConfRasiFileName = confRasiFileName
-        self.szConfKopaFileName = confKopaFileName
         self.iGrahaProgr = graha
         self.iRasiProgr = rasi
         self.fGrahaLon  = lon
+        self.szRetro    = retro
         self.Log.scriviLog(2, "\n\n" )
 
-        self.Log.scriviLog(2, self.szMsgPrefix + "istanziata con file di input: " + self.szConfGrahaFileName + ", " + self.szConfRasiFileName + " e " + self.szConfKopaFileName )
-        self.Log.scriviLog(2, self.szMsgPrefix + "Parametri iniziali: graha=" + str(self.iGrahaProgr) + ", rasi=" + str(self.iRasiProgr) + ", longitudine=" + str(self.fGrahaLon))
+        self.Log.scriviLog(2, self.szMsgPrefix + "istanziata con file di input: " + self.szConfGrahaFileName + " e " + self.szConfRasiFileName )
+        self.Log.scriviLog(2, self.szMsgPrefix + "Parametri iniziali: graha=" + str(self.iGrahaProgr) + ", rasi=" + str(self.iRasiProgr) + ", longitudine=" + str(self.fGrahaLon) + " e indicazione: " + self.szRetro )
 
         if(retro == "R"):
             self.bRetrogade = True
@@ -67,9 +67,9 @@ class Graha:
         #Carica file di configurazione per auto-configurarsi
         self.loadGrahaFile()
         self.loadRasiFile()
-        self.loadKopaFile()
 
-        #self.showGraha()
+        if (self.getRasi() != " - "):
+            self.getLongitudeAssolute()
 
 
     def loadGrahaFile(self):
@@ -80,10 +80,7 @@ class Graha:
             self.Log.scriviLog(2, self.szMsgPrefix + "------- Graha File -----------")
             self.Log.scriviLog(2, self.szMsgPrefix + "Riga " + str(i) + ": " + line)
             line_content = line.split("|")
-            #print(line_content)
-            #Caricamento lista GrahaSmall
-            #Caricamento del graha corretto
-            #print(line_content[1] + " - " + str(self.iGrahaProgr))
+
             self.lstGrahaSmall.append(line_content[0])
             self.lstGrahaProgr.append(line_content[1])
             self.lstGrahaSansc.append(line_content[2])
@@ -94,6 +91,8 @@ class Graha:
             self.lstRasiGrahaMool.append(line_content[7])
             self.lstLonMoolFrom.append(line_content[8])
             self.lstLonMoolTo.append(line_content[9])
+            self.lstKopaGrahaStd.append(line_content[10])
+            self.lstKopaGrahaRetro.append(line_content[11])
 
             if line_content[1] == str(self.iGrahaProgr):
                 #print("Trovato graha corretto. Caricamento dei parametri di default")
@@ -107,13 +106,11 @@ class Graha:
                 self.iRasiGrahaMool   = line_content[7]
                 self.fLonMoolFrom     = line_content[8]
                 self.fLonMoolTo       = line_content[9]
-
-                if(line_content[10]=='R'):
-                    self.bRetrogade=True
-                    self.Log.scriviLog(2, self.szMsgPrefix + "Retrogado: " + self.bRetrogade)
+                self.fKopaStd         = line_content[10]
+                self.fKopaRetr        = line_content[11]
             i=i+1
         file_input.close()
-        self.createNote()
+
 
     def loadRasiFile(self):
     #"Carica sia le liste dei graha che i parametri di default del graha"
@@ -132,26 +129,6 @@ class Graha:
             self.lstRasiSansc.append(line_content[2])
             i=i+1
         file_input.close()
-
-    def loadKopaFile(self):
-        #"Carica sia le liste dei graha che i parametri Kopa, standard e retrogadi"
-            file_input = open(self.szConfKopaFileName, "r", encoding='utf-8')
-            i = 1
-            for line in file_input.readlines():
-                self.Log.scriviLog(2, self.szMsgPrefix + "--------- Kopa File ------------")
-                self.Log.scriviLog(2, self.szMsgPrefix + "Riga " + str(i) + ": " + line)
-                line_content = line.split("|")
-                #print(line_content)
-                #Caricamento lista GrahaSmall
-                #Caricamento del graha corretto
-                #print(line_content[1] + " - " + str(self.iGrahaProgr))
-                self.lstKopaGrahaSmall.append(line_content[0])
-                self.lstKopaGrahaProgr.append(line_content[1])
-                self.lstKopaGrahaSansc.append(line_content[2])
-                self.lstKopaGrahaStd.append(line_content[3])
-                self.lstKopaGrahaRetro.append(line_content[4])
-                i=i+1
-            file_input.close()
 
 
     def showGraha(self):
@@ -181,8 +158,25 @@ class Graha:
         self.Log.scriviLog(9, self.szMsgPrefix + self.getNote())
         self.Log.scriviLog(9, self.szMsgPrefix + "\n")
 
-    def checkIsKopa(self, SunLonAss):
-        if(SunLonAss + self.fKopaStdse > self.fGrahaLonAss)
+    def checkIsKopa(self, fSunLonAss):
+        #Calcola differenza assoluta tra long del sole e quella del graha a seconda che sia retrogado o meno
+        # e se occorre, ovvero diversa da zero
+        self.Log.scriviLog(2, self.szMsgPrefix + " +-- Verifica se Kopa --+")
+        self.Log.scriviLog(2, self.szMsgPrefix + " Long ass. del sole: " + str(fSunLonAss))
+        self.Log.scriviLog(2, self.szMsgPrefix + " Long ass. del graha: " + str(self.fGrahaLonAss))
+        self.Log.scriviLog(2, self.szMsgPrefix + " Gradi max per Kopa (Std):  " + str(self.fKopaStd))
+        self.Log.scriviLog(2, self.szMsgPrefix + " Gradi max per Kopa (Rtr):  " + str(self.fKopaRetr))
+
+        if(self.fKopaStd):
+            self.fKobaDiff = format(round(abs(float(fSunLonAss) - float(self.fGrahaLonAss)),2))
+            self.Log.scriviLog(2, self.szMsgPrefix + " Differenza Long:  " + str(self.fKobaDiff))
+            if (float(self.fKobaDiff) <= float(self.fKopaStd)):
+                self.Log.scriviLog(2, self.szMsgPrefix + " Il Graha è in Koba di gradi =  " + str(self.fKobaDiff))
+                self.bKoba = True
+        else:
+            self.Log.scriviLog(2, self.szMsgPrefix + " Questo Graha non va mai in Kopa ")
+
+        #self.createNote()
 
 
     def createNote(self):
@@ -206,6 +200,13 @@ class Graha:
         if(self.bRetrogade):
             self.Log.scriviLog(2, self.szMsgPrefix + " RETROGADO")
             self.szNote = self.szNote + " RETROGADO"
+
+        if(self.bKoba):
+            self.Log.scriviLog(2, self.szMsgPrefix + " COMBUSTO")
+            if(self.bRetrogade):
+                self.szNote = self.szNote + " COMBUSTO di " + str(self.fKobaDiff) + " gradi su " + str(self.fKopaRetr)
+            else:
+                self.szNote = self.szNote + " COMBUSTO di " + str(self.fKobaDiff) + " gradi su " + str(self.fKopaStd)
 
     def getGrahaSmall(self):
         return self.szGrahaSmall
@@ -260,7 +261,8 @@ class Graha:
         return self.fGrahaLon
 
     def getLongitudeAssolute(self):
-        self.fGrahaLonAss=str(((float(self.iRasiProgr)-1)*30+float(self.fGrahaLon))).rjust(8)
+        self.fGrahaLonAss = format(((float(self.iRasiProgr) - 1) * 30 + float(self.fGrahaLon)), ".2f").rjust(6)
+        self.Log.scriviLog(2, self.szMsgPrefix + " Long Ass di " + self.getGrahaSansc() + ": " + str(self.fGrahaLonAss))
         return self.fGrahaLonAss
 
     def getKopaDef(self):

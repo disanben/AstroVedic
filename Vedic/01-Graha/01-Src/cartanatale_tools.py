@@ -24,6 +24,8 @@ lstMakara = []
 lstKumbha = []
 lstMina = []
 
+lstPlanetWar = []
+
 
 
 def help_utente():
@@ -279,6 +281,19 @@ def showGrahaDetail(Log,
     Log.scriviLog(9, "+-----------------------+")
     Log.scriviLog(9, "\n")
 
+    #Creazione delle note per ogni pianeta
+    GrahaAsc.createNote()
+    GrahaSun.createNote()
+    GrahaMoon.createNote()
+    GrahaMars.createNote()
+    GrahaMercury.createNote()
+    GrahaJupiter.createNote()
+    GrahaVenus.createNote()
+    GrahaSaturn.createNote()
+    GrahaRahu.createNote()
+    GrahaKetu.createNote()
+
+
     if(GrahaAsc.getRasi() != " - "):
         szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " in " + "(" + GrahaAsc.getRasi() + ")" + GrahaAsc.getRasiGrahaInSansc(GrahaAsc.getRasi()) + " Lat.: " + GrahaAsc.getLongitude() + " - " + GrahaAsc.getLongitudeAssolute() + " - " + GrahaAsc.getNote()
     else:
@@ -306,3 +321,79 @@ def showGrahaDetail(Log,
     Log.scriviLog(9, szLine08)
     Log.scriviLog(9, szLine09)
     Log.scriviLog(9, szLine10)
+
+
+def checkIsKopa(Log, GrahaToCheck, fSunLonAss):
+    Log.scriviLog(2, "Verifica se " + GrahaToCheck.getGrahaSansc() + " è in Kopa. Long. assoluta del sole: " + fSunLonAss)
+    GrahaToCheck.checkIsKopa(fSunLonAss)
+
+
+
+def checkIsPlanetWar(Log, fSunLonAbs, fMoonLonAbs, fMarsLonAbs, fMercLonAbs, fJuptLonAbs, fVenLonAbs, fSatLonAbs, fRahuLonAbs, fKetuLonAbs ):
+    Log.scriviLog(2, "Verifica presenza di Guerre Planetarie")
+    lstGrahaWar=[]
+    #lstGrahaProgr = [2,3,4,5,6,7,8,9,10]
+    #lstGrahaLon = []
+
+    lstPlanetWar.append([float(fSunLonAbs),2])
+    lstPlanetWar.append([float(fMoonLonAbs),3])
+    lstPlanetWar.append([float(fMarsLonAbs),4])
+    lstPlanetWar.append([float(fMercLonAbs),5])
+    lstPlanetWar.append([float(fJuptLonAbs),6])
+    lstPlanetWar.append([float(fVenLonAbs),7])
+    lstPlanetWar.append([float(fSatLonAbs),8])
+    lstPlanetWar.append([float(fRahuLonAbs),9])
+    lstPlanetWar.append([float(fKetuLonAbs),10])
+
+    print (lstPlanetWar)
+    lstPlanetWar.sort()
+    print (lstPlanetWar)
+    #Log.scriviLog(2, lstPlanetWar)
+
+    i=0
+    for graha in lstPlanetWar:
+        if(i>7):
+            break
+        print(str(lstPlanetWar[i][0]) + " -> " + str(lstPlanetWar [i+1][0]))
+        if(abs(float(str(lstPlanetWar[i][0]))-float(str(lstPlanetWar[i+1][0]))) < 2):
+            print("Lotta planetaria tra " + str(lstPlanetWar[i][1]) + " e " + str(lstPlanetWar[i+1][1]))
+            lstGrahaWar.append([str(lstPlanetWar[i][1]), str(lstPlanetWar[i+1][1])])
+        i=i+1
+    return lstGrahaWar
+
+
+'''
+print("##############################")
+print("   Lista GrahaSmall", LoadGrahaCarta.getLstGrahaSmall())
+
+print("##############################")
+print("   Lista GrahaProgr", LoadGrahaCarta.getLstGrahaProgr())
+
+print("##############################")
+print("   Lista lstGrahaSansc", LoadGrahaCarta.getLstGrahaSansc())
+
+print("##############################")
+print("   Lista lstTipoAK", LoadGrahaCarta.getLstTipoAK())
+
+print("##############################")
+print("   Lista lstRasiSmall", LoadGrahaCarta.getLstRasiSmall())
+
+print("##############################")
+print("   Lista lstRasiProgr", LoadGrahaCarta.getLstRasiProgr())
+
+print("##############################")
+print("   Lista lstGrahaLng", LoadGrahaCarta.getLstGrahaLng())
+
+print("##############################")
+print("   Lista lstNakName", LoadGrahaCarta.getLstNakName())
+
+print("##############################")
+print("   Lista lstNakProgr", LoadGrahaCarta.getLstNakProgr())
+
+print("##############################")
+print("   Lista lstNakReg", LoadGrahaCarta.getLstNakReg())
+
+print("##############################")
+print("   Lista lstNakPada", LoadGrahaCarta.getLstNakPada())
+'''
+
