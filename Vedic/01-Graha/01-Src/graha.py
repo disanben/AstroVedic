@@ -9,10 +9,13 @@ class Graha:
     szConfKopaFileName      = ""
     szGrahaSmall     = ""
     szRetro          = ""
+    iBhava           = 0
+    iBhavaLon        = 0.0
     iGrahaProgr      = 0
     iRasiProgr       = 0
     fGrahaLon        = 0.0
     fGrahaLonAss    = 0.0
+    fGrahaLonAssFromAsc = 0.0
     szGrahaSansc    = ""
     iRasiGrahaExalt  = 0
     iRasiGrahaDebil  = 0
@@ -26,6 +29,7 @@ class Graha:
     fKobaDiff        = 0.0
     bRetrogade       = False
     bKoba            = False
+    bWar             = False
 
     lstGrahaSmall      = []
     lstGrahaProgr      = []
@@ -208,6 +212,10 @@ class Graha:
             else:
                 self.szNote = self.szNote + " COMBUSTO di " + str(self.fKobaDiff) + " gradi su " + str(self.fKopaStd)
 
+        if(self.bWar):
+            self.szNote = self.szNote + " IN GUERRA "
+
+
     def getGrahaSmall(self):
         return self.szGrahaSmall
         #self.Log.scriviLog(2, self.szMsgPrefix + self.szGrahaSmall)
@@ -276,3 +284,13 @@ class Graha:
 
     def getNote(self):
         return self.szNote
+
+    def setPlanetWar(self):
+        self.bWar = True
+        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + self.getGrahaSansc() + " impostato in guerra planetaria")
+    def getIsWar(self):
+        return self.bWar
+
+    def setLon(self, fAscLonAssFromAsc):
+        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + self.getGrahaSansc() + " calcolo Bhava da " + str(fAscLonAssFromAsc) + " da ASC").0.
+        self.fGrahaLonAssFromAsc = 0.0

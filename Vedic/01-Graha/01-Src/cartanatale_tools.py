@@ -362,6 +362,14 @@ def checkIsPlanetWar(Log, fSunLonAbs, fMoonLonAbs, fMarsLonAbs, fMercLonAbs, fJu
     return lstGrahaWar
 
 
+def putGrahaInBavha(Log,GrahaAsc,GrahaSun,GrahaMoon,GrahaMars,GrahaMercury,GrahaJupiter,GrahaVenus,GrahaSaturn,GrahaRahu,GrahaKetu):
+    #si crea un nuovo zodiaco formato da 12 case, ogni casa ha ampiezza di 30 gradi e parte dall'ascendente taglando i segni ed
+    # includendo i pianeti
+    # Longitudine del pianeta nella casa è uguale al rapporto tra la logitudine assoluta dall'ascendente e 30,
+    # la parte intera rappresenta la casa mentre la parte restante indica la longitudine nella casa
+    # occorre quindi che il graha conosca la sua logitudine assoluta rspetto ascendente
+
+
 '''
 print("##############################")
 print("   Lista GrahaSmall", LoadGrahaCarta.getLstGrahaSmall())

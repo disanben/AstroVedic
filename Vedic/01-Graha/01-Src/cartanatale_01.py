@@ -169,6 +169,52 @@ lstGrahaWar = checkIsPlanetWar(Log,
                  GrahaKetu.getLongitudeAssolute())
 
 print(lstGrahaWar)
+#scrive il primo ed il secondo in lotta, indica il promo vincente sul secondo nelle note
+for graha in lstGrahaWar:
+    print(graha[0] + " - " + graha[1])
+    match int(graha[0]):
+        case 2:
+            GrahaSun.setPlanetWar()
+        case 3:
+            GrahaMoon.setPlanetWar()
+        case 4:
+            GrahaMars.setPlanetWar()
+        case 5:
+            GrahaMercury.setPlanetWar()
+        case 6:
+            GrahaJupiter.setPlanetWar()
+        case 7:
+            GrahaVenus.setPlanetWar()
+        case 8:
+            GrahaSaturn.setPlanetWar()
+        case 9:
+            GrahaRahu.setPlanetWar()
+        case 9:
+            GrahaKetu.setPlanetWar()
+
+    match int(graha[1]):
+        case 2:
+            GrahaSun.setPlanetWar()
+        case 3:
+            GrahaMoon.setPlanetWar()
+        case 4:
+            GrahaMars.setPlanetWar()
+        case 5:
+            GrahaMercury.setPlanetWar()
+        case 6:
+            GrahaJupiter.setPlanetWar()
+        case 7:
+            GrahaVenus.setPlanetWar()
+        case 8:
+            GrahaSaturn.setPlanetWar()
+        case 9:
+            GrahaRahu.setPlanetWar()
+        case 9:
+            GrahaKetu.setPlanetWar()
+
+
+putGrahaInBavha(Log,GrahaAsc,GrahaSun,GrahaMoon,GrahaMars,GrahaMercury,GrahaJupiter,GrahaVenus,GrahaSaturn,GrahaRahu,GrahaKetu)
+
 
 '''
 GrahaAsc.showGrahaPict()
