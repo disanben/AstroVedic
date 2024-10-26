@@ -1,0 +1,4 @@
+Log ../12-CarteNataliOutput/Carta_Natale_.txt inizializzato il: 2024-10-26 21:14:15.728120 con priorita = 2
+
+
+2024-10-26 21:14:15.728253 - File ../11-DataInput/.txt non trovato!

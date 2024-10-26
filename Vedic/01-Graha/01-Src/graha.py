@@ -292,5 +292,5 @@ class Graha:
         return self.bWar
 
     def setLon(self, fAscLonAssFromAsc):
-        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + self.getGrahaSansc() + " calcolo Bhava da " + str(fAscLonAssFromAsc) + " da ASC").0.
+        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + self.getGrahaSansc() + " calcolo Bhava da " + str(fAscLonAssFromAsc) + " da ASC")
         self.fGrahaLonAssFromAsc = 0.0

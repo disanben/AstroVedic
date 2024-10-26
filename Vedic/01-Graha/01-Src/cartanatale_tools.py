@@ -370,38 +370,38 @@ def putGrahaInBavha(Log,GrahaAsc,GrahaSun,GrahaMoon,GrahaMars,GrahaMercury,Graha
     # occorre quindi che il graha conosca la sua logitudine assoluta rspetto ascendente
 
 
-'''
-print("##############################")
-print("   Lista GrahaSmall", LoadGrahaCarta.getLstGrahaSmall())
+    '''
+    print("##############################")
+    print("   Lista GrahaSmall", LoadGrahaCarta.getLstGrahaSmall())
 
-print("##############################")
-print("   Lista GrahaProgr", LoadGrahaCarta.getLstGrahaProgr())
+    print("##############################")
+    print("   Lista GrahaProgr", LoadGrahaCarta.getLstGrahaProgr())
 
-print("##############################")
-print("   Lista lstGrahaSansc", LoadGrahaCarta.getLstGrahaSansc())
+    print("##############################")
+    print("   Lista lstGrahaSansc", LoadGrahaCarta.getLstGrahaSansc())
 
-print("##############################")
-print("   Lista lstTipoAK", LoadGrahaCarta.getLstTipoAK())
+    print("##############################")
+    print("   Lista lstTipoAK", LoadGrahaCarta.getLstTipoAK())
 
-print("##############################")
-print("   Lista lstRasiSmall", LoadGrahaCarta.getLstRasiSmall())
+    print("##############################")
+    print("   Lista lstRasiSmall", LoadGrahaCarta.getLstRasiSmall())
 
-print("##############################")
-print("   Lista lstRasiProgr", LoadGrahaCarta.getLstRasiProgr())
+    print("##############################")
+    print("   Lista lstRasiProgr", LoadGrahaCarta.getLstRasiProgr())
 
-print("##############################")
-print("   Lista lstGrahaLng", LoadGrahaCarta.getLstGrahaLng())
+    print("##############################")
+    print("   Lista lstGrahaLng", LoadGrahaCarta.getLstGrahaLng())
 
-print("##############################")
-print("   Lista lstNakName", LoadGrahaCarta.getLstNakName())
+    print("##############################")
+    print("   Lista lstNakName", LoadGrahaCarta.getLstNakName())
 
-print("##############################")
-print("   Lista lstNakProgr", LoadGrahaCarta.getLstNakProgr())
+    print("##############################")
+    print("   Lista lstNakProgr", LoadGrahaCarta.getLstNakProgr())
 
-print("##############################")
-print("   Lista lstNakReg", LoadGrahaCarta.getLstNakReg())
+    print("##############################")
+    print("   Lista lstNakReg", LoadGrahaCarta.getLstNakReg())
 
-print("##############################")
-print("   Lista lstNakPada", LoadGrahaCarta.getLstNakPada())
-'''
+    print("##############################")
+    print("   Lista lstNakPada", LoadGrahaCarta.getLstNakPada())
+    '''
 
