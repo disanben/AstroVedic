@@ -7,5 +7,5 @@ Me| 5|Budha   | GK|Ge| 3|10.5014| 6|2| |
 Jp| 6|Guru    |PiK|Ge| 3|13.5839| 6|3| |
 Ve| 7|Sukra   | BK|Ar| 1|17.1824| 2|2| |
 Sa| 8|Sani    | DK|Pi|12| 5.2932|26|1| |
-Ra| 9|Rahu    | AK|Ta| 2| 0.4811| 3|2|R|
-Ke|10|Ketu    | - |Sc| 8| 0.4811|16|4|R|
+Ra| 9|Rahu    | AK|Ta| 2| 0.4811| 3|2| |
+Ke|10|Ketu    | - |Sc| 8| 0.4811|16|4| |

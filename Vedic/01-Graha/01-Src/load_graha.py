@@ -27,7 +27,7 @@ class LoadGraha:
     bAsc = True
 
     Log = LogCartaNatale
-    szMsgPrefix = "Load Graha"
+    szMsgPrefix = "Load Graha - "
 
 
     def __init__ (self, passLog, szInputFileName):
