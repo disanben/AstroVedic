@@ -1,0 +1,4 @@
+Log ..\\12-CarteNataliOutput\Carta_Natale_ElisdIsANO.txt inizializzato il: 2024-10-25 19:01:54.345570 con priorita = 9
+
+
+2024-10-25 19:01:54.353641 - File ..\\11-DataInput\ElisdIsANO.txt non trovato!

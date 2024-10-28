@@ -33,6 +33,7 @@ class Graha:
     bRetrogade       = False
     bKoba            = False
     bWar             = False
+    bBhavaCuspNeg    = False
 
     lstGrahaSmall      = []
     lstGrahaProgr      = []
@@ -310,6 +311,10 @@ class Graha:
             self.fGrahaLonAssFromAscCusp = format((float(self.getLongitudeAssolute())+360) - float(fAscLonAssFromAscCusp) - 15, ".2f")
         self.Log.scriviLog(5, self.szMsgPrefix + "Longitudine Assoluta da ASC: " + str(self.fGrahaLonAssFromAscCusp))
 
+        if(float(self.fGrahaLonAssFromAscCusp) < 0):
+            self.fGrahaLonAssFromAscCusp = 30 + float(self.fGrahaLonAssFromAscCusp)
+            self.bBhavaCuspNeg = True
+            self.Log.scriviLog(2, self.szMsgPrefix + "Calcolo con ASC Cuspide risulta negativo. Settato il flag bBhavaCuspNeg a:" + str(self.bBhavaCuspNeg))
 
     def setBhava(self):
         self.Log.scriviLog(5, self.szMsgPrefix + "Graha " + self.getGrahaSansc() + " calcolo Bhava con Case Piene da " + str(self.fGrahaLonAssFromAsc) + " da ASC")
@@ -323,6 +328,12 @@ class Graha:
         self.fBhavaLonCusp = format(float(self.fGrahaLonAssFromAscCusp)-(self.iBhavaProgrCusp-1)*30, ".2f")
         self.Log.scriviLog(5, self.szMsgPrefix + "Bhava di " + self.getGrahaSansc() + ": " + str(self.iBhavaProgrCusp) + " e Long: " + str(self.fBhavaLonCusp))
 
+        if(self.bBhavaCuspNeg):
+            self.Log.scriviLog(2, self.szMsgPrefix + "bBhavaCuspNeg a:" + str(self.bBhavaCuspNeg) + " Retrocedo di una Bhava")
+            self.iBhavaProgrCusp = self.iBhavaProgrCusp - 1
+            if(self.iBhavaProgrCusp == 0):
+                self.Log.scriviLog(2, self.szMsgPrefix + "il progressivo della Bhava è zero. Lo setto a 12")
+                self.iBhavaProgrCusp = 12
 
     def getBhava(self):
         return str(self.iBhavaProgr).rjust(2)

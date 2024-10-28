@@ -1,187 +1,56 @@
-Log ../12-CarteNataliOutput/Carta_Natale_Chiara.txt inizializzato il: 2024-10-27 02:18:13.945292 con priorita = 5
+Log ..\\12-CarteNataliOutput\\Carta_Natale_Chiara.txt inizializzato il: 2024-10-28 07:24:15.514101 con priorita = 9
 
 
-2024-10-27 02:18:13.945587 - **************************************************************
-2024-10-27 02:18:13.945745 -    Graha: ../11-DataInput/Chiara.txt
-2024-10-27 02:18:13.945871 - --------------------------------------------------------------
-2024-10-27 02:18:13.945952 -                       Carta Natale
-2024-10-27 02:18:13.946019 - **************************************************************
-2024-10-27 02:18:13.946169 - Load Graha - 
+2024-10-28 07:24:15.516207 - **************************************************************
+2024-10-28 07:24:15.517209 -    Graha: ..\\11-DataInput\\Chiara.txt
+2024-10-28 07:24:15.520096 - --------------------------------------------------------------
+2024-10-28 07:24:15.524085 -                       Carta Natale
+2024-10-28 07:24:15.525083 - **************************************************************
+2024-10-28 07:24:15.542343 - Load Graha - 
 
 
-2024-10-27 02:18:13.946237 - Load Graha - -----------------------------------------------------------------------------------------
-2024-10-27 02:18:13.946339 - Load Graha -  -                    Lettura dati di nascita di: Chiara Fagioli
-2024-10-27 02:18:13.946423 - Load Graha -  -     Nato il: 15.08.1970 alle ore: 21:45 a Milano (45.4642N - 9.1895E)
-2024-10-27 02:18:13.946526 - Load Graha - -----------------------------------------------------------------------------------------
-2024-10-27 02:18:13.946804 - Inizio caricamento Graha
-2024-10-27 02:18:13.947367 - Passati: AS, 12,  5.1349
-2024-10-27 02:18:13.947490 - 
-
-2024-10-27 02:18:13.947991 - Graha - Graha Surya   calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.948083 - Graha - Longitudine Assoluta da ASC: 143.94
-2024-10-27 02:18:13.948152 - Graha - Graha Surya   calcolo Bhava con Case Piene da 143.94 da ASC
-2024-10-27 02:18:13.948225 - Graha - Bhava di Surya  : 5 e Long: 23.94
-2024-10-27 02:18:13.948324 - Graha - Graha Surya   calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.948407 - Graha - Longitudine Assoluta da ASC: 128.94
-2024-10-27 02:18:13.948475 - Graha - Graha Surya   calcolo Bhava con Cuspide da 128.94 da ASC
-2024-10-27 02:18:13.948547 - Graha - Bhava di Surya  : 5 e Long: 8.94
-2024-10-27 02:18:13.948616 - Passati: Su,  4, 29.0711
-2024-10-27 02:18:13.948687 - 
-
-2024-10-27 02:18:13.948990 - Passati: Mo, 10, 10.2841
-2024-10-27 02:18:13.949096 - Graha - Graha Chandra calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.949179 - Graha - Longitudine Assoluta da ASC: 305.15
-2024-10-27 02:18:13.949265 - Graha - Graha Chandra calcolo Bhava con Case Piene da 305.15 da ASC
-2024-10-27 02:18:13.949380 - Graha - Bhava di Chandra: 11 e Long: 5.15
-2024-10-27 02:18:13.949484 - Graha - Graha Chandra calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.949600 - Graha - Longitudine Assoluta da ASC: 290.15
-2024-10-27 02:18:13.949709 - Graha - Graha Chandra calcolo Bhava con Cuspide da 290.15 da ASC
-2024-10-27 02:18:13.949818 - Graha - Bhava di Chandra: 10 e Long: 20.15
-2024-10-27 02:18:13.949908 - 
-
-2024-10-27 02:18:13.950407 - Passati: Ma,  4, 24.5138
-2024-10-27 02:18:13.950524 - Graha - Graha Mangala calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.950636 - Graha - Longitudine Assoluta da ASC: 139.38
-2024-10-27 02:18:13.950746 - Graha - Graha Mangala calcolo Bhava con Case Piene da 139.38 da ASC
-2024-10-27 02:18:13.950863 - Graha - Bhava di Mangala: 5 e Long: 19.38
-2024-10-27 02:18:13.950968 - Graha - Graha Mangala calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.951080 - Graha - Longitudine Assoluta da ASC: 124.38
-2024-10-27 02:18:13.951187 - Graha - Graha Mangala calcolo Bhava con Cuspide da 124.38 da ASC
-2024-10-27 02:18:13.951312 - Graha - Bhava di Mangala: 5 e Long: 4.38
-2024-10-27 02:18:13.951385 - 
-
-2024-10-27 02:18:13.951723 - Passati: Me,  5, 26.2907
-2024-10-27 02:18:13.951808 - Graha - Graha Budha   calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.951885 - Graha - Longitudine Assoluta da ASC: 171.16
-2024-10-27 02:18:13.951950 - Graha - Graha Budha   calcolo Bhava con Case Piene da 171.16 da ASC
-2024-10-27 02:18:13.952020 - Graha - Bhava di Budha  : 6 e Long: 21.16
-2024-10-27 02:18:13.952092 - Graha - Graha Budha   calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.952166 - Graha - Longitudine Assoluta da ASC: 156.16
-2024-10-27 02:18:13.952274 - Graha - Graha Budha   calcolo Bhava con Cuspide da 156.16 da ASC
-2024-10-27 02:18:13.952402 - Graha - Bhava di Budha  : 6 e Long: 6.16
-2024-10-27 02:18:13.952500 - 
-
-2024-10-27 02:18:13.952898 - Passati: Jp,  7, 06.3445
-2024-10-27 02:18:13.952979 - Graha - Graha Guru    calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.953052 - Graha - Longitudine Assoluta da ASC: 211.21
-2024-10-27 02:18:13.953114 - Graha - Graha Guru    calcolo Bhava con Case Piene da 211.21 da ASC
-2024-10-27 02:18:13.953182 - Graha - Bhava di Guru   : 8 e Long: 1.21
-2024-10-27 02:18:13.953307 - Graha - Graha Guru    calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.953428 - Graha - Longitudine Assoluta da ASC: 196.21
-2024-10-27 02:18:13.953509 - Graha - Graha Guru    calcolo Bhava con Cuspide da 196.21 da ASC
-2024-10-27 02:18:13.953621 - Graha - Bhava di Guru   : 7 e Long: 16.21
-2024-10-27 02:18:13.953732 - 
-
-2024-10-27 02:18:13.954303 - Passati: Ve,  6, 14.2740
-2024-10-27 02:18:13.954468 - Graha - Graha Sukra   calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.954671 - Graha - Longitudine Assoluta da ASC: 189.14
-2024-10-27 02:18:13.954795 - Graha - Graha Sukra   calcolo Bhava con Case Piene da 189.14 da ASC
-2024-10-27 02:18:13.954884 - Graha - Bhava di Sukra  : 7 e Long: 9.14
-2024-10-27 02:18:13.954955 - Graha - Graha Sukra   calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.955028 - Graha - Longitudine Assoluta da ASC: 174.14
-2024-10-27 02:18:13.955090 - Graha - Graha Sukra   calcolo Bhava con Cuspide da 174.14 da ASC
-2024-10-27 02:18:13.955155 - Graha - Bhava di Sukra  : 6 e Long: 24.14
-2024-10-27 02:18:13.955214 - 
-
-2024-10-27 02:18:13.955544 - Passati: Sa,  1, 28.5037
-2024-10-27 02:18:13.955645 - Graha - Graha Sani    calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.955719 - Graha - Longitudine Assoluta da ASC: 53.37
-2024-10-27 02:18:13.955782 - Graha - Graha Sani    calcolo Bhava con Case Piene da 53.37 da ASC
-2024-10-27 02:18:13.955847 - Graha - Bhava di Sani   : 2 e Long: 23.37
-2024-10-27 02:18:13.955914 - Graha - Graha Sani    calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.955987 - Graha - Longitudine Assoluta da ASC: 38.37
-2024-10-27 02:18:13.956048 - Graha - Graha Sani    calcolo Bhava con Cuspide da 38.37 da ASC
-2024-10-27 02:18:13.956114 - Graha - Bhava di Sani   : 2 e Long: 8.37
-2024-10-27 02:18:13.956173 - 
-
-2024-10-27 02:18:13.956619 - Passati: Ra, 11, 09.5045
-2024-10-27 02:18:13.956715 - Graha - Graha Rahu    calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.956789 - Graha - Longitudine Assoluta da ASC: 334.37
-2024-10-27 02:18:13.956852 - Graha - Graha Rahu    calcolo Bhava con Case Piene da 334.37 da ASC
-2024-10-27 02:18:13.956919 - Graha - Bhava di Rahu   : 12 e Long: 4.37
-2024-10-27 02:18:13.956986 - Graha - Graha Rahu    calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.957057 - Graha - Longitudine Assoluta da ASC: 319.37
-2024-10-27 02:18:13.957118 - Graha - Graha Rahu    calcolo Bhava con Cuspide da 319.37 da ASC
-2024-10-27 02:18:13.957183 - Graha - Bhava di Rahu   : 11 e Long: 19.37
-2024-10-27 02:18:13.957242 - 
-
-2024-10-27 02:18:13.957719 - Passati: Ke,  5, 09.5045
-2024-10-27 02:18:13.957843 - Graha - Graha Ketu    calcolo Longitudine (Case Piene)da 335.13 da ASC
-2024-10-27 02:18:13.957965 - Graha - Longitudine Assoluta da ASC: 154.37
-2024-10-27 02:18:13.958065 - Graha - Graha Ketu    calcolo Bhava con Case Piene da 154.37 da ASC
-2024-10-27 02:18:13.958180 - Graha - Bhava di Ketu   : 6 e Long: 4.37
-2024-10-27 02:18:13.958303 - Graha - Graha Ketu    calcolo Longitudine (Cuspide) da 335.13 da ASC
-2024-10-27 02:18:13.958449 - Graha - Longitudine Assoluta da ASC: 139.37
-2024-10-27 02:18:13.958552 - Graha - Graha Ketu    calcolo Bhava con Cuspide da 139.37 da ASC
-2024-10-27 02:18:13.958645 - Graha - Bhava di Ketu   : 5 e Long: 19.37
-2024-10-27 02:18:13.958784 - +--------------------------------+
-2024-10-27 02:18:13.958928 - |   Verifica dei Graha in Kopa   |
-2024-10-27 02:18:13.959072 - +--------------------------------+
-2024-10-27 02:18:13.959592 - +--------------------------------+
-2024-10-27 02:18:13.959699 - |   Verifica Guerra Planetaria   |
-2024-10-27 02:18:13.959790 - +--------------------------------+
-2024-10-27 02:18:13.959997 - Verifica presenza di Guerre Planetarie
-2024-10-27 02:18:13.960373 - Inizio caricamento Carta Natale
-2024-10-27 02:18:13.960574 - Num graha in Mesa   : 1
-2024-10-27 02:18:13.960636 -    Sa - Lon = 28.5037
-2024-10-27 02:18:13.960704 - Num graha in Vrsabha: 0
-2024-10-27 02:18:13.960762 - Num graha in Mithuna: 0
-2024-10-27 02:18:13.960818 - Num graha in Karkata: 2
-2024-10-27 02:18:13.960875 -    Su - Lon = 29.0711
-2024-10-27 02:18:13.960937 -    Ma - Lon = 24.5138
-2024-10-27 02:18:13.961001 - Num graha in Simha  : 2
-2024-10-27 02:18:13.961058 -    Me - Lon = 26.2907
-2024-10-27 02:18:13.961118 -    Ke - Lon = 09.5045
-2024-10-27 02:18:13.961181 - Num graha in Kania  : 1
-2024-10-27 02:18:13.961296 -    Ve - Lon = 14.2740
-2024-10-27 02:18:13.961409 - Num graha in Tula   : 1
-2024-10-27 02:18:13.961515 -    Jp - Lon = 06.3445
-2024-10-27 02:18:13.961624 - Num graha in Vrscika: 0
-2024-10-27 02:18:13.961712 - Num graha in Dhanus : 0
-2024-10-27 02:18:13.961810 - Num graha in Makara : 1
-2024-10-27 02:18:13.961896 -    Mo - Lon = 10.2841
-2024-10-27 02:18:13.961988 - Num graha in Kumbha : 1
-2024-10-27 02:18:13.962070 -    Ra - Lon = 09.5045
-2024-10-27 02:18:13.962174 - Num graha in Mina   : 1
-2024-10-27 02:18:13.962275 -    AS - Lon =  5.1349
-2024-10-27 02:18:13.962399 - 
+2024-10-28 07:24:15.543849 - Load Graha - -----------------------------------------------------------------------------------------
+2024-10-28 07:24:15.544337 - Load Graha -  -                    Lettura dati di nascita di: Chiara Fagioli
+2024-10-28 07:24:15.546351 - Load Graha -  -     Nato il: 15.08.1970 alle ore: 21:45 a Milano (45.4642N - 9.1895E)
+2024-10-28 07:24:15.547426 - Load Graha - -----------------------------------------------------------------------------------------
+2024-10-28 07:24:15.559378 - 
 
 
-2024-10-27 02:18:13.962611 - 
+2024-10-28 07:24:15.560375 - 
 
 
-2024-10-27 02:18:13.962705 - +------------+------------+------------+------------+
-2024-10-27 02:18:13.962797 - |Pi          |Ar          |Ta          |Ge          |
-2024-10-27 02:18:13.962899 - |         AS |         Sa |            |            |
-2024-10-27 02:18:13.962990 - |         05 |         28 |            |            |
-2024-10-27 02:18:13.963071 - +------------+------------+------------+------------+
-2024-10-27 02:18:13.963178 - |Aq          |                         |Cn          |
-2024-10-27 02:18:13.963284 - |         Ra |                         |      Su Ma |
-2024-10-27 02:18:13.963376 - |         09 |                         |      29 24 |
-2024-10-27 02:18:13.963455 - +------------+                         +------------+
-2024-10-27 02:18:13.963538 - |Cp          |                         |Le          |
-2024-10-27 02:18:13.963613 - |         Mo |                         |      Me Ke |
-2024-10-27 02:18:13.963671 - |         10 |                         |      26 09 |
-2024-10-27 02:18:13.963727 - +------------+------------+------------+------------+
-2024-10-27 02:18:13.963781 - |Sg          |Sc          |Li          |Vi          |
-2024-10-27 02:18:13.963835 - |            |            |         Jp |         Ve |
-2024-10-27 02:18:13.963890 - |            |            |         06 |         14 |
-2024-10-27 02:18:13.963944 - +------------+------------+------------+------------+
-2024-10-27 02:18:13.964003 - 
+2024-10-28 07:24:15.561372 - +------------+------------+------------+------------+
+2024-10-28 07:24:15.562369 - |Pi          |Ar          |Ta          |Ge          |
+2024-10-28 07:24:15.563625 - |         AS |         Sa |            |            |
+2024-10-28 07:24:15.564365 - |         05 |         28 |            |            |
+2024-10-28 07:24:15.565362 - +------------+------------+------------+------------+
+2024-10-28 07:24:15.566439 - |Aq          |                         |Cn          |
+2024-10-28 07:24:15.567440 - |         Ra |                         |      Su Ma |
+2024-10-28 07:24:15.568491 - |         09 |                         |      29 24 |
+2024-10-28 07:24:15.569754 - +------------+                         +------------+
+2024-10-28 07:24:15.570556 - |Cp          |                         |Le          |
+2024-10-28 07:24:15.571552 - |         Mo |                         |      Me Ke |
+2024-10-28 07:24:15.572723 - |         10 |                         |      26 09 |
+2024-10-28 07:24:15.573988 - +------------+------------+------------+------------+
+2024-10-28 07:24:15.574545 - |Sg          |Sc          |Li          |Vi          |
+2024-10-28 07:24:15.576281 - |            |            |         Jp |         Ve |
+2024-10-28 07:24:15.576697 - |            |            |         06 |         14 |
+2024-10-28 07:24:15.577269 - +------------+------------+------------+------------+
+2024-10-28 07:24:15.578267 - 
 
 
-2024-10-27 02:18:13.964060 - +-----------------------+
-2024-10-27 02:18:13.964115 - |      Graha Detail     |
-2024-10-27 02:18:13.964169 - +-----------------------+
-2024-10-27 02:18:13.964223 - 
+2024-10-28 07:24:15.579264 - +-----------------------+
+2024-10-28 07:24:15.580262 - |      Graha Detail     |
+2024-10-28 07:24:15.581344 - +-----------------------+
+2024-10-28 07:24:15.581344 - 
 
-2024-10-27 02:18:13.964441 - (AS)Lagna   in (12)Mina    Lat.:  5.1349 - 335.13 - 
-2024-10-27 02:18:13.964508 - (Su)Surya   in ( 4)Karkata Lat.: 29.0711 - Bhava CP:  5 [23.94] - Bhava CU:  5 [ 8.94] - 
-2024-10-27 02:18:13.964564 - (Mo)Chandra in (10)Makara  Lat.: 10.2841 - Bhava CP: 11 [ 5.15] - Bhava CU: 10 [20.15] - 
-2024-10-27 02:18:13.964618 - (Ma)Mangala in ( 4)Karkata Lat.: 24.5138 - Bhava CP:  5 [19.38] - Bhava CU:  5 [ 4.38] -  IN DEBILITAZIONE COMBUSTO di 4.56 gradi su 17.00
-2024-10-27 02:18:13.964673 - (Me)Budha   in ( 5)Simha   Lat.: 26.2907 - Bhava CP:  6 [21.16] - Bhava CU:  6 [ 6.16] - 
-2024-10-27 02:18:13.964727 - (Jp)Guru    in ( 7)Tula    Lat.: 06.3445 - Bhava CP:  8 [ 1.21] - Bhava CU:  7 [16.21] - 
-2024-10-27 02:18:13.964781 - (Ve)Sukra   in ( 6)Kania   Lat.: 14.2740 - Bhava CP:  7 [ 9.14] - Bhava CU:  6 [24.14] -  IN DEBILITAZIONE
-2024-10-27 02:18:13.964835 - (Sa)Sani    in ( 1)Mesa    Lat.: 28.5037 - Bhava CP:  2 [23.37] - Bhava CU:  2 [ 8.37] -  IN DEBILITAZIONE
-2024-10-27 02:18:13.964904 - (Ra)Rahu    in (11)Kumbha  Lat.: 09.5045 - Bhava CP: 12 [ 4.37] - Bhava CU: 11 [19.37] -  IN DOMICILIO
-2024-10-27 02:18:13.964969 - (Ke)Ketu    in ( 5)Simha   Lat.: 09.5045 - Bhava CP:  6 [ 4.37] - Bhava CU:  5 [19.37] - 
+2024-10-28 07:24:15.585327 - (AS)Lagna   in (12)Mina    Lat.:  5.1349 - 335.13 - 
+2024-10-28 07:24:15.586326 - (Su)Surya   in ( 4)Karkata Lat.: 29.0711 - Bhava CP:  5 [23.94] - Bhava CU:  5 [ 8.94] - 
+2024-10-28 07:24:15.587322 - (Mo)Chandra in (10)Makara  Lat.: 10.2841 - Bhava CP: 11 [ 5.15] - Bhava CU: 10 [20.15] - 
+2024-10-28 07:24:15.588442 - (Ma)Mangala in ( 4)Karkata Lat.: 24.5138 - Bhava CP:  5 [19.38] - Bhava CU:  5 [ 4.38] -  IN DEBILITAZIONE COMBUSTO di 4.56 gradi su 17.00
+2024-10-28 07:24:15.590443 - (Me)Budha   in ( 5)Simha   Lat.: 26.2907 - Bhava CP:  6 [21.16] - Bhava CU:  6 [ 6.16] - 
+2024-10-28 07:24:15.593435 - (Jp)Guru    in ( 7)Tula    Lat.: 06.3445 - Bhava CP:  8 [ 1.21] - Bhava CU:  7 [16.21] - 
+2024-10-28 07:24:15.595430 - (Ve)Sukra   in ( 6)Kania   Lat.: 14.2740 - Bhava CP:  7 [ 9.14] - Bhava CU:  6 [24.14] -  IN DEBILITAZIONE
+2024-10-28 07:24:15.596497 - (Sa)Sani    in ( 1)Mesa    Lat.: 28.5037 - Bhava CP:  2 [23.37] - Bhava CU:  2 [ 8.37] -  IN DEBILITAZIONE
+2024-10-28 07:24:15.597498 - (Ra)Rahu    in (11)Kumbha  Lat.: 09.5045 - Bhava CP: 12 [ 4.37] - Bhava CU: 11 [19.37] -  IN DOMICILIO
+2024-10-28 07:24:15.598339 - (Ke)Ketu    in ( 5)Simha   Lat.: 09.5045 - Bhava CP:  6 [ 4.37] - Bhava CU:  5 [19.37] - 
