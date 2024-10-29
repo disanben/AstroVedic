@@ -5,6 +5,7 @@ from colorama import init, Fore, Back, Style
 
 from load_graha import LoadGraha
 from graha import Graha
+from tabellario import Tabellario
 from logCartaNatale import LogCartaNatale
 
 from cartanatale_tools import *
@@ -40,6 +41,7 @@ print('back to normal now')
 #print(Style.RESET_ALL)
 
 lstCartaNatale = []
+szMsgPrefix = " MAIN - "
 
 '''
 szCfgPath="..\\02-Cfg\\"
@@ -89,139 +91,87 @@ if checkFilePresence(Log, confRasiFileName, 1003):
 
 
 
-Log.scriviLog(9, "**************************************************************")
-Log.scriviLog(9, "   Graha: " + inputCartaNatale )
-Log.scriviLog(9, "--------------------------------------------------------------")
-Log.scriviLog(9, "                      Carta Natale")
-Log.scriviLog(9, "**************************************************************")
+Log.scriviLog(9, szMsgPrefix + "**************************************************************")
+Log.scriviLog(9, szMsgPrefix + "   Graha: " + inputCartaNatale )
+Log.scriviLog(9, szMsgPrefix + "--------------------------------------------------------------")
+Log.scriviLog(9, szMsgPrefix + "                      Carta Natale")
+Log.scriviLog(9, szMsgPrefix + "**************************************************************")
 
 #showCartaNatale(Log)
 ###########################################
 # 02. Inizializzazione del Graha
 ###########################################
 
-
+Log.scriviLog(9, szMsgPrefix + "***********************************************************")
+Log.scriviLog(9, szMsgPrefix + "  01.00 - Caricamento dei dati relativi alla Carta Natale  ")
+Log.scriviLog(9, szMsgPrefix + "***********************************************************")
 #Caricamento dei GRAHA della carta natale passata
 # Il caricamento viene effettuato nella lista lstGrahaCarta
 LoadGrahaCarta = LoadGraha(Log, inputCartaNatale)
 LoadGrahaCarta.loadGrahaFile()
 
+#creazione del tabellario
+Tab = Tabellario(Log, confGrahaFileName, confRasiFileName)
+
 # Creazione del Graha:
-Log.scriviLog(5, "Inizio caricamento Graha")
+Log.scriviLog(9, szMsgPrefix + "**************************************")
+Log.scriviLog(9, szMsgPrefix + "  02.00 - Inizio caricamento Graha ")
+Log.scriviLog(9, szMsgPrefix + "***************************************\n\n")
 
-GrahaAsc = Graha(Log, confGrahaFileName, confRasiFileName,0, LoadGrahaCarta.getAscRasi(), LoadGrahaCarta.getAscLong(), "")
+lstGrahaList = []
 
-if(LoadGrahaCarta.getAscTrue()):
-    lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaAsc.getGrahaSmall(), GrahaAsc.getRasi(), GrahaAsc.getLongitude() )
-    #lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Fore.RED + Back.GREEN + GrahaAsc.getGrahaSmall() + Fore.WHITE + Back.BLACK, GrahaAsc.getRasi(), GrahaAsc.getLongitude())
-
-Log.scriviLog(5, "\n")
-GrahaSun = Graha(Log, confGrahaFileName, confRasiFileName,1, LoadGrahaCarta.getSunRasi(), LoadGrahaCarta.getSunLong(), LoadGrahaCarta.getSunRetro())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaSun.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaSun.setBhava()
-    GrahaSun.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaSun.setBhavaCusp()
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaSun.getGrahaSmall(), GrahaSun.getRasi(), GrahaSun.getLongitude())
-
-Log.scriviLog(5, "\n")
-GrahaMoon = Graha(Log, confGrahaFileName, confRasiFileName, 2, LoadGrahaCarta.getMoonRasi(), LoadGrahaCarta.getMoonLong(), LoadGrahaCarta.getMoonRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaMoon.getGrahaSmall(), GrahaMoon.getRasi(), GrahaMoon.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaMoon.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaMoon.setBhava()
-    GrahaMoon.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaMoon.setBhavaCusp()
-
-Log.scriviLog(5, "\n")
-GrahaMars = Graha(Log, confGrahaFileName, confRasiFileName, 3, LoadGrahaCarta.getMarsRasi(), LoadGrahaCarta.getMarsLong(), LoadGrahaCarta.getMarsRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaMars.getGrahaSmall(), GrahaMars.getRasi(), GrahaMars.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaMars.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaMars.setBhava()
-    GrahaMars.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaMars.setBhavaCusp()
-
-Log.scriviLog(5, "\n")
-GrahaMercury = Graha(Log, confGrahaFileName, confRasiFileName,4, LoadGrahaCarta.getMercuryRasi(), LoadGrahaCarta.getMercuryLong(), LoadGrahaCarta.getMercuryRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaMercury.getGrahaSmall(), GrahaMercury.getRasi(), GrahaMercury.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaMercury.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaMercury.setBhava()
-    GrahaMercury.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaMercury.setBhavaCusp()
-
-Log.scriviLog(5, "\n")
-GrahaJupiter = Graha(Log, confGrahaFileName, confRasiFileName, 5, LoadGrahaCarta.getJupiterRasi(), LoadGrahaCarta.getJupiterLong(), LoadGrahaCarta.getJupiterRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaJupiter.getGrahaSmall(), GrahaJupiter.getRasi(), GrahaJupiter.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaJupiter.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaJupiter.setBhava()
-    GrahaJupiter.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaJupiter.setBhavaCusp()
-
-Log.scriviLog(5, "\n")
-GrahaVenus = Graha(Log, confGrahaFileName, confRasiFileName, 6, LoadGrahaCarta.getVenusRasi(), LoadGrahaCarta.getVenusLong(), LoadGrahaCarta.getVenusRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaVenus.getGrahaSmall(), GrahaVenus.getRasi(), GrahaVenus.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaVenus.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaVenus.setBhava()
-    GrahaVenus.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaVenus.setBhavaCusp()
-
-Log.scriviLog(5, "\n")
-GrahaSaturn = Graha(Log, confGrahaFileName, confRasiFileName, 7, LoadGrahaCarta.getSaturnRasi(), LoadGrahaCarta.getSaturnLong(), LoadGrahaCarta.getSaturnRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaSaturn.getGrahaSmall(), GrahaSaturn.getRasi(), GrahaSaturn.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaSaturn.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaSaturn.setBhava()
-    GrahaSaturn.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaSaturn.setBhavaCusp()
+lstGrahaList.append(Graha(Log, Tab, 0, LoadGrahaCarta.lstRasiProgr[0], LoadGrahaCarta.lstGrahaLng[0], LoadGrahaCarta.lstRetrogade[0]))
+lstGrahaList.append(Graha(Log, Tab, 1, LoadGrahaCarta.lstRasiProgr[1], LoadGrahaCarta.lstGrahaLng[1], LoadGrahaCarta.lstRetrogade[1]))
+lstGrahaList.append(Graha(Log, Tab, 2, LoadGrahaCarta.lstRasiProgr[2], LoadGrahaCarta.lstGrahaLng[2], LoadGrahaCarta.lstRetrogade[2]))
+lstGrahaList.append(Graha(Log, Tab, 3, LoadGrahaCarta.lstRasiProgr[3], LoadGrahaCarta.lstGrahaLng[3], LoadGrahaCarta.lstRetrogade[3]))
+lstGrahaList.append(Graha(Log, Tab, 4, LoadGrahaCarta.lstRasiProgr[4], LoadGrahaCarta.lstGrahaLng[4], LoadGrahaCarta.lstRetrogade[4]))
+lstGrahaList.append(Graha(Log, Tab, 5, LoadGrahaCarta.lstRasiProgr[5], LoadGrahaCarta.lstGrahaLng[5], LoadGrahaCarta.lstRetrogade[5]))
+lstGrahaList.append(Graha(Log, Tab, 6, LoadGrahaCarta.lstRasiProgr[6], LoadGrahaCarta.lstGrahaLng[6], LoadGrahaCarta.lstRetrogade[6]))
+lstGrahaList.append(Graha(Log, Tab, 7, LoadGrahaCarta.lstRasiProgr[7], LoadGrahaCarta.lstGrahaLng[7], LoadGrahaCarta.lstRetrogade[7]))
+lstGrahaList.append(Graha(Log, Tab, 8, LoadGrahaCarta.lstRasiProgr[8], LoadGrahaCarta.lstGrahaLng[8], LoadGrahaCarta.lstRetrogade[8]))
+lstGrahaList.append(Graha(Log, Tab, 9, LoadGrahaCarta.lstRasiProgr[9], LoadGrahaCarta.lstGrahaLng[9], LoadGrahaCarta.lstRetrogade[9]))
 
 
-Log.scriviLog(5, "\n")
-GrahaRahu = Graha(Log, confGrahaFileName, confRasiFileName, 8, LoadGrahaCarta.getRahuRasi(), LoadGrahaCarta.getRahuLong(), LoadGrahaCarta.getRahuRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaRahu.getGrahaSmall(), GrahaRahu.getRasi(), GrahaRahu.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaRahu.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaRahu.setBhava()
-    GrahaRahu.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaRahu.setBhavaCusp()
+for graha in lstGrahaList:
+    graha.showGraha()
+    graha.showGrahaPict()
 
-Log.scriviLog(5, "\n")
-GrahaKetu = Graha(Log, confGrahaFileName, confRasiFileName, 9, LoadGrahaCarta.getKetuRasi(), LoadGrahaCarta.getKetuLong(), LoadGrahaCarta.getKetuRetro())
-lstCartaNatale = grahaInRasi(Log, lstCartaNatale, GrahaKetu.getGrahaSmall(), GrahaKetu.getRasi(), GrahaKetu.getLongitude())
-if(LoadGrahaCarta.getAscTrue()):
-    GrahaKetu.setLonAssFromAsc(GrahaAsc.getLongitudeAssolute())
-    GrahaKetu.setBhava()
-    GrahaKetu.setLonAssFromAscCusp(GrahaAsc.getLongitudeAssolute())
-    GrahaKetu.setBhavaCusp()
 
-Log.scriviLog(5, "+--------------------------------+")
-Log.scriviLog(5, "|   Verifica dei Graha in Kopa   |")
-Log.scriviLog(5, "+--------------------------------+")
+i=0
+for graha in lstGrahaList:
+    if(LoadGrahaCarta.getAscTrue()):
+        if(i>0):
+            graha.setLonAssFromAsc(lstGrahaList[0].getLongitudeAssolute())
+            graha.setBhava()
+            graha.setLonAssFromAscCusp(lstGrahaList[0].getLongitudeAssolute())
+            graha.setBhavaCusp()
+            #lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Fore.RED + Back.GREEN + GrahaAsc.getGrahaSmall() + Fore.WHITE + Back.BLACK, GrahaAsc.getRasi(), GrahaAsc.getLongitude())
+    lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Tab.lstGrahaSmall[i], graha.getRasi(), graha.getLongitude())
+    i=i+1
 
-checkIsKopa(Log,GrahaMoon, GrahaSun.getLongitudeAssolute())
-checkIsKopa(Log,GrahaMars, GrahaSun.getLongitudeAssolute())
-checkIsKopa(Log,GrahaMercury, GrahaSun.getLongitudeAssolute())
-checkIsKopa(Log,GrahaVenus, GrahaSun.getLongitudeAssolute())
-checkIsKopa(Log,GrahaJupiter, GrahaSun.getLongitudeAssolute())
-checkIsKopa(Log,GrahaSaturn, GrahaSun.getLongitudeAssolute())
 
-Log.scriviLog(5, "+--------------------------------+")
-Log.scriviLog(5, "|   Verifica Guerra Planetaria   |")
-Log.scriviLog(5, "+--------------------------------+")
+
+Log.scriviLog(5, szMsgPrefix + "+--------------------------------+")
+Log.scriviLog(5, szMsgPrefix + "|   Verifica dei Graha in Kopa   |")
+Log.scriviLog(5, szMsgPrefix + "+--------------------------------+")
+
+for i in range(2,8):
+    checkIsKopa(Log,lstGrahaList[i], lstGrahaList[1].getLongitudeAssolute())
+
+Log.scriviLog(5, szMsgPrefix + "+--------------------------------+")
+Log.scriviLog(5, szMsgPrefix + "|   Verifica Guerra Planetaria   |")
+Log.scriviLog(5, szMsgPrefix + "+--------------------------------+")
 #Nella guerra planetaria la distanza deve essere max 1 grado
 lstGrahaWar = checkIsPlanetWar(Log,
-                 GrahaSun.getLongitudeAssolute(),
-                 GrahaMoon.getLongitudeAssolute(),
-                 GrahaMars.getLongitudeAssolute(),
-                 GrahaMercury.getLongitudeAssolute(),
-                 GrahaJupiter.getLongitudeAssolute(),
-                 GrahaVenus.getLongitudeAssolute(),
-                 GrahaSaturn.getLongitudeAssolute(),
-                 GrahaRahu.getLongitudeAssolute(),
-                 GrahaKetu.getLongitudeAssolute())
+                 lstGrahaList[1].getLongitudeAssolute(),
+                 lstGrahaList[2].getLongitudeAssolute(),
+                 lstGrahaList[3].getLongitudeAssolute(),
+                 lstGrahaList[4].getLongitudeAssolute(),
+                 lstGrahaList[5].getLongitudeAssolute(),
+                 lstGrahaList[6].getLongitudeAssolute(),
+                 lstGrahaList[7].getLongitudeAssolute(),
+                 lstGrahaList[8].getLongitudeAssolute(),
+                 lstGrahaList[9].getLongitudeAssolute())
 
 print(lstGrahaWar)
 #scrive il primo ed il secondo in lotta, indica il promo vincente sul secondo nelle note
@@ -267,21 +217,6 @@ for graha in lstGrahaWar:
         case 9:
             GrahaKetu.setPlanetWar()
 
+showCartaNatale(Log, lstGrahaList[0], lstCartaNatale)
+showGrahaDetail(Log, lstGrahaList)
 
-putGrahaInBavha(Log,GrahaAsc,GrahaSun,GrahaMoon,GrahaMars,GrahaMercury,GrahaJupiter,GrahaVenus,GrahaSaturn,GrahaRahu,GrahaKetu)
-
-
-'''
-GrahaAsc.showGrahaPict()
-GrahaSun.showGrahaPict()
-GrahaMoon.showGrahaPict()
-GrahaMars.showGrahaPict()
-GrahaMercury.showGrahaPict()
-GrahaJupiter.showGrahaPict()
-GrahaVenus.showGrahaPict()
-GrahaRahu.showGrahaPict()
-GrahaKetu.showGrahaPict()
-'''
-
-showCartaNatale(Log, GrahaAsc, lstCartaNatale)
-showGrahaDetail(Log,GrahaAsc,GrahaSun,GrahaMoon,GrahaMars,GrahaMercury,GrahaJupiter,GrahaVenus,GrahaSaturn,GrahaRahu,GrahaKetu)

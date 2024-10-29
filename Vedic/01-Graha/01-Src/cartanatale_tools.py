@@ -26,6 +26,8 @@ lstMina = []
 
 lstPlanetWar = []
 
+lstLinetoPrint = []
+
 
 
 def help_utente():
@@ -72,7 +74,7 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
     szMinaGrahaLon = ""
 
     for rasi in range(12):
-        Log.scriviLog(5, "Num graha in " + GrahaAsc.lstRasiSansc[rasi] + ": " + str(len(lstCartaNatale[rasi])))
+        Log.scriviLog(5, "Num graha in " + GrahaAsc.Tab.lstRasiSansc[rasi] + ": " + str(len(lstCartaNatale[rasi])))
         for graha in lstCartaNatale[rasi]:
             #lstCartaNatale = ["Mesa","Vrsabha","Mithuna","Karkata","Simha","Kania","Tula","Vrscika","Dhanus","Makara","Kumbha","Mina"]
             Log.scriviLog(5, "   " + graha[0] + " - Lon = " + str(graha[1]) )
@@ -80,7 +82,7 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
                 case 1:
                     szMesaGrahaSmall = szMesaGrahaSmall + graha[0] + " "
                     szMesaGrahaLon  = szMesaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
-			  #print(Style.RESET_ALL)
+			        #print(Style.RESET_ALL)
                     Log.scriviLog(2, "      Aggiunto in Mesa: " + szMesaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Mesa: " + szMesaGrahaLon)
                 case 2:
@@ -262,17 +264,7 @@ def grahaInRasi(Log, lstCartaNatale, szGrahaSmall, iRasi, fLon):
 
     return lstCartaNatale
 
-def showGrahaDetail(Log,
-                    GrahaAsc,
-                    GrahaSun,
-                    GrahaMoon,
-                    GrahaMars,
-                    GrahaMercury,
-                    GrahaJupiter,
-                    GrahaVenus,
-                    GrahaSaturn,
-                    GrahaRahu,
-                    GrahaKetu):
+def showGrahaDetail(Log, lstGrahaList):
 
     Log.scriviLog(9, "\n\n")
     Log.scriviLog(2, "Inizio Graha detail")
@@ -282,49 +274,33 @@ def showGrahaDetail(Log,
     Log.scriviLog(9, "\n")
 
     #Creazione delle note per ogni pianeta
-    GrahaAsc.createNote()
-    GrahaSun.createNote()
-    GrahaMoon.createNote()
-    GrahaMars.createNote()
-    GrahaMercury.createNote()
-    GrahaJupiter.createNote()
-    GrahaVenus.createNote()
-    GrahaSaturn.createNote()
-    GrahaRahu.createNote()
-    GrahaKetu.createNote()
-
-
-    if(GrahaAsc.getRasi() != " - "):
-        szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " in " + "(" + GrahaAsc.getRasi() + ")" + GrahaAsc.getRasiGrahaInSansc(GrahaAsc.getRasi()) + " Lat.: " + GrahaAsc.getLongitude() + " - " + GrahaAsc.getLongitudeAssolute() + " - " + GrahaAsc.getNote()
-    else:
-        szLine01 = "(" + GrahaAsc.getGrahaSmall() + ")" + GrahaAsc.getGrahaSansc() + " ** NON CALCOLABILE **"
-
-    szLine02 = "(" + GrahaSun.getGrahaSmall()     + ")" + GrahaSun.getGrahaSansc()     + " in " + "(" + GrahaSun.getRasi()     + ")" + GrahaSun.getRasiGrahaInSansc(GrahaSun.getRasi())         + " Lat.: " + GrahaSun.getLongitude()     + " - Bhava CP: " + GrahaSun.getBhava()     + " [" + GrahaSun.getBhavaLon()     + "]" + " - Bhava CU: " + GrahaSun.getBhavaCusp()     + " [" + GrahaSun.getBhavaLonCusp()     + "] - " + GrahaSun.getNote()
-    szLine03 = "(" + GrahaMoon.getGrahaSmall()    + ")" + GrahaMoon.getGrahaSansc()    + " in " + "(" + GrahaMoon.getRasi()    + ")" + GrahaMoon.getRasiGrahaInSansc(GrahaMoon.getRasi())       + " Lat.: " + GrahaMoon.getLongitude()    + " - Bhava CP: " + GrahaMoon.getBhava()    + " [" + GrahaMoon.getBhavaLon()    + "]" + " - Bhava CU: " + GrahaMoon.getBhavaCusp()    + " [" + GrahaMoon.getBhavaLonCusp()    + "] - " + GrahaMoon.getNote()
-    szLine04 = "(" + GrahaMars.getGrahaSmall()    + ")" + GrahaMars.getGrahaSansc()    + " in " + "(" + GrahaMars.getRasi()    + ")" + GrahaMars.getRasiGrahaInSansc(GrahaMars.getRasi())       + " Lat.: " + GrahaMars.getLongitude()    + " - Bhava CP: " + GrahaMars.getBhava()    + " [" + GrahaMars.getBhavaLon()    + "]" + " - Bhava CU: " + GrahaMars.getBhavaCusp()    + " [" + GrahaMars.getBhavaLonCusp()    + "] - " + GrahaMars.getNote()
-    szLine05 = "(" + GrahaMercury.getGrahaSmall() + ")" + GrahaMercury.getGrahaSansc() + " in " + "(" + GrahaMercury.getRasi() + ")" + GrahaMercury.getRasiGrahaInSansc(GrahaMercury.getRasi()) + " Lat.: " + GrahaMercury.getLongitude() + " - Bhava CP: " + GrahaMercury.getBhava() + " [" + GrahaMercury.getBhavaLon() + "]" + " - Bhava CU: " + GrahaMercury.getBhavaCusp() + " [" + GrahaMercury.getBhavaLonCusp() + "] - " + GrahaMercury.getNote()
-    szLine06 = "(" + GrahaJupiter.getGrahaSmall() + ")" + GrahaJupiter.getGrahaSansc() + " in " + "(" + GrahaJupiter.getRasi() + ")" + GrahaJupiter.getRasiGrahaInSansc(GrahaJupiter.getRasi()) + " Lat.: " + GrahaJupiter.getLongitude() + " - Bhava CP: " + GrahaJupiter.getBhava() + " [" + GrahaJupiter.getBhavaLon() + "]" + " - Bhava CU: " + GrahaJupiter.getBhavaCusp() + " [" + GrahaJupiter.getBhavaLonCusp() + "] - " + GrahaJupiter.getNote()
-    szLine07 = "(" + GrahaVenus.getGrahaSmall()   + ")" + GrahaVenus.getGrahaSansc()   + " in " + "(" + GrahaVenus.getRasi()   + ")" + GrahaVenus.getRasiGrahaInSansc(GrahaVenus.getRasi())     + " Lat.: " + GrahaVenus.getLongitude()   + " - Bhava CP: " + GrahaVenus.getBhava()   + " [" + GrahaVenus.getBhavaLon()   + "]" + " - Bhava CU: " + GrahaVenus.getBhavaCusp()   + " [" + GrahaVenus.getBhavaLonCusp()   + "] - " + GrahaVenus.getNote()
-    szLine08 = "(" + GrahaSaturn.getGrahaSmall()  + ")" + GrahaSaturn.getGrahaSansc()  + " in " + "(" + GrahaSaturn.getRasi()  + ")" + GrahaSaturn.getRasiGrahaInSansc(GrahaSaturn.getRasi())   + " Lat.: " + GrahaSaturn.getLongitude()  + " - Bhava CP: " + GrahaSaturn.getBhava()  + " [" + GrahaSaturn.getBhavaLon()  + "]" + " - Bhava CU: " + GrahaSaturn.getBhavaCusp()  + " [" + GrahaSaturn.getBhavaLonCusp()  + "] - " + GrahaSaturn.getNote()
-    szLine09 = "(" + GrahaRahu.getGrahaSmall()    + ")" + GrahaRahu.getGrahaSansc()    + " in " + "(" + GrahaRahu.getRasi()    + ")" + GrahaRahu.getRasiGrahaInSansc(GrahaRahu.getRasi())       + " Lat.: " + GrahaRahu.getLongitude()    + " - Bhava CP: " + GrahaRahu.getBhava()    + " [" + GrahaRahu.getBhavaLon()    + "]" + " - Bhava CU: " + GrahaRahu.getBhavaCusp()    + " [" + GrahaRahu.getBhavaLonCusp()    + "] - " + GrahaRahu.getNote()
-    szLine10 = "(" + GrahaKetu.getGrahaSmall()    + ")" + GrahaKetu.getGrahaSansc()    + " in " + "(" + GrahaKetu.getRasi()    + ")" + GrahaKetu.getRasiGrahaInSansc(GrahaKetu.getRasi())       + " Lat.: " + GrahaKetu.getLongitude()    + " - Bhava CP: " + GrahaKetu.getBhava()    + " [" + GrahaKetu.getBhavaLon()    + "]" + " - Bhava CU: " + GrahaKetu.getBhavaCusp()    + " [" + GrahaKetu.getBhavaLonCusp()    + "] - " + GrahaKetu.getNote()
 
 
 
-    Log.scriviLog(9, szLine01)
-    Log.scriviLog(9, szLine02)
-    Log.scriviLog(9, szLine03)
-    Log.scriviLog(9, szLine04)
-    Log.scriviLog(9, szLine05)
-    Log.scriviLog(9, szLine06)
-    Log.scriviLog(9, szLine07)
-    Log.scriviLog(9, szLine08)
-    Log.scriviLog(9, szLine09)
-    Log.scriviLog(9, szLine10)
+    for graha in lstGrahaList:
+        graha.createNote()
+        if(graha.iGrahaProgr == 0):
+            if (graha.getRasi() != " - "):
+                szLine = "(" + graha.Tab.lstGrahaSmall[graha.iGrahaProgr] + ")" + \
+                         graha.Tab.lstGrahaSansc[graha.iGrahaProgr] + " in " + "(" + str(graha.getRasi()) + ")" + \
+                         graha.getRasiGrahaInSansc(graha.getRasi()) + \
+                         " Long.: " + str(graha.getLongitude()) + " - " + graha.getLongitudeAssolute() + " - " + graha.getNote()
+        else:
+            szLine="(" + graha.Tab.lstGrahaSmall[graha.iGrahaProgr] + ")" + \
+                         graha.Tab.lstGrahaSansc[graha.iGrahaProgr] + " in " + \
+                   "(" + str(graha.getRasi()) + ")" + \
+                   graha.getRasiGrahaInSansc(graha.getRasi()) + \
+                   " Long.: " + str(graha.getLongitude()) + \
+                   " - Bhava CP: " + graha.getBhava() + " [" + graha.getBhavaLon() + "]" + \
+                   " - Bhava CU: " + graha.getBhavaCusp() + " [" + graha.getBhavaLonCusp() + "] - " \
+                   + graha.getNote()
+        lstLinetoPrint.append(szLine)
 
+    for line in lstLinetoPrint:
+        Log.scriviLog(9, line)
 
 def checkIsKopa(Log, GrahaToCheck, fSunLonAss):
-    Log.scriviLog(2, "Verifica se " + GrahaToCheck.getGrahaSansc() + " è in Kopa. Long. assoluta del sole: " + fSunLonAss)
+    Log.scriviLog(2, "Verifica se " + str(GrahaToCheck.szGrahaSansc) + " è in Kopa. Long. assoluta del sole: " + fSunLonAss)
     GrahaToCheck.checkIsKopa(fSunLonAss)
 
 
@@ -357,48 +333,4 @@ def checkIsPlanetWar(Log, fSunLonAbs, fMoonLonAbs, fMarsLonAbs, fMercLonAbs, fJu
             lstGrahaWar.append([str(lstPlanetWar[i][1]), str(lstPlanetWar[i+1][1])])
         i=i+1
     return lstGrahaWar
-
-
-def putGrahaInBavha(Log,GrahaAsc,GrahaSun,GrahaMoon,GrahaMars,GrahaMercury,GrahaJupiter,GrahaVenus,GrahaSaturn,GrahaRahu,GrahaKetu):
-    #si crea un nuovo zodiaco formato da 12 case, ogni casa ha ampiezza di 30 gradi e parte dall'ascendente taglando i segni ed
-    # includendo i pianeti
-    # Longitudine del pianeta nella casa è uguale al rapporto tra la logitudine assoluta dall'ascendente e 30,
-    # la parte intera rappresenta la casa mentre la parte restante indica la longitudine nella casa
-    # occorre quindi che il graha conosca la sua logitudine assoluta rspetto ascendente
-
-
-    '''
-    print("##############################")
-    print("   Lista GrahaSmall", LoadGrahaCarta.getLstGrahaSmall())
-
-    print("##############################")
-    print("   Lista GrahaProgr", LoadGrahaCarta.getLstGrahaProgr())
-
-    print("##############################")
-    print("   Lista lstGrahaSansc", LoadGrahaCarta.getLstGrahaSansc())
-
-    print("##############################")
-    print("   Lista lstTipoAK", LoadGrahaCarta.getLstTipoAK())
-
-    print("##############################")
-    print("   Lista lstRasiSmall", LoadGrahaCarta.getLstRasiSmall())
-
-    print("##############################")
-    print("   Lista lstRasiProgr", LoadGrahaCarta.getLstRasiProgr())
-
-    print("##############################")
-    print("   Lista lstGrahaLng", LoadGrahaCarta.getLstGrahaLng())
-
-    print("##############################")
-    print("   Lista lstNakName", LoadGrahaCarta.getLstNakName())
-
-    print("##############################")
-    print("   Lista lstNakProgr", LoadGrahaCarta.getLstNakProgr())
-
-    print("##############################")
-    print("   Lista lstNakReg", LoadGrahaCarta.getLstNakReg())
-
-    print("##############################")
-    print("   Lista lstNakPada", LoadGrahaCarta.getLstNakPada())
-    '''
 

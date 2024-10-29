@@ -24,6 +24,7 @@ class LoadGraha:
     szCittaLon=""
     szOra = ""
 
+    # indica se è possibile il calcolo dell'ascendente e delle case
     bAsc = True
 
     Log = LogCartaNatale
@@ -81,7 +82,10 @@ class LoadGraha:
 
             i=i+1
         file_input.close()
-        self.Log.scriviLog(2, self.szMsgPrefix + " - Caricamento Graha presenti in " + self.inputFileName + " --> PASSED")
+        self.Log.scriviLog(2, self.szMsgPrefix + " - Dati presenti nel file di input caricati nelle liste: lstGrahaSmall, lstGrahaProgr, lstGrahaSansc, lstTipoAK, lstRasiSmall, lstRasiProgr, lstGrahaLng, lstNakProgr, lstNakPada, lstRetrogade ")
+        self.Log.scriviLog(2, self.szMsgPrefix + " - Caricamento Graha presenti in " + self.inputFileName + " --> PASSED\n")
+
+
 
         if(self.szOra == "XX:XX"):
             self.Log.scriviLog(9, self.szMsgPrefix + " - Ora di nascita ignota - Ascendente e Case non calcolate")
