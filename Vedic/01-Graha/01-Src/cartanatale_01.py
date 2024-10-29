@@ -58,7 +58,6 @@ print("Lista argomenti passati", sys.argv)
 print("Nome del file di input per Carta Natale:" + sys.argv[1])
 print("Nome del file di input per Graha:" + sys.argv[2])
 print("Nome del file di input per Rasi:" + sys.argv[3])
-#print("Nome del file di input per Kopa:" + sys.argv[4])
 print("Nome del file di output:" + sys.argv[4])
 print("Livello Log:" + sys.argv[5])
 
@@ -134,7 +133,8 @@ lstGrahaList.append(Graha(Log, Tab, 9, LoadGrahaCarta.lstRasiProgr[9], LoadGraha
 
 for graha in lstGrahaList:
     graha.showGraha()
-    graha.showGrahaPict()
+    if (graha.iGrahaProgr != 0):
+        graha.showGrahaPict()
 
 
 i=0
@@ -146,7 +146,8 @@ for graha in lstGrahaList:
             graha.setLonAssFromAscCusp(lstGrahaList[0].getLongitudeAssolute())
             graha.setBhavaCusp()
             #lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Fore.RED + Back.GREEN + GrahaAsc.getGrahaSmall() + Fore.WHITE + Back.BLACK, GrahaAsc.getRasi(), GrahaAsc.getLongitude())
-    lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Tab.lstGrahaSmall[i], graha.getRasi(), graha.getLongitude())
+    if(graha.iGrahaProgr != 0):
+        lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Tab.lstGrahaSmall[i], graha.getRasi(), graha.getLongitude(), graha.bRetrogade)
     i=i+1
 
 
@@ -175,6 +176,7 @@ lstGrahaWar = checkIsPlanetWar(Log,
 
 print(lstGrahaWar)
 #scrive il primo ed il secondo in lotta, indica il promo vincente sul secondo nelle note
+'''
 for graha in lstGrahaWar:
     print(graha[0] + " - " + graha[1])
     match int(graha[0]):
@@ -216,7 +218,7 @@ for graha in lstGrahaWar:
             GrahaRahu.setPlanetWar()
         case 9:
             GrahaKetu.setPlanetWar()
-
+'''
 showCartaNatale(Log, lstGrahaList[0], lstCartaNatale)
 showGrahaDetail(Log, lstGrahaList)
 

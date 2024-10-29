@@ -64,8 +64,8 @@ class Graha:
     def __init__ (self, passLog, Tab, graha, rasi, lon, retro ):
         self.Log = passLog
         self.iGrahaProgr = int(graha)
-        self.iRasiProgr  = int(rasi)
-        self.fGrahaLon   = float(lon)
+        self.iRasiProgr  = rasi
+        self.fGrahaLon   = lon
         self.szRetro     = retro
         self.Tab = Tab
 
@@ -77,9 +77,12 @@ class Graha:
 
         if (self.getRasi() != " - "):
             self.getLongitudeAssolute()
+            self.iRasiProgr = int(rasi)
+            self.fGrahaLon = float(lon)
+            self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " inizializzato con Rasi: " + str(self.Tab.getRasiSanscForProgr(int(self.iRasiProgr))) + " (" + str(self.iRasiProgr) + ") Long: " + str(lon) + " indicazione R: " + retro + "\n")
 
-        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " inizializzato con Rasi: " + str(self.Tab.getRasiSanscForProgr(int(self.iRasiProgr))) + " (" + str(self.iRasiProgr) + ") Long: " + str(lon) + " indicazione R: " + retro + "\n")
-
+        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + str(
+        self.szGrahaSansc) + " inizializzato con Rasi: " + rasi + " Long: " + lon + " indicazione R: " + retro + "\n")
 
     def loadGrahaParameter(self):
         self.Log.scriviLog(2, self.szMsgPrefix + "Load Graha Parameter from Tab")
@@ -106,23 +109,28 @@ class Graha:
         self.Log.scriviLog(9, self.szMsgPrefix + "********************************************")
         self.Log.scriviLog(9, self.szMsgPrefix + "Nome graha breve: " + self.szGrahaSmall)
         self.Log.scriviLog(9, self.szMsgPrefix + "Nome graha in sanscrito: " + self.szGrahaSansc)
-        self.Log.scriviLog(9, self.szMsgPrefix + "Nel segno: (" + str(self.iRasiProgr) + "): " + self.getRasiSmall(self.iRasiProgr) + " con longitudine: " + str(self.fGrahaLon))
-        self.Log.scriviLog(9, self.szMsgPrefix + "Retrogado: " + str(self.bRetrogade))
-        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di esaltazione = " + self.szRasiGrahaExaltSansc + " (" + str(self.iRasiGrahaExalt) + ")")
-        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di debilitazione = " + self.szRasiGrahaDebilSansc + "(" + str(self.iRasiGrahaDebil) + ")")
-        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di domicilio 1 = " + self.szRasiGrahaDomic1Sansc + "(" + str(self.iRasiGrahaDomic1) + ")")
-        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di domicilio 2 = " + self.szRasiGrahaDomic2Sansc + "(" + str(self.iRasiGrahaDomic2) + ")")
-        self.Log.scriviLog(9, self.szMsgPrefix + "Rasi Moolatrikona = " + self.szRasiGrahaMoolSansc + "(" + str(self.iRasiGrahaMool) + ")")
-        self.Log.scriviLog(9, self.szMsgPrefix + "Longitudine di partenza Moolatrikona = " + str(self.fLonMoolFrom))
-        self.Log.scriviLog(9, self.szMsgPrefix + "Longitudine di fine Moolatrikona =" + str(self.fLonMoolTo))
+        if(self.iGrahaProgr != 0):
+            self.Log.scriviLog(9, self.szMsgPrefix + "Nel segno: (" + str(self.iRasiProgr) + "): " + self.getRasiSmall(self.iRasiProgr) + " con longitudine: " + str(self.fGrahaLon))
+            self.Log.scriviLog(9, self.szMsgPrefix + "Retrogado: " + str(self.bRetrogade))
+            self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di esaltazione = " + self.szRasiGrahaExaltSansc + " (" + str(self.iRasiGrahaExalt) + ")")
+            self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di debilitazione = " + self.szRasiGrahaDebilSansc + "(" + str(self.iRasiGrahaDebil) + ")")
+            self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di domicilio 1 = " + self.szRasiGrahaDomic1Sansc + "(" + str(self.iRasiGrahaDomic1) + ")")
+            self.Log.scriviLog(9, self.szMsgPrefix + "Rasi di domicilio 2 = " + self.szRasiGrahaDomic2Sansc + "(" + str(self.iRasiGrahaDomic2) + ")")
+            self.Log.scriviLog(9, self.szMsgPrefix + "Rasi Moolatrikona = " + self.szRasiGrahaMoolSansc + "(" + str(self.iRasiGrahaMool) + ")")
+            self.Log.scriviLog(9, self.szMsgPrefix + "Longitudine di partenza Moolatrikona = " + str(self.fLonMoolFrom))
+            self.Log.scriviLog(9, self.szMsgPrefix + "Longitudine di fine Moolatrikona =" + str(self.fLonMoolTo))
         #self.showGrahaPict()
 
 
     def showGrahaPict(self):
         self.Log.scriviLog(9, self.szMsgPrefix + "+----------+")
         self.Log.scriviLog(9, self.szMsgPrefix + "|" + self.getRasiSmall(self.iRasiProgr) + "        |")
+        if (self.bRetrogade):
+            self.Log.scriviLog(9, self.szMsgPrefix + "|   __     |")
+        else:
+            self.Log.scriviLog(9, self.szMsgPrefix + "|          |")
         self.Log.scriviLog(9, self.szMsgPrefix + "|   " + str(self.szGrahaSmall) + "     |")
-        self.Log.scriviLog(9, self.szMsgPrefix + "|   " + str(self.fGrahaLon) + "|")
+        self.Log.scriviLog(9, self.szMsgPrefix + "|   " + str(self.fGrahaLon).rjust(7) + "|")
         self.Log.scriviLog(9, self.szMsgPrefix + "+----------+")
         self.Log.scriviLog(9, self.szMsgPrefix + self.getNote())
         self.Log.scriviLog(9, self.szMsgPrefix + "\n")

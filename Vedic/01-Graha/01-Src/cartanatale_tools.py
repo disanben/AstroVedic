@@ -48,28 +48,52 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
     Log.scriviLog(5, "Inizio caricamento Carta Natale")
     Log.scriviLog(2, str(lstCartaNatale))
 
+    szRetrSym = "__ "
+    szMesaGrahaRetr = ""
     szMesaGrahaSmall = ""
     szMesaGrahaLon = ""
+
+    szVrsabhaGrahaRetr = ""
     szVrsabhaGrahaSmall = ""
     szVrsabhaGrahaLon = ""
+
+    szMithunaGrahaRetr = ""
     szMithunaGrahaSmall = ""
     szMithunaGrahaLon = ""
+
+    szKarkataGrahaRetr = ""
     szKarkataGrahaSmall = ""
     szKarkataGrahaLon = ""
+
+    szSimhaGrahaRetr= ""
     szSimhaGrahaSmall = ""
     szSimhaGrahaLon = ""
+
+    szKaniaGrahaRetr = ""
     szKaniaGrahaSmall = ""
     szKaniaGrahaLon = ""
+
+    szTulaGrahaRetr = ""
     szTulaGrahaSmall = ""
     szTulaGrahaLon = ""
+
+    szVriscikaGrahaRetr = ""
     szVriscikaGrahaSmall = ""
     szVriscikaGrahaLon = ""
+
+    szDhanusGrahaRetr = ""
     szDhanusGrahaSmall = ""
     szDhanusGrahaLon = ""
+
+    szMakaraGrahaRetr = ""
     szMakaraGrahaSmall = ""
     szMakaraGrahaLon = ""
+
+    szKumbaGrahaRetr = ""
     szKumbaGrahaSmall = ""
     szKumbaGrahaLon = ""
+
+    szMinaGrahaRetr = ""
     szMinaGrahaSmall = ""
     szMinaGrahaLon = ""
 
@@ -78,66 +102,130 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
         for graha in lstCartaNatale[rasi]:
             #lstCartaNatale = ["Mesa","Vrsabha","Mithuna","Karkata","Simha","Kania","Tula","Vrscika","Dhanus","Makara","Kumbha","Mina"]
             Log.scriviLog(5, "   " + graha[0] + " - Lon = " + str(graha[1]) )
+            if(graha[0] == 'AS'):
+                graha[0] = graha[0]
+                #graha[0] = Fore.RED + graha[0] + Style.RESET_ALL
+                # Fore.RED +  + Style.RESET_ALL).rjust(12)
             match (rasi+1):
                 case 1:
-                    szMesaGrahaSmall = szMesaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szMesaGrahaRetr = szMesaGrahaRetr + szRetrSym
+                    else:
+                        szMesaGrahaRetr = szMesaGrahaRetr + "   "
+                    szMesaGrahaSmall = str(szMesaGrahaSmall + graha[0] + " ")
                     szMesaGrahaLon  = szMesaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
 			        #print(Style.RESET_ALL)
+                    Log.scriviLog(2, "      Aggiunto in Mesa: " + szMesaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Mesa: " + szMesaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Mesa: " + szMesaGrahaLon)
                 case 2:
-                    szVrsabhaGrahaSmall = szVrsabhaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szVrsabhaGrahaRetr = szVrsabhaGrahaRetr + szRetrSym
+                    else:
+                        szVrsabhaGrahaRetr = szVrsabhaGrahaRetr + "   "
+                    szVrsabhaGrahaSmall = str(szVrsabhaGrahaSmall + graha[0] + " ")
                     szVrsabhaGrahaLon  = szVrsabhaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Vrsabha: " + szVrsabhaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Vrsabha: " + szVrsabhaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Vrsabha: " + szVrsabhaGrahaLon)
                 case 3:
-                    szMithunaGrahaSmall = szMithunaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szMithunaGrahaRetr = szMithunaGrahaRetr + szRetrSym
+                    else:
+                        szMithunaGrahaRetr = szMithunaGrahaRetr + "   "
+                    szMithunaGrahaSmall = str(szMithunaGrahaSmall + graha[0] + " ")
                     szMithunaGrahaLon  = szMithunaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Mithuna: " + szMithunaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Mithuna: " + szMithunaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Mithuna: " + szMithunaGrahaLon)
                 case 4:
-                    szKarkataGrahaSmall = szKarkataGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szKarkataGrahaRetr = szKarkataGrahaRetr + szRetrSym
+                    else:
+                        szKarkataGrahaRetr = szKarkataGrahaRetr + "   "
+                    szKarkataGrahaSmall = str(szKarkataGrahaSmall + graha[0] + " ")
                     szKarkataGrahaLon  = szKarkataGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Karkata: " + szKarkataGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Karkata: " + szKarkataGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Karkata: " + szKarkataGrahaLon)
                 case 5:
-                    szSimhaGrahaSmall = szSimhaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szSimhaGrahaRetr = szSimhaGrahaRetr + szRetrSym
+                    else:
+                        szSimhaGrahaRetr = szSimhaGrahaRetr + "   "
+                    szSimhaGrahaSmall = str(szSimhaGrahaSmall + graha[0] + " ")
                     szSimhaGrahaLon  = szSimhaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Simha: " + szSimhaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Simha: " + szSimhaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Simha: " + szSimhaGrahaLon)
                 case 6:
-                    szKaniaGrahaSmall = szKaniaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szKaniaGrahaRetr = szKaniaGrahaRetr + szRetrSym
+                    else:
+                        szKaniaGrahaRetr = szKaniaGrahaRetr + "   "
+                    szKaniaGrahaSmall = str(szKaniaGrahaSmall + graha[0] + " ")
                     szKaniaGrahaLon  = szKaniaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Kania: " + szKaniaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Kania: " + szKaniaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Kania: " + szKaniaGrahaLon)
                 case 7:
-                    szTulaGrahaSmall = szTulaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szTulaGrahaRetr = szTulaGrahaRetr + szRetrSym
+                    else:
+                        szTulaGrahaRetr = szTulaGrahaRetr + "   "
+                    szTulaGrahaSmall = str(szTulaGrahaSmall + graha[0] + " ")
                     szTulaGrahaLon  = szTulaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Tula: " + szTulaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Tula: " + szTulaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Tula: " + szTulaGrahaLon)
                 case 8:
-                    szVriscikaGrahaSmall = szVriscikaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szVriscikaGrahaRetr = szVriscikaGrahaRetr + szRetrSym
+                    else:
+                        szVriscikaGrahaRetr = szVriscikaGrahaRetr + "   "
+                    szVriscikaGrahaSmall = str(szVriscikaGrahaSmall + graha[0] + " ")
                     szVriscikaGrahaLon  = szVriscikaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Vriscika: " + szVriscikaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Vriscika: " + szVriscikaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Vriscika: " + szVriscikaGrahaLon)
                 case 9:
-                    szDhanusGrahaSmall = szDhanusGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szDhanusGrahaRetr = szDhanusGrahaRetr + szRetrSym
+                    else:
+                        szDhanusGrahaRetr = szDhanusGrahaRetr + "   "
+                    szDhanusGrahaSmall = str(szDhanusGrahaSmall + graha[0] + " ")
                     szDhanusGrahaLon  = szDhanusGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Dhanus: " + szDhanusGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Dhanus: " + szDhanusGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Dhanus: " + szDhanusGrahaLon)
                 case 10:
-                    szMakaraGrahaSmall = szMakaraGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szMakaraGrahaRetr = szMakaraGrahaRetr + szRetrSym
+                    else:
+                        szMakaraGrahaRetr = szMakaraGrahaRetr + "   "
+                    szMakaraGrahaSmall = str(szMakaraGrahaSmall + graha[0] + " ")
                     szMakaraGrahaLon  = szMakaraGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Makara: " + szMakaraGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Makara: " + szMakaraGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Makara: " + szMakaraGrahaLon)
                 case 11:
-                    szKumbaGrahaSmall = szKumbaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szKumbaGrahaRetr = szKumbaGrahaRetr + szRetrSym
+                    else:
+                        szKumbaGrahaRetr = szKumbaGrahaRetr + "   "
+                    szKumbaGrahaSmall = str(szKumbaGrahaSmall + graha[0] + " ")
                     szKumbaGrahaLon  = szKumbaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Kumba: " + szKumbaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Kumba: " + szKumbaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Kumba: " + szKumbaGrahaLon)
                 case 12:
-                    szMinaGrahaSmall = szMinaGrahaSmall + graha[0] + " "
+                    if(graha[2]):
+                        szMinaGrahaRetr = szMinaGrahaRetr + szRetrSym
+                    else:
+                        szMinaGrahaRetr = szMinaGrahaRetr + "   "
+                    szMinaGrahaSmall = str(szMinaGrahaSmall + graha[0] + " ")
                     szMinaGrahaLon  = szMinaGrahaLon + str(int(float(graha[1]))).zfill(2) + " "
+                    Log.scriviLog(2, "      Aggiunto in Mina: " + szMinaGrahaRetr)
                     Log.scriviLog(2, "      Aggiunto in Mina: " + szMinaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Mina: " + szMinaGrahaLon)
 
@@ -145,27 +233,33 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
     #      0        1         2         3         4         5
     #      12345678901234567890123456789012345678901234567890123
 
-    szBigBorder = "+------------+------------+------------+------------+"
-    szSmallBorder = "+------------+"
-    szEmptySpace = "                         "
+    szBigBorder = "+----------------+----------------+----------------+----------------+"
+    szSmallBorder = "+----------------+"
+    szEmptySpace = "                                 "
+    iJust=16
 
-    szLine01 = szBigBorder
-    szLine02 = "|Pi          |Ar          |Ta          |Ge          |"
-    szLine03 = "|" + szMinaGrahaSmall.rjust(12) + "|" + szMesaGrahaSmall.rjust(12) + "|" + szVrsabhaGrahaSmall.rjust(12) + "|" + szMithunaGrahaSmall.rjust(12) + "|"
-    szLine04 = "|" + szMinaGrahaLon.rjust(12) + "|" + szMesaGrahaLon.rjust(12) + "|" + szVrsabhaGrahaLon.rjust(12) + "|" + szMithunaGrahaLon.rjust(12) + "|"
-    szLine05 = szBigBorder
-    szLine06 = "|Aq          |                         |Cn          |"
-    szLine07 = "|" + szKumbaGrahaSmall.rjust(12)+ "|" + szEmptySpace + "|" + szKarkataGrahaSmall.rjust(12) + "|"
-    szLine08 = "|" + szKumbaGrahaLon.rjust(12)+ "|" + szEmptySpace +  "|" + szKarkataGrahaLon.rjust(12) + "|"
-    szLine09 = szSmallBorder + szEmptySpace + szSmallBorder
-    szLine10 = "|Cp          |                         |Le          |"
-    szLine11 = "|" + szMakaraGrahaSmall.rjust(12)+ "|" + szEmptySpace + "|" + szSimhaGrahaSmall.rjust(12) + "|"
-    szLine12 = "|" + szMakaraGrahaLon.rjust(12)+ "|" + szEmptySpace +  "|" + szSimhaGrahaLon.rjust(12) + "|"
-    szLine13 = szBigBorder
-    szLine14 = "|Sg          |Sc          |Li          |Vi          |"
-    szLine15 = "|" + szDhanusGrahaSmall.rjust(12) + "|" + szVriscikaGrahaSmall.rjust(12) + "|" + szTulaGrahaSmall.rjust(12) + "|" + szKaniaGrahaSmall.rjust(12) + "|"
-    szLine16 = "|" + szDhanusGrahaLon.rjust(12) + "|" + szVriscikaGrahaLon.rjust(12) + "|" + szTulaGrahaLon.rjust(12) + "|" + szKaniaGrahaLon.rjust(12) + "|"
-    szLine17 = szBigBorder
+    lstLineToPrint = []
+    lstLineToPrint.append(szBigBorder)
+    lstLineToPrint.append("| Pi             | Ar             | Ta             | Ge             |")
+    lstLineToPrint.append("|" + szMinaGrahaRetr.rjust(iJust) + "|" + szMesaGrahaRetr.rjust(iJust) + "|" + szVrsabhaGrahaRetr.rjust(iJust) + "|" + szMithunaGrahaRetr.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szMinaGrahaSmall.rjust(iJust) + "|" + szMesaGrahaSmall.rjust(iJust) + "|" + szVrsabhaGrahaSmall.rjust(iJust) + "|" + szMithunaGrahaSmall.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szMinaGrahaLon.rjust(iJust) + "|" + szMesaGrahaLon.rjust(iJust) + "|" + szVrsabhaGrahaLon.rjust(iJust) + "|" + szMithunaGrahaLon.rjust(iJust) + "|")
+    lstLineToPrint.append(szBigBorder)
+    lstLineToPrint.append("| Aq             |                                 | Cn             |")
+    lstLineToPrint.append("|" + szKumbaGrahaRetr.rjust(iJust)+ "|" + szEmptySpace + "|" + szKarkataGrahaRetr.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szKumbaGrahaSmall.rjust(iJust) + "|" + szEmptySpace + "|" + szKarkataGrahaSmall.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szKumbaGrahaLon.rjust(iJust)+ "|" + szEmptySpace +  "|" + szKarkataGrahaLon.rjust(iJust) + "|")
+    lstLineToPrint.append(szSmallBorder + szEmptySpace + szSmallBorder)
+    lstLineToPrint.append("| Cp             |                                 | Le             |")
+    lstLineToPrint.append("|" + szMakaraGrahaRetr.rjust(iJust)+ "|" + szEmptySpace + "|" + szSimhaGrahaRetr.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szMakaraGrahaSmall.rjust(iJust)+ "|" + szEmptySpace + "|" + szSimhaGrahaSmall.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szMakaraGrahaLon.rjust(iJust)+ "|" + szEmptySpace +  "|" + szSimhaGrahaLon.rjust(iJust) + "|")
+    lstLineToPrint.append(szBigBorder)
+    lstLineToPrint.append("| Sg             | Sc             | Li             | Vi             |")
+    lstLineToPrint.append("|" + szDhanusGrahaRetr.rjust(iJust) + "|" + szVriscikaGrahaRetr.rjust(iJust) + "|" + szTulaGrahaRetr.rjust(iJust) + "|" + szKaniaGrahaRetr.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szDhanusGrahaSmall.rjust(iJust) + "|" + szVriscikaGrahaSmall.rjust(iJust) + "|" + szTulaGrahaSmall.rjust(iJust) + "|" + szKaniaGrahaSmall.rjust(iJust) + "|")
+    lstLineToPrint.append("|" + szDhanusGrahaLon.rjust(iJust) + "|" + szVriscikaGrahaLon.rjust(iJust) + "|" + szTulaGrahaLon.rjust(iJust) + "|" + szKaniaGrahaLon.rjust(iJust) + "|")
+    lstLineToPrint.append(szBigBorder)
 
 
     '''
@@ -189,64 +283,49 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
     '''
     Log.scriviLog(9, "\n\n")
 
-    Log.scriviLog(9, szLine01) #Line 01
-    Log.scriviLog(9, szLine02) #Line 02
-    Log.scriviLog(9, szLine03) #Line 03
-    Log.scriviLog(9, szLine04) #Line 04
-    Log.scriviLog(9, szLine05) #Line 05
-    Log.scriviLog(9, szLine06) #Line 06
-    Log.scriviLog(9, szLine07) #Line 07
-    Log.scriviLog(9, szLine08) #Line 08
-    Log.scriviLog(9, szLine09) #Line 09
-    Log.scriviLog(9, szLine10) #Line 10
-    Log.scriviLog(9, szLine11) #Line 11
-    Log.scriviLog(9, szLine12) #Line 12
-    Log.scriviLog(9, szLine13) #Line 13
-    Log.scriviLog(9, szLine14) #Line 14
-    Log.scriviLog(9, szLine15) #Line 15
-    Log.scriviLog(9, szLine16) #Line 16
-    Log.scriviLog(9, szLine17) #Line 17
+    for line in lstLineToPrint:
+        Log.scriviLog(9, line)
 
 
-def grahaInRasi(Log, lstCartaNatale, szGrahaSmall, iRasi, fLon):
-    Log.scriviLog(5, "Passati: " + szGrahaSmall + ", " + str(iRasi) + ", " + str(fLon))
+def grahaInRasi(Log, lstCartaNatale, szGrahaSmall, iRasi, fLon, bRetr):
+    Log.scriviLog(5, "Passati: " + szGrahaSmall + ", " + str(iRasi) + ", " + str(fLon) + ", " + str(bRetr) )
     #lstCartaNatale = ["Mesa","Vrsabha","Mithuna","Karkata","Simha","Kania","Tula","Vrscika","Dhanus","Makara","Kumbha","Mina"]
     match int(iRasi):
         case 1:
-            lstMesa.append([szGrahaSmall, fLon])
+            lstMesa.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Mesa")
         case 2:
-            lstVrsabha.append([szGrahaSmall, fLon])
+            lstVrsabha.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Vrsabha")
         case 3:
-            lstMithuna.append([szGrahaSmall, fLon])
+            lstMithuna.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Mithuna")
         case 4:
-            lstKarkata.append([szGrahaSmall, fLon])
+            lstKarkata.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in: Karkata")
         case 5:
-            lstSimha.append([szGrahaSmall, fLon])
+            lstSimha.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Simha")
         case 6:
-            lstKania.append([szGrahaSmall, fLon])
+            lstKania.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Kania")
         case 7:
-            lstTula.append([szGrahaSmall, fLon])
+            lstTula.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Tula")
         case 8:
-            lstVrscika.append([szGrahaSmall, fLon])
+            lstVrscika.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Vriscika")
         case 9:
-            lstDhanus.append([szGrahaSmall, fLon])
+            lstDhanus.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Dhanus")
         case 10:
-            lstMakara.append([szGrahaSmall, fLon])
+            lstMakara.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Makara")
         case 11:
-            lstKumbha.append([szGrahaSmall, fLon])
+            lstKumbha.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Kumba")
         case 12:
-            lstMina.append([szGrahaSmall, fLon])
+            lstMina.append([szGrahaSmall, fLon, bRetr])
             Log.scriviLog(2, "Aggiunto in Mina")
 
     lstCartaNatale.append(lstMesa)
@@ -281,20 +360,20 @@ def showGrahaDetail(Log, lstGrahaList):
         graha.createNote()
         if(graha.iGrahaProgr == 0):
             if (graha.getRasi() != " - "):
-                szLine = "(" + graha.Tab.lstGrahaSmall[graha.iGrahaProgr] + ")" + \
-                         graha.Tab.lstGrahaSansc[graha.iGrahaProgr] + " in " + "(" + str(graha.getRasi()) + ")" + \
-                         graha.getRasiGrahaInSansc(graha.getRasi()) + \
-                         " Long.: " + str(graha.getLongitude()) + " - " + graha.getLongitudeAssolute() + " - " + graha.getNote()
+                szLine = "(" + graha.Tab.lstGrahaSmall[graha.iGrahaProgr] + ") "  \
+                             + graha.Tab.lstGrahaSansc[graha.iGrahaProgr].rjust(8) + " in (" + str(graha.getRasi()).rjust(2) + ") " \
+                             + graha.getRasiGrahaInSansc(graha.getRasi()).rjust(8) \
+                             + " Long.: " + str(graha.getLongitude()).rjust(8) + " - " + graha.getLongitudeAssolute() + " - " + graha.getNote()
+                lstLinetoPrint.append(szLine)
         else:
-            szLine="(" + graha.Tab.lstGrahaSmall[graha.iGrahaProgr] + ")" + \
-                         graha.Tab.lstGrahaSansc[graha.iGrahaProgr] + " in " + \
-                   "(" + str(graha.getRasi()) + ")" + \
-                   graha.getRasiGrahaInSansc(graha.getRasi()) + \
-                   " Long.: " + str(graha.getLongitude()) + \
-                   " - Bhava CP: " + graha.getBhava() + " [" + graha.getBhavaLon() + "]" + \
-                   " - Bhava CU: " + graha.getBhavaCusp() + " [" + graha.getBhavaLonCusp() + "] - " \
-                   + graha.getNote()
-        lstLinetoPrint.append(szLine)
+            szLine="(" + graha.Tab.lstGrahaSmall[graha.iGrahaProgr] + ") " \
+                       + graha.Tab.lstGrahaSansc[graha.iGrahaProgr].rjust(8) + " in (" + str(graha.getRasi()).rjust(2) + ") "  \
+                       + graha.getRasiGrahaInSansc(graha.getRasi()).rjust(8) \
+                       + " Long.: " + str(graha.getLongitude()).rjust(8)  \
+                       + " - Bhava CP: " + graha.getBhava() + " [" + graha.getBhavaLon() + "]"  \
+                       + " - Bhava CU: " + graha.getBhavaCusp() + " [" + graha.getBhavaLonCusp() + "] - " \
+                       + graha.getNote()
+            lstLinetoPrint.append(szLine)
 
     for line in lstLinetoPrint:
         Log.scriviLog(9, line)

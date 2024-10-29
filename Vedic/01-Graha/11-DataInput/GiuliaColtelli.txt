@@ -5,7 +5,7 @@ Mo| 3|Chandra | GK|Ar| 1| 4.2005| 1|2| |
 Ma| 4|Mangala | AK|Li| 7|29.2256|16|3| |
 Me| 5|Budha   | MK|Le| 5|14.4525|11|1| |
 Jp| 6|Guru    | BK|Cp|10|18.5323|22|3| |
-Ve| 7|Sukra   |PiK|Li| 7|14.1530|15|3| |
+Ve| 7|Sukra   |PiK|Li| 7|14.1531|15|3| |
 Sa| 8|Sani    |AmK|Pi|12|24.4223|27|3| |
 Ra| 9|Rahu    | PK|Le| 5|25.2537|11|4| |
 Ke|10|Ketu    | - |Aq|11|25.2537|25|2| |
