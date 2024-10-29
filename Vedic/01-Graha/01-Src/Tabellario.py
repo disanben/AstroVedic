@@ -120,15 +120,17 @@ class Tabellario:
 
     def getRasiSmallForProgr(self, iRasiProgr):
         if(iRasiProgr > 1):
-            return self.lstRasiSmall[iRasiProgr-1]
+            szToReturn=self.lstRasiSmall[iRasiProgr-1]
         else:
-            return "NONE"
+            szToReturn="NONE"
+        return szToReturn
 
     def getRasiSanscForProgr(self, iRasiProgr):
-        if (iRasiProgr > 1):
-            return self.lstRasiSansc[iRasiProgr - 1]
+        if(iRasiProgr > 1):
+            szToReturn=self.lstRasiSansc[iRasiProgr-1]
         else:
-            return "NONE"
+            szToReturn="NONE"
+        return szToReturn
 
     def getLongKopaStd(self, iGrahaProgr):
         return self.lstKopaGrahaStd[iGrahaProgr]
