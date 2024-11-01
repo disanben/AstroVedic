@@ -31,7 +31,7 @@ lstLinetoPrint = []
 
 
 def help_utente():
-    print("\n\n")
+    #print("\n\n")
     print("+-------------------------+")
     print("|      Manuale utente     |")
     print("+-------------------------+")
@@ -229,7 +229,7 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
                     Log.scriviLog(2, "      Aggiunto in Mina: " + szMinaGrahaSmall)
                     Log.scriviLog(2, "      Aggiunto in Mina: " + szMinaGrahaLon)
 
-    Log.scriviLog(9, "\n\n")
+    #Log.scriviLog(9, "\n\n")
     #      0        1         2         3         4         5
     #      12345678901234567890123456789012345678901234567890123
 
@@ -290,43 +290,44 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
 def grahaInRasi(Log, lstCartaNatale, szGrahaSmall, iRasi, fLon, bRetr):
     Log.scriviLog(5, "Passati: " + szGrahaSmall + ", " + str(iRasi) + ", " + str(fLon) + ", " + str(bRetr) )
     #lstCartaNatale = ["Mesa","Vrsabha","Mithuna","Karkata","Simha","Kania","Tula","Vrscika","Dhanus","Makara","Kumbha","Mina"]
-    match int(iRasi):
-        case 1:
-            lstMesa.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Mesa")
-        case 2:
-            lstVrsabha.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Vrsabha")
-        case 3:
-            lstMithuna.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Mithuna")
-        case 4:
-            lstKarkata.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in: Karkata")
-        case 5:
-            lstSimha.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Simha")
-        case 6:
-            lstKania.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Kania")
-        case 7:
-            lstTula.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Tula")
-        case 8:
-            lstVrscika.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Vriscika")
-        case 9:
-            lstDhanus.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Dhanus")
-        case 10:
-            lstMakara.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Makara")
-        case 11:
-            lstKumbha.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Kumba")
-        case 12:
-            lstMina.append([szGrahaSmall, fLon, bRetr])
-            Log.scriviLog(2, "Aggiunto in Mina")
+    if(iRasi != " - "):
+        match int(iRasi):
+            case 1:
+                lstMesa.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Mesa")
+            case 2:
+                lstVrsabha.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Vrsabha")
+            case 3:
+                lstMithuna.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Mithuna")
+            case 4:
+                lstKarkata.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in: Karkata")
+            case 5:
+                lstSimha.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Simha")
+            case 6:
+                lstKania.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Kania")
+            case 7:
+                lstTula.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Tula")
+            case 8:
+                lstVrscika.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Vriscika")
+            case 9:
+                lstDhanus.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Dhanus")
+            case 10:
+                lstMakara.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Makara")
+            case 11:
+                lstKumbha.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Kumba")
+            case 12:
+                lstMina.append([szGrahaSmall, fLon, bRetr])
+                Log.scriviLog(2, "Aggiunto in Mina")
 
     lstCartaNatale.append(lstMesa)
     lstCartaNatale.append(lstVrsabha)
@@ -345,12 +346,12 @@ def grahaInRasi(Log, lstCartaNatale, szGrahaSmall, iRasi, fLon, bRetr):
 
 def showGrahaDetail(Log, lstGrahaList):
 
-    Log.scriviLog(9, "\n\n")
+    #Log.scriviLog(9, "\n\n")
     Log.scriviLog(2, "Inizio Graha detail")
     Log.scriviLog(9, "+-----------------------+")
     Log.scriviLog(9, "|      Graha Detail     |")
     Log.scriviLog(9, "+-----------------------+")
-    Log.scriviLog(9, "\n")
+    #Log.scriviLog(9, "\n")
 
     #Creazione delle note per ogni pianeta
 

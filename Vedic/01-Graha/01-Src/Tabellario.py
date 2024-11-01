@@ -18,16 +18,21 @@ class Tabellario:
     lstRasiProgr       = []
     lstRasiSansc       = []
 
+    lstBhavaSmall      = []
+    lstBhavaProgr      = []
+    lstBhavaSansc      = []
+
     lstKopaGrahaStd         = []
     lstKopaGrahaRetro       = []
 
     Log = LogCartaNatale
     szMsgPrefix = "Tabellario - "
 
-    def __init__ (self, passLog, confGrahaFileName, confRasiFileName):
+    def __init__ (self, passLog, confGrahaFileName, confRasiFileName, confBhavaFileName):
         self.Log = passLog
         self.szConfGrahaFileName = confGrahaFileName
         self.szConfRasiFileName = confRasiFileName
+        self.szConfBhavaFileName = confBhavaFileName
 
         self.Log.scriviLog(2, "\n\n" )
 
@@ -40,6 +45,7 @@ class Tabellario:
         #Carica file di configurazione per auto-configurarsi
         self.loadGrahaFile()
         self.loadRasiFile()
+        self.loadBhavaFile()
 
 
     def loadGrahaFile(self):
@@ -97,6 +103,31 @@ class Tabellario:
         self.Log.scriviLog(2, self.szMsgPrefix + " - Dati presenti nel file di input caricati nelle liste: lstRasiSmall, lstRasiProgr, lstRasiSansc")
         self.Log.scriviLog(2, self.szMsgPrefix + " - Caricamento Graha presenti in " + self.szConfGrahaFileName + " --> PASSED\n")
 
+    def loadBhavaFile(self):
+        # "Carica sia le liste dei graha che i parametri di default delle Bhava"
+        self.Log.scriviLog(2, self.szMsgPrefix + "+------------------------------+")
+        self.Log.scriviLog(2, self.szMsgPrefix + "+ Caricamento info per le Bhava  +")
+        self.Log.scriviLog(2, self.szMsgPrefix + "+------------------------------+\n")
+        file_input = open(self.szConfBhavaFileName, "r", encoding='utf-8')
+        i = 1
+        for line in file_input.readlines():
+            # self.Log.scriviLog(2, self.szMsgPrefix + "-------- Rasi File ------------")
+            self.Log.scriviLog(2, self.szMsgPrefix + "Riga " + str(i) + ": " + line)
+            line_content = line.split("|")
+            # print(line_content)
+            # Caricamento lista GrahaSmall
+            # Caricamento del graha corretto
+            # print(line_content[1] + " - " + str(self.iGrahaProgr))
+            self.lstBhavaSmall.append(line_content[0])
+            self.lstBhavaProgr.append(line_content[1])
+            self.lstBhavaSansc.append(line_content[2])
+            i = i + 1
+        file_input.close()
+        self.Log.scriviLog(2,
+                           self.szMsgPrefix + " - Dati presenti nel file di input caricati nelle liste: lstRasiSmall, lstRasiProgr, lstRasiSansc")
+        self.Log.scriviLog(2,
+                           self.szMsgPrefix + " - Caricamento Graha presenti in " + self.szConfBhavaFileName + " --> PASSED\n")
+
     def getRasiGrahaExaltProgr(self, iGrahaProgr):
         return self.lstRasiGrahaExalt[iGrahaProgr]
 
@@ -126,10 +157,21 @@ class Tabellario:
         return szToReturn
 
     def getRasiSanscForProgr(self, iRasiProgr):
-        if(iRasiProgr > 1):
+        if(iRasiProgr > 0):
             szToReturn=self.lstRasiSansc[iRasiProgr-1]
         else:
             szToReturn="NONE"
+        return szToReturn
+
+    def getBhavaSanscForProgr(self, iBhavaProgr):
+        if(iBhavaProgr > 0):
+            szToReturn=self.lstBhavaSansc[iBhavaProgr-1]
+        else:
+            szToReturn="NONE"
+        return szToReturn
+
+    def getgrahaSanscForProgr(self, iGrahaProgr):
+        szToReturn=self.lstGrahaSansc[iGrahaProgr]
         return szToReturn
 
     def getLongKopaStd(self, iGrahaProgr):

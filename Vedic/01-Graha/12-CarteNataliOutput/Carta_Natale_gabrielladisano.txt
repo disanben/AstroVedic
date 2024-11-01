@@ -1,280 +1,677 @@
-Log ..\\12-CarteNataliOutput\Carta_Natale_gabrielladisano.txt inizializzato il: 2024-10-29 16:08:31.449095 con priorita = 9
+Log ..\\12-CarteNataliOutput\\Carta_Natale_GabriellaDiSano.txt inizializzato il: 2024-10-29 23:05:38.768453 con priorita = 2
 
 
-2024-10-29 16:08:31.464713 -  MAIN - **************************************************************
-2024-10-29 16:08:31.471221 -  MAIN -    Graha: ..\\11-DataInput\gabrielladisano.txt
-2024-10-29 16:08:31.471221 -  MAIN - --------------------------------------------------------------
-2024-10-29 16:08:31.471221 -  MAIN -                       Carta Natale
-2024-10-29 16:08:31.471221 -  MAIN - **************************************************************
-2024-10-29 16:08:31.471221 -  MAIN - ***********************************************************
-2024-10-29 16:08:31.471221 -  MAIN -   01.00 - Caricamento dei dati relativi alla Carta Natale  
-2024-10-29 16:08:31.471221 -  MAIN - ***********************************************************
-2024-10-29 16:08:31.471221 - Load Graha - 
+2024-10-29 23:05:38.776516 -  MAIN - **************************************************************
+2024-10-29 23:05:38.777513 -  MAIN -    Graha: ..\\11-DataInput\\GabriellaDiSano.txt
+2024-10-29 23:05:38.778512 -  MAIN - --------------------------------------------------------------
+2024-10-29 23:05:38.778512 -  MAIN -                       Carta Natale
+2024-10-29 23:05:38.779508 -  MAIN - **************************************************************
+2024-10-29 23:05:38.780506 -  MAIN - ***********************************************************
+2024-10-29 23:05:38.781503 -  MAIN -   01.00 - Caricamento dei dati relativi alla Carta Natale  
+2024-10-29 23:05:38.781503 -  MAIN - ***********************************************************
+2024-10-29 23:05:38.782501 - Load Graha -  - istanziata con file di input: ..\\11-DataInput\\GabriellaDiSano.txt
+2024-10-29 23:05:38.792475 - Load Graha - 
 
 
-2024-10-29 16:08:31.471221 - Load Graha - -----------------------------------------------------------------------------------------
-2024-10-29 16:08:31.471221 - Load Graha -  -                    Lettura dati di nascita di: Gabriella Di Sano
-2024-10-29 16:08:31.471221 - Load Graha -  -     Nato il: 20.09.1967 alle ore: XX:XX a Catania (37.4716N - 14.8473E)
-2024-10-29 16:08:31.471221 - Load Graha - -----------------------------------------------------------------------------------------
-2024-10-29 16:08:31.471221 - Load Graha -  - Ora di nascita ignota - Ascendente e Case non calcolate
-2024-10-29 16:08:31.486851 -  MAIN - **************************************
-2024-10-29 16:08:31.486851 -  MAIN -   02.00 - Inizio caricamento Graha 
-2024-10-29 16:08:31.486851 -  MAIN - ***************************************
+2024-10-29 23:05:38.793471 - Load Graha - -----------------------------------------------------------------------------------------
+2024-10-29 23:05:38.794469 - Load Graha -  -                    Lettura dati di nascita di: Gabriella Di Sano
+2024-10-29 23:05:38.795466 - Load Graha -  -     Nato il: 20.09.1967 alle ore: XX:XX a Catania (37.4716N - 14.8473E)
+2024-10-29 23:05:38.796464 - Load Graha - -----------------------------------------------------------------------------------------
+2024-10-29 23:05:38.797460 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.799457 - Load Graha - Riga 1: As| 1|Lagna   |	- |Ge| 3| 8.4654| 6|1| |
+
+2024-10-29 23:05:38.800453 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.801451 - Load Graha - Riga 2: Su| 2|Surya   | GK|Vi| 6| 2.5301|12|2| |
+
+2024-10-29 23:05:38.802448 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.804443 - Load Graha - Riga 3: Mo| 3|Chandra | MK|Pi|12|16.1245|26|4| |
+
+2024-10-29 23:05:38.805440 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.805440 - Load Graha - Riga 4: Ma| 4|Mangala |PiK|Sc| 8|13.1011|17|3| |
+
+2024-10-29 23:05:38.808432 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.810428 - Load Graha - Riga 5: Me| 5|Budha   |AmK|Vi| 6|22.3652|13|4| |
+
+2024-10-29 23:05:38.810428 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.811424 - Load Graha - Riga 6: Jp| 6|Guru    | DK|Le| 5| 1.0912|10|1| |
+
+2024-10-29 23:05:38.811424 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.812421 - Load Graha - Riga 7: Ve| 7|Sukra   | PK|Le| 5| 4.1525|10|2| |
+
+2024-10-29 23:05:38.813419 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.813419 - Load Graha - Riga 8: Sa| 8|Sani    | BK|Pi|12|16.3816|26|4|R|
+
+2024-10-29 23:05:38.814416 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.814416 - Load Graha - Riga 9: Ra| 9|Rahu    | AK|Ar| 1| 6.0403| 1|2|R|
+
+2024-10-29 23:05:38.815413 - Load Graha - --------- Input File ------------
+2024-10-29 23:05:38.815413 - Load Graha - Riga 10: Ke|10|Ketu    |	- |Li| 7| 6.0403|14|4|R|
+
+2024-10-29 23:05:38.816411 - Load Graha -  - Dati presenti nel file di input caricati nelle liste: lstGrahaSmall, lstGrahaProgr, lstGrahaSansc, lstTipoAK, lstRasiSmall, lstRasiProgr, lstGrahaLng, lstNakProgr, lstNakPada, lstRetrogade 
+2024-10-29 23:05:38.816411 - Load Graha -  - Caricamento Graha presenti in ..\\11-DataInput\\GabriellaDiSano.txt --> PASSED
+
+2024-10-29 23:05:38.817408 - Load Graha -  - Ora di nascita ignota - Ascendente e Case non calcolate
+2024-10-29 23:05:38.817408 - 
 
 
-2024-10-29 16:08:31.486851 - Graha - *********************************************
-2024-10-29 16:08:31.486851 - Graha - ****  Graha Lagna  (AS)  Show
-2024-10-29 16:08:31.502473 - Graha - ********************************************
-2024-10-29 16:08:31.502473 - Graha - Nome graha breve: AS
-2024-10-29 16:08:31.502473 - Graha - Nome graha in sanscrito: Lagna  
-2024-10-29 16:08:31.502473 - Graha - *********************************************
-2024-10-29 16:08:31.502473 - Graha - ****  Graha Surya  (Su)  Show
-2024-10-29 16:08:31.502473 - Graha - ********************************************
-2024-10-29 16:08:31.502473 - Graha - Nome graha breve: Su
-2024-10-29 16:08:31.502473 - Graha - Nome graha in sanscrito: Surya  
-2024-10-29 16:08:31.502473 - Graha - Nel segno: (6): Vi con longitudine: 2.5301
-2024-10-29 16:08:31.518097 - Graha - Retrogado: False
-2024-10-29 16:08:31.518097 - Graha - Rasi di esaltazione = NONE (1)
-2024-10-29 16:08:31.518097 - Graha - Rasi di debilitazione = Tula   (7)
-2024-10-29 16:08:31.518097 - Graha - Rasi di domicilio 1 = Simha  (5)
-2024-10-29 16:08:31.518097 - Graha - Rasi di domicilio 2 = Simha  (5)
-2024-10-29 16:08:31.518097 - Graha - Rasi Moolatrikona = Simha  (5)
-2024-10-29 16:08:31.518097 - Graha - Longitudine di partenza Moolatrikona = 0.0
-2024-10-29 16:08:31.518097 - Graha - Longitudine di fine Moolatrikona =20.0
-2024-10-29 16:08:31.533713 - Graha - +----------+
-2024-10-29 16:08:31.533713 - Graha - |Vi        |
-2024-10-29 16:08:31.533713 - Graha - |          |
-2024-10-29 16:08:31.533713 - Graha - |   Su     |
-2024-10-29 16:08:31.533713 - Graha - |    2.5301|
-2024-10-29 16:08:31.533713 - Graha - +----------+
-2024-10-29 16:08:31.533713 - Graha - 
-2024-10-29 16:08:31.533713 - Graha - 
-
-2024-10-29 16:08:31.549337 - Graha - *********************************************
-2024-10-29 16:08:31.549337 - Graha - ****  Graha Chandra(Mo)  Show
-2024-10-29 16:08:31.549337 - Graha - ********************************************
-2024-10-29 16:08:31.549337 - Graha - Nome graha breve: Mo
-2024-10-29 16:08:31.549337 - Graha - Nome graha in sanscrito: Chandra
-2024-10-29 16:08:31.549337 - Graha - Nel segno: (12): Pi con longitudine: 16.1245
-2024-10-29 16:08:31.549337 - Graha - Retrogado: False
-2024-10-29 16:08:31.549337 - Graha - Rasi di esaltazione = Vrsabha (2)
-2024-10-29 16:08:31.564956 - Graha - Rasi di debilitazione = Vrscika(8)
-2024-10-29 16:08:31.571596 - Graha - Rasi di domicilio 1 = Karkata(4)
-2024-10-29 16:08:31.571596 - Graha - Rasi di domicilio 2 = Karkata(4)
-2024-10-29 16:08:31.571596 - Graha - Rasi Moolatrikona = Vrsabha(2)
-2024-10-29 16:08:31.571596 - Graha - Longitudine di partenza Moolatrikona = 4.0
-2024-10-29 16:08:31.571596 - Graha - Longitudine di fine Moolatrikona =30.0
-2024-10-29 16:08:31.571596 - Graha - +----------+
-2024-10-29 16:08:31.571596 - Graha - |Pi        |
-2024-10-29 16:08:31.571596 - Graha - |          |
-2024-10-29 16:08:31.571596 - Graha - |   Mo     |
-2024-10-29 16:08:31.571596 - Graha - |   16.1245|
-2024-10-29 16:08:31.571596 - Graha - +----------+
-2024-10-29 16:08:31.571596 - Graha - 
-2024-10-29 16:08:31.571596 - Graha - 
-
-2024-10-29 16:08:31.587223 - Graha - *********************************************
-2024-10-29 16:08:31.587223 - Graha - ****  Graha Mangala(Ma)  Show
-2024-10-29 16:08:31.587223 - Graha - ********************************************
-2024-10-29 16:08:31.587223 - Graha - Nome graha breve: Ma
-2024-10-29 16:08:31.587223 - Graha - Nome graha in sanscrito: Mangala
-2024-10-29 16:08:31.587223 - Graha - Nel segno: (8): Sc con longitudine: 13.1011
-2024-10-29 16:08:31.587223 - Graha - Retrogado: False
-2024-10-29 16:08:31.587223 - Graha - Rasi di esaltazione = Makara  (10)
-2024-10-29 16:08:31.587223 - Graha - Rasi di debilitazione = Karkata(4)
-2024-10-29 16:08:31.603386 - Graha - Rasi di domicilio 1 = NONE(1)
-2024-10-29 16:08:31.603406 - Graha - Rasi di domicilio 2 = Vrscika(8)
-2024-10-29 16:08:31.603406 - Graha - Rasi Moolatrikona = NONE(1)
-2024-10-29 16:08:31.603406 - Graha - Longitudine di partenza Moolatrikona = 0.0
-2024-10-29 16:08:31.603406 - Graha - Longitudine di fine Moolatrikona =12.0
-2024-10-29 16:08:31.603406 - Graha - +----------+
-2024-10-29 16:08:31.603406 - Graha - |Sc        |
-2024-10-29 16:08:31.603406 - Graha - |          |
-2024-10-29 16:08:31.603406 - Graha - |   Ma     |
-2024-10-29 16:08:31.603406 - Graha - |   13.1011|
-2024-10-29 16:08:31.603406 - Graha - +----------+
-2024-10-29 16:08:31.619029 - Graha - 
-2024-10-29 16:08:31.619029 - Graha - 
-
-2024-10-29 16:08:31.619029 - Graha - *********************************************
-2024-10-29 16:08:31.619029 - Graha - ****  Graha Budha  (Me)  Show
-2024-10-29 16:08:31.634651 - Graha - ********************************************
-2024-10-29 16:08:31.634651 - Graha - Nome graha breve: Me
-2024-10-29 16:08:31.634651 - Graha - Nome graha in sanscrito: Budha  
-2024-10-29 16:08:31.634651 - Graha - Nel segno: (6): Vi con longitudine: 22.3652
-2024-10-29 16:08:31.651997 - Graha - Retrogado: False
-2024-10-29 16:08:31.651997 - Graha - Rasi di esaltazione = Kania   (6)
-2024-10-29 16:08:31.651997 - Graha - Rasi di debilitazione = Mina   (12)
-2024-10-29 16:08:31.673951 - Graha - Rasi di domicilio 1 = Mithuna(3)
-2024-10-29 16:08:31.674964 - Graha - Rasi di domicilio 2 = Kania  (6)
-2024-10-29 16:08:31.674964 - Graha - Rasi Moolatrikona = Kania  (6)
-2024-10-29 16:08:31.674964 - Graha - Longitudine di partenza Moolatrikona = 16.0
-2024-10-29 16:08:31.674964 - Graha - Longitudine di fine Moolatrikona =20.0
-2024-10-29 16:08:31.674964 - Graha - +----------+
-2024-10-29 16:08:31.674964 - Graha - |Vi        |
-2024-10-29 16:08:31.674964 - Graha - |          |
-2024-10-29 16:08:31.674964 - Graha - |   Me     |
-2024-10-29 16:08:31.674964 - Graha - |   22.3652|
-2024-10-29 16:08:31.674964 - Graha - +----------+
-2024-10-29 16:08:31.674964 - Graha - 
-2024-10-29 16:08:31.690590 - Graha - 
-
-2024-10-29 16:08:31.690590 - Graha - *********************************************
-2024-10-29 16:08:31.690590 - Graha - ****  Graha Guru   (Jp)  Show
-2024-10-29 16:08:31.690590 - Graha - ********************************************
-2024-10-29 16:08:31.690590 - Graha - Nome graha breve: Jp
-2024-10-29 16:08:31.690590 - Graha - Nome graha in sanscrito: Guru   
-2024-10-29 16:08:31.690590 - Graha - Nel segno: (5): Le con longitudine: 1.0912
-2024-10-29 16:08:31.690590 - Graha - Retrogado: False
-2024-10-29 16:08:31.706213 - Graha - Rasi di esaltazione = Karkata (4)
-2024-10-29 16:08:31.706213 - Graha - Rasi di debilitazione = Makara (10)
-2024-10-29 16:08:31.706213 - Graha - Rasi di domicilio 1 = Dhanus (9)
-2024-10-29 16:08:31.706213 - Graha - Rasi di domicilio 2 = Mina   (12)
-2024-10-29 16:08:31.706213 - Graha - Rasi Moolatrikona = Dhanus (9)
-2024-10-29 16:08:31.706213 - Graha - Longitudine di partenza Moolatrikona = 0.0
-2024-10-29 16:08:31.706213 - Graha - Longitudine di fine Moolatrikona =10.0
-2024-10-29 16:08:31.706213 - Graha - +----------+
-2024-10-29 16:08:31.706213 - Graha - |Le        |
-2024-10-29 16:08:31.706213 - Graha - |          |
-2024-10-29 16:08:31.706213 - Graha - |   Jp     |
-2024-10-29 16:08:31.721834 - Graha - |    1.0912|
-2024-10-29 16:08:31.721834 - Graha - +----------+
-2024-10-29 16:08:31.721834 - Graha - 
-2024-10-29 16:08:31.721834 - Graha - 
-
-2024-10-29 16:08:31.721834 - Graha - *********************************************
-2024-10-29 16:08:31.721834 - Graha - ****  Graha Sukra  (Ve)  Show
-2024-10-29 16:08:31.721834 - Graha - ********************************************
-2024-10-29 16:08:31.721834 - Graha - Nome graha breve: Ve
-2024-10-29 16:08:31.721834 - Graha - Nome graha in sanscrito: Sukra  
-2024-10-29 16:08:31.737455 - Graha - Nel segno: (5): Le con longitudine: 4.1525
-2024-10-29 16:08:31.737455 - Graha - Retrogado: False
-2024-10-29 16:08:31.737455 - Graha - Rasi di esaltazione = Mina    (12)
-2024-10-29 16:08:31.737455 - Graha - Rasi di debilitazione = Kania  (6)
-2024-10-29 16:08:31.737455 - Graha - Rasi di domicilio 1 = Vrsabha(2)
-2024-10-29 16:08:31.737455 - Graha - Rasi di domicilio 2 = Tula   (7)
-2024-10-29 16:08:31.737455 - Graha - Rasi Moolatrikona = Tula   (7)
-2024-10-29 16:08:31.737455 - Graha - Longitudine di partenza Moolatrikona = 0.0
-2024-10-29 16:08:31.737455 - Graha - Longitudine di fine Moolatrikona =15.0
-2024-10-29 16:08:31.737455 - Graha - +----------+
-2024-10-29 16:08:31.753076 - Graha - |Le        |
-2024-10-29 16:08:31.753076 - Graha - |          |
-2024-10-29 16:08:31.753076 - Graha - |   Ve     |
-2024-10-29 16:08:31.753076 - Graha - |    4.1525|
-2024-10-29 16:08:31.753076 - Graha - +----------+
-2024-10-29 16:08:31.771723 - Graha - 
-2024-10-29 16:08:31.771723 - Graha - 
-
-2024-10-29 16:08:31.787373 - Graha - *********************************************
-2024-10-29 16:08:31.787373 - Graha - ****  Graha Sani   (Sa)  Show
-2024-10-29 16:08:31.787373 - Graha - ********************************************
-2024-10-29 16:08:31.787373 - Graha - Nome graha breve: Sa
-2024-10-29 16:08:31.787373 - Graha - Nome graha in sanscrito: Sani   
-2024-10-29 16:08:31.787373 - Graha - Nel segno: (12): Pi con longitudine: 16.3816
-2024-10-29 16:08:31.787373 - Graha - Retrogado: True
-2024-10-29 16:08:31.802980 - Graha - Rasi di esaltazione = Tula    (7)
-2024-10-29 16:08:31.802980 - Graha - Rasi di debilitazione = NONE(1)
-2024-10-29 16:08:31.802980 - Graha - Rasi di domicilio 1 = Makara (10)
-2024-10-29 16:08:31.802980 - Graha - Rasi di domicilio 2 = Kumbha (11)
-2024-10-29 16:08:31.818599 - Graha - Rasi Moolatrikona = Kumbha (11)
-2024-10-29 16:08:31.818599 - Graha - Longitudine di partenza Moolatrikona = 0.0
-2024-10-29 16:08:31.818599 - Graha - Longitudine di fine Moolatrikona =20.0
-2024-10-29 16:08:31.818599 - Graha - +----------+
-2024-10-29 16:08:31.834227 - Graha - |Pi        |
-2024-10-29 16:08:31.834227 - Graha - |   __     |
-2024-10-29 16:08:31.849862 - Graha - |   Sa     |
-2024-10-29 16:08:31.849862 - Graha - |   16.3816|
-2024-10-29 16:08:31.849862 - Graha - +----------+
-2024-10-29 16:08:31.865463 - Graha - 
-2024-10-29 16:08:31.871972 - Graha - 
-
-2024-10-29 16:08:31.871972 - Graha - *********************************************
-2024-10-29 16:08:31.871972 - Graha - ****  Graha Rahu   (Ra)  Show
-2024-10-29 16:08:31.871972 - Graha - ********************************************
-2024-10-29 16:08:31.871972 - Graha - Nome graha breve: Ra
-2024-10-29 16:08:31.871972 - Graha - Nome graha in sanscrito: Rahu   
-2024-10-29 16:08:31.871972 - Graha - Nel segno: (1): Ar con longitudine: 6.0403
-2024-10-29 16:08:31.871972 - Graha - Retrogado: True
-2024-10-29 16:08:31.871972 - Graha - Rasi di esaltazione = Mithuna (3)
-2024-10-29 16:08:31.887603 - Graha - Rasi di debilitazione = Dhanus (9)
-2024-10-29 16:08:31.887603 - Graha - Rasi di domicilio 1 = Kumbha (11)
-2024-10-29 16:08:31.887603 - Graha - Rasi di domicilio 2 = Kumbha (11)
-2024-10-29 16:08:31.887603 - Graha - Rasi Moolatrikona = NONE(0)
-2024-10-29 16:08:31.887603 - Graha - Longitudine di partenza Moolatrikona = 0.0
-2024-10-29 16:08:31.887603 - Graha - Longitudine di fine Moolatrikona =0.0
-2024-10-29 16:08:31.887603 - Graha - +----------+
-2024-10-29 16:08:31.887603 - Graha - |Ar        |
-2024-10-29 16:08:31.903224 - Graha - |   __     |
-2024-10-29 16:08:31.903224 - Graha - |   Ra     |
-2024-10-29 16:08:31.903224 - Graha - |    6.0403|
-2024-10-29 16:08:31.903224 - Graha - +----------+
-2024-10-29 16:08:31.903224 - Graha - 
-2024-10-29 16:08:31.903224 - Graha - 
-
-2024-10-29 16:08:31.903224 - Graha - *********************************************
-2024-10-29 16:08:31.903224 - Graha - ****  Graha Ketu   (Ke)  Show
-2024-10-29 16:08:31.918842 - Graha - ********************************************
-2024-10-29 16:08:31.918842 - Graha - Nome graha breve: Ke
-2024-10-29 16:08:31.918842 - Graha - Nome graha in sanscrito: Ketu   
-2024-10-29 16:08:31.918842 - Graha - Nel segno: (7): Li con longitudine: 6.0403
-2024-10-29 16:08:31.918842 - Graha - Retrogado: True
-2024-10-29 16:08:31.918842 - Graha - Rasi di esaltazione = Dhanus  (9)
-2024-10-29 16:08:31.918842 - Graha - Rasi di debilitazione = Mithuna(3)
-2024-10-29 16:08:31.918842 - Graha - Rasi di domicilio 1 = Vrscika(8)
-2024-10-29 16:08:31.918842 - Graha - Rasi di domicilio 2 = Vrscika(8)
-2024-10-29 16:08:31.918842 - Graha - Rasi Moolatrikona = NONE(0)
-2024-10-29 16:08:31.918842 - Graha - Longitudine di partenza Moolatrikona = 0.0
-2024-10-29 16:08:31.934466 - Graha - Longitudine di fine Moolatrikona =0.0
-2024-10-29 16:08:31.934466 - Graha - +----------+
-2024-10-29 16:08:31.934466 - Graha - |Li        |
-2024-10-29 16:08:31.950096 - Graha - |   __     |
-2024-10-29 16:08:31.950096 - Graha - |   Ke     |
-2024-10-29 16:08:31.950096 - Graha - |    6.0403|
-2024-10-29 16:08:31.965717 - Graha - +----------+
-2024-10-29 16:08:31.972235 - Graha - 
-2024-10-29 16:08:31.972235 - Graha - 
-
-2024-10-29 16:08:31.972235 - 
+2024-10-29 23:05:38.818405 - Tabellario - *******************************
+2024-10-29 23:05:38.818405 - Tabellario -      Crazione del Tabellario 
+2024-10-29 23:05:38.819403 - Tabellario - *******************************
 
 
-2024-10-29 16:08:31.972235 - 
+2024-10-29 23:05:38.819403 - Tabellario - istanziata con file di input: ..\\02-Cfg\\Graha.cfg e ..\\02-Cfg\\Rasi.cfg
+2024-10-29 23:05:38.820401 - Tabellario - +------------------------------+
+2024-10-29 23:05:38.821397 - Tabellario - + Caricamento info per i Graha +
+2024-10-29 23:05:38.821397 - Tabellario - +------------------------------+
+
+2024-10-29 23:05:38.822393 - Tabellario - Riga 1: AS|0|Lagna  | 0| 0| 0| 0| 0| 0.00| 0.00| 0.00| 0.00|
+
+2024-10-29 23:05:38.823391 - Tabellario - Riga 2: Su|1|Surya  | 1| 7| 5| 5| 5| 0.00|20.00| 0.00| 0.00|
+
+2024-10-29 23:05:38.823391 - Tabellario - Riga 3: Mo|2|Chandra| 2| 8| 4| 4| 2| 4.00|30.00|12.00|12.00|
+
+2024-10-29 23:05:38.824388 - Tabellario - Riga 4: Ma|3|Mangala|10| 4| 1| 8| 1| 0.00|12.00|17.00|17.00|
+
+2024-10-29 23:05:38.825385 - Tabellario - Riga 5: Me|4|Budha  | 6|12| 3| 6| 6|16.00|20.00|14.00|12.00|
+
+2024-10-29 23:05:38.826383 - Tabellario - Riga 6: Jp|5|Guru   | 4|10| 9|12| 9| 0.00|10.00|11.00|11.00|
+
+2024-10-29 23:05:38.826383 - Tabellario - Riga 7: Ve|6|Sukra  |12| 6| 2| 7| 7| 0.00|15.00|10.00| 8.00|
+
+2024-10-29 23:05:38.827382 - Tabellario - Riga 8: Sa|7|Sani   | 7| 1|10|11|11| 0.00|20.00|15.00|15.00|
+
+2024-10-29 23:05:38.828377 - Tabellario - Riga 9: Ra|8|Rahu   | 3| 9|11|11| 0| 0.00| 0.00| 0.00| 0.00|
+
+2024-10-29 23:05:38.829374 - Tabellario - Riga 10: Ke|9|Ketu   | 9| 3| 8| 8| 0| 0.00| 0.00| 0.00| 0.00|
+
+2024-10-29 23:05:38.829374 - Tabellario -  - Dati presenti nel file di input caricati nelle liste: lstGrahaSmall, lstGrahaProgr, lstGrahaSansc, lstRasiGrahaExalt, lstRasiGrahaDebil, lstRasiGrahaDomic1, lstRasiGrahaDomic2, lstRasiGrahaMool, lstLonMoolFrom, lstLonMoolTo, lstKopaGrahaStd, lstKopaGrahaRetro
+2024-10-29 23:05:38.830371 - Tabellario -  - Caricamento Graha presenti in ..\\02-Cfg\\Graha.cfg --> PASSED
+
+2024-10-29 23:05:38.830371 - Tabellario - +------------------------------+
+2024-10-29 23:05:38.831370 - Tabellario - + Caricamento info per i Rasi  +
+2024-10-29 23:05:38.831370 - Tabellario - +------------------------------+
+
+2024-10-29 23:05:38.832367 - Tabellario - Riga 1: Ar| 1|Mesa   |
+
+2024-10-29 23:05:38.833364 - Tabellario - Riga 2: Ta| 2|Vrsabha|
+
+2024-10-29 23:05:38.833364 - Tabellario - Riga 3: Ge| 3|Mithuna|
+
+2024-10-29 23:05:38.834361 - Tabellario - Riga 4: Cn| 4|Karkata|
+
+2024-10-29 23:05:38.835360 - Tabellario - Riga 5: Le| 5|Simha  |
+
+2024-10-29 23:05:38.835360 - Tabellario - Riga 6: Vi| 6|Kania  |
+
+2024-10-29 23:05:38.836357 - Tabellario - Riga 7: Li| 7|Tula   |
+
+2024-10-29 23:05:38.836357 - Tabellario - Riga 8: Sc| 8|Vrscika|
+
+2024-10-29 23:05:38.837354 - Tabellario - Riga 9: Sg| 9|Dhanus |
+
+2024-10-29 23:05:38.838352 - Tabellario - Riga 10: Cp|10|Makara |
+
+2024-10-29 23:05:38.839349 - Tabellario - Riga 11: Aq|11|Kumbha |
+
+2024-10-29 23:05:38.839349 - Tabellario - Riga 12: Pi|12|Mina   |
+
+2024-10-29 23:05:38.840345 - Tabellario -  - Dati presenti nel file di input caricati nelle liste: lstRasiSmall, lstRasiProgr, lstRasiSansc
+2024-10-29 23:05:38.841343 - Tabellario -  - Caricamento Graha presenti in ..\\02-Cfg\\Graha.cfg --> PASSED
+
+2024-10-29 23:05:38.841343 -  MAIN - **************************************
+2024-10-29 23:05:38.843339 -  MAIN -   02.00 - Inizio caricamento Graha 
+2024-10-29 23:05:38.843339 -  MAIN - ***************************************
 
 
-2024-10-29 16:08:31.972235 - +----------------+----------------+----------------+----------------+
-2024-10-29 16:08:31.972235 - | Pi             | Ar             | Ta             | Ge             |
-2024-10-29 16:08:31.987864 - |             __ |             __ |                |                |
-2024-10-29 16:08:32.005526 - |          Mo Sa |             Ra |                |                |
-2024-10-29 16:08:32.005526 - |          16 16 |             06 |                |                |
-2024-10-29 16:08:32.005526 - +----------------+----------------+----------------+----------------+
-2024-10-29 16:08:32.005526 - | Aq             |                                 | Cn             |
-2024-10-29 16:08:32.005526 - |                |                                 |                |
-2024-10-29 16:08:32.005526 - |                |                                 |                |
-2024-10-29 16:08:32.005526 - |                |                                 |                |
-2024-10-29 16:08:32.005526 - +----------------+                                 +----------------+
-2024-10-29 16:08:32.005526 - | Cp             |                                 | Le             |
-2024-10-29 16:08:32.005526 - |                |                                 |                |
-2024-10-29 16:08:32.005526 - |                |                                 |          Jp Ve |
-2024-10-29 16:08:32.005526 - |                |                                 |          01 04 |
-2024-10-29 16:08:32.005526 - +----------------+----------------+----------------+----------------+
-2024-10-29 16:08:32.005526 - | Sg             | Sc             | Li             | Vi             |
-2024-10-29 16:08:32.005526 - |                |                |             __ |                |
-2024-10-29 16:08:32.005526 - |                |             Ma |             Ke |          Su Me |
-2024-10-29 16:08:32.005526 - |                |             13 |             06 |          02 22 |
-2024-10-29 16:08:32.005526 - +----------------+----------------+----------------+----------------+
-2024-10-29 16:08:32.021152 - 
+2024-10-29 23:05:38.844335 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.845334 - Graha - -----------------------------
+2024-10-29 23:05:38.845334 - Graha - GrahaSmall settato a: AS
+2024-10-29 23:05:38.846331 - Graha - GrahaSansc settato a: Lagna  
+2024-10-29 23:05:38.846331 - Graha - Non calcolabile: Graha e' ASC
+2024-10-29 23:05:38.847328 - Graha - Graha Lagna   inizializzato con Rasi:  -  Long:  -  indicazione R:  
+
+2024-10-29 23:05:38.847328 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.848325 - Graha - -----------------------------
+2024-10-29 23:05:38.849323 - Graha - GrahaSmall settato a: Su
+2024-10-29 23:05:38.849323 - Graha - GrahaSansc settato a: Surya  
+2024-10-29 23:05:38.850320 - Graha - Rasi di esaltazione: iProgr= 1 , Small: NONE , Sansc: NONE
+2024-10-29 23:05:38.850320 - Graha - Rasi di debilitazione: iProgr= 7 , Small: Li , Sansc: Tula   
+2024-10-29 23:05:38.851319 - Graha - Rasi di Primo Domicilio: iProgr= 5 , Small: Le , Sansc: Simha  
+2024-10-29 23:05:38.852314 - Graha - Rasi di Secondo Domicilio: iProgr= 5 , Small: Le , Sansc: Simha  
+2024-10-29 23:05:38.853311 - Graha - Rasi di Moolatrikona: iProgr= 5 , Small: Le , Sansc: Simha  
+2024-10-29 23:05:38.853311 - Graha - Long. di Moolatrikona da: 0.0  a: 20.0
+2024-10-29 23:05:38.854310 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:38.855305 - Graha - Graha Surya   inizializzato con Rasi: Kania   (6) Long:  2.5301 indicazione R:  
+
+2024-10-29 23:05:38.855305 - Graha - Graha Surya   inizializzato con Rasi:  6 Long:  2.5301 indicazione R:  
+
+2024-10-29 23:05:38.856304 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.856304 - Graha - -----------------------------
+2024-10-29 23:05:38.857300 - Graha - GrahaSmall settato a: Mo
+2024-10-29 23:05:38.857300 - Graha - GrahaSansc settato a: Chandra
+2024-10-29 23:05:38.858298 - Graha - Rasi di esaltazione: iProgr= 2 , Small: Ta , Sansc: Vrsabha
+2024-10-29 23:05:38.858298 - Graha - Rasi di debilitazione: iProgr= 8 , Small: Sc , Sansc: Vrscika
+2024-10-29 23:05:38.859302 - Graha - Rasi di Primo Domicilio: iProgr= 4 , Small: Cn , Sansc: Karkata
+2024-10-29 23:05:38.859302 - Graha - Rasi di Secondo Domicilio: iProgr= 4 , Small: Cn , Sansc: Karkata
+2024-10-29 23:05:38.860292 - Graha - Rasi di Moolatrikona: iProgr= 2 , Small: Ta , Sansc: Vrsabha
+2024-10-29 23:05:38.860292 - Graha - Long. di Moolatrikona da: 4.0  a: 30.0
+2024-10-29 23:05:38.861289 - Graha - Long Ass di Chandra: 346.12
+2024-10-29 23:05:38.861289 - Graha - Graha Chandra inizializzato con Rasi: Mina    (12) Long: 16.1245 indicazione R:  
+
+2024-10-29 23:05:38.862289 - Graha - Graha Chandra inizializzato con Rasi: 12 Long: 16.1245 indicazione R:  
+
+2024-10-29 23:05:38.862289 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.863340 - Graha - -----------------------------
+2024-10-29 23:05:38.863340 - Graha - GrahaSmall settato a: Ma
+2024-10-29 23:05:38.864339 - Graha - GrahaSansc settato a: Mangala
+2024-10-29 23:05:38.864339 - Graha - Rasi di esaltazione: iProgr= 10 , Small: Cp , Sansc: Makara 
+2024-10-29 23:05:38.865336 - Graha - Rasi di debilitazione: iProgr= 4 , Small: Cn , Sansc: Karkata
+2024-10-29 23:05:38.865336 - Graha - Rasi di Primo Domicilio: iProgr= 1 , Small: NONE , Sansc: NONE
+2024-10-29 23:05:38.866335 - Graha - Rasi di Secondo Domicilio: iProgr= 8 , Small: Sc , Sansc: Vrscika
+2024-10-29 23:05:38.866335 - Graha - Rasi di Moolatrikona: iProgr= 1 , Small: NONE , Sansc: NONE
+2024-10-29 23:05:38.867332 - Graha - Long. di Moolatrikona da: 0.0  a: 12.0
+2024-10-29 23:05:38.867332 - Graha - Long Ass di Mangala: 223.10
+2024-10-29 23:05:38.868329 - Graha - Graha Mangala inizializzato con Rasi: Vrscika (8) Long: 13.1011 indicazione R:  
+
+2024-10-29 23:05:38.868329 - Graha - Graha Mangala inizializzato con Rasi:  8 Long: 13.1011 indicazione R:  
+
+2024-10-29 23:05:38.869472 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.869472 - Graha - -----------------------------
+2024-10-29 23:05:38.870470 - Graha - GrahaSmall settato a: Me
+2024-10-29 23:05:38.871467 - Graha - GrahaSansc settato a: Budha  
+2024-10-29 23:05:38.871467 - Graha - Rasi di esaltazione: iProgr= 6 , Small: Vi , Sansc: Kania  
+2024-10-29 23:05:38.872464 - Graha - Rasi di debilitazione: iProgr= 12 , Small: Pi , Sansc: Mina   
+2024-10-29 23:05:38.872464 - Graha - Rasi di Primo Domicilio: iProgr= 3 , Small: Ge , Sansc: Mithuna
+2024-10-29 23:05:38.873461 - Graha - Rasi di Secondo Domicilio: iProgr= 6 , Small: Vi , Sansc: Kania  
+2024-10-29 23:05:38.873461 - Graha - Rasi di Moolatrikona: iProgr= 6 , Small: Vi , Sansc: Kania  
+2024-10-29 23:05:38.874459 - Graha - Long. di Moolatrikona da: 16.0  a: 20.0
+2024-10-29 23:05:38.875484 - Graha - Long Ass di Budha  : 172.37
+2024-10-29 23:05:38.875622 - Graha - Graha Budha   inizializzato con Rasi: Kania   (6) Long: 22.3652 indicazione R:  
+
+2024-10-29 23:05:38.876621 - Graha - Graha Budha   inizializzato con Rasi:  6 Long: 22.3652 indicazione R:  
+
+2024-10-29 23:05:38.876621 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.877618 - Graha - -----------------------------
+2024-10-29 23:05:38.877618 - Graha - GrahaSmall settato a: Jp
+2024-10-29 23:05:38.878615 - Graha - GrahaSansc settato a: Guru   
+2024-10-29 23:05:38.879612 - Graha - Rasi di esaltazione: iProgr= 4 , Small: Cn , Sansc: Karkata
+2024-10-29 23:05:38.879612 - Graha - Rasi di debilitazione: iProgr= 10 , Small: Cp , Sansc: Makara 
+2024-10-29 23:05:38.880610 - Graha - Rasi di Primo Domicilio: iProgr= 9 , Small: Sg , Sansc: Dhanus 
+2024-10-29 23:05:38.880610 - Graha - Rasi di Secondo Domicilio: iProgr= 12 , Small: Pi , Sansc: Mina   
+2024-10-29 23:05:38.881671 - Graha - Rasi di Moolatrikona: iProgr= 9 , Small: Sg , Sansc: Dhanus 
+2024-10-29 23:05:38.881671 - Graha - Long. di Moolatrikona da: 0.0  a: 10.0
+2024-10-29 23:05:38.882669 - Graha - Long Ass di Guru   : 121.09
+2024-10-29 23:05:38.882669 - Graha - Graha Guru    inizializzato con Rasi: Simha   (5) Long:  1.0912 indicazione R:  
+
+2024-10-29 23:05:38.883666 - Graha - Graha Guru    inizializzato con Rasi:  5 Long:  1.0912 indicazione R:  
+
+2024-10-29 23:05:38.884664 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.884664 - Graha - -----------------------------
+2024-10-29 23:05:38.885662 - Graha - GrahaSmall settato a: Ve
+2024-10-29 23:05:38.885662 - Graha - GrahaSansc settato a: Sukra  
+2024-10-29 23:05:38.886659 - Graha - Rasi di esaltazione: iProgr= 12 , Small: Pi , Sansc: Mina   
+2024-10-29 23:05:38.886659 - Graha - Rasi di debilitazione: iProgr= 6 , Small: Vi , Sansc: Kania  
+2024-10-29 23:05:38.887716 - Graha - Rasi di Primo Domicilio: iProgr= 2 , Small: Ta , Sansc: Vrsabha
+2024-10-29 23:05:38.888716 - Graha - Rasi di Secondo Domicilio: iProgr= 7 , Small: Li , Sansc: Tula   
+2024-10-29 23:05:38.888716 - Graha - Rasi di Moolatrikona: iProgr= 7 , Small: Li , Sansc: Tula   
+2024-10-29 23:05:38.889712 - Graha - Long. di Moolatrikona da: 0.0  a: 15.0
+2024-10-29 23:05:38.889712 - Graha - Long Ass di Sukra  : 124.15
+2024-10-29 23:05:38.890723 - Graha - Graha Sukra   inizializzato con Rasi: Simha   (5) Long:  4.1525 indicazione R:  
+
+2024-10-29 23:05:38.891707 - Graha - Graha Sukra   inizializzato con Rasi:  5 Long:  4.1525 indicazione R:  
+
+2024-10-29 23:05:38.891707 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.892703 - Graha - -----------------------------
+2024-10-29 23:05:38.892703 - Graha - GrahaSmall settato a: Sa
+2024-10-29 23:05:38.893701 - Graha - GrahaSansc settato a: Sani   
+2024-10-29 23:05:38.893701 - Graha - Rasi di esaltazione: iProgr= 7 , Small: Li , Sansc: Tula   
+2024-10-29 23:05:38.894698 - Graha - Rasi di debilitazione: iProgr= 1 , Small: NONE , Sansc: NONE
+2024-10-29 23:05:38.895696 - Graha - Rasi di Primo Domicilio: iProgr= 10 , Small: Cp , Sansc: Makara 
+2024-10-29 23:05:38.895696 - Graha - Rasi di Secondo Domicilio: iProgr= 11 , Small: Aq , Sansc: Kumbha 
+2024-10-29 23:05:38.896693 - Graha - Rasi di Moolatrikona: iProgr= 11 , Small: Aq , Sansc: Kumbha 
+2024-10-29 23:05:38.897691 - Graha - Long. di Moolatrikona da: 0.0  a: 20.0
+2024-10-29 23:05:38.897691 - Graha - Pianeta Retrogrado
+2024-10-29 23:05:38.898688 - Graha - Long Ass di Sani   : 346.38
+2024-10-29 23:05:38.899685 - Graha - Graha Sani    inizializzato con Rasi: Mina    (12) Long: 16.3816 indicazione R: R
+
+2024-10-29 23:05:38.899685 - Graha - Graha Sani    inizializzato con Rasi: 12 Long: 16.3816 indicazione R: R
+
+2024-10-29 23:05:38.900682 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.900682 - Graha - -----------------------------
+2024-10-29 23:05:38.901680 - Graha - GrahaSmall settato a: Ra
+2024-10-29 23:05:38.902677 - Graha - GrahaSansc settato a: Rahu   
+2024-10-29 23:05:38.902677 - Graha - Rasi di esaltazione: iProgr= 3 , Small: Ge , Sansc: Mithuna
+2024-10-29 23:05:38.903675 - Graha - Rasi di debilitazione: iProgr= 9 , Small: Sg , Sansc: Dhanus 
+2024-10-29 23:05:38.905670 - Graha - Rasi di Primo Domicilio: iProgr= 11 , Small: Aq , Sansc: Kumbha 
+2024-10-29 23:05:38.906667 - Graha - Rasi di Secondo Domicilio: iProgr= 11 , Small: Aq , Sansc: Kumbha 
+2024-10-29 23:05:38.907664 - Graha - Rasi di Moolatrikona: iProgr= 0 , Small: NONE , Sansc: NONE
+2024-10-29 23:05:38.907664 - Graha - Long. di Moolatrikona da: 0.0  a: 0.0
+2024-10-29 23:05:38.908661 - Graha - Pianeta Retrogrado
+2024-10-29 23:05:38.909659 - Graha - Long Ass di Rahu   :   6.04
+2024-10-29 23:05:38.909659 - Graha - Graha Rahu    inizializzato con Rasi: NONE (1) Long:  6.0403 indicazione R: R
+
+2024-10-29 23:05:38.910656 - Graha - Graha Rahu    inizializzato con Rasi:  1 Long:  6.0403 indicazione R: R
+
+2024-10-29 23:05:38.910656 - Graha - Load Graha Parameter from Tab
+2024-10-29 23:05:38.911653 - Graha - -----------------------------
+2024-10-29 23:05:38.914646 - Graha - GrahaSmall settato a: Ke
+2024-10-29 23:05:38.914646 - Graha - GrahaSansc settato a: Ketu   
+2024-10-29 23:05:38.915642 - Graha - Rasi di esaltazione: iProgr= 9 , Small: Sg , Sansc: Dhanus 
+2024-10-29 23:05:38.915642 - Graha - Rasi di debilitazione: iProgr= 3 , Small: Ge , Sansc: Mithuna
+2024-10-29 23:05:38.916640 - Graha - Rasi di Primo Domicilio: iProgr= 8 , Small: Sc , Sansc: Vrscika
+2024-10-29 23:05:38.917637 - Graha - Rasi di Secondo Domicilio: iProgr= 8 , Small: Sc , Sansc: Vrscika
+2024-10-29 23:05:38.917637 - Graha - Rasi di Moolatrikona: iProgr= 0 , Small: NONE , Sansc: NONE
+2024-10-29 23:05:38.918634 - Graha - Long. di Moolatrikona da: 0.0  a: 0.0
+2024-10-29 23:05:38.918634 - Graha - Pianeta Retrogrado
+2024-10-29 23:05:38.919632 - Graha - Long Ass di Ketu   : 186.04
+2024-10-29 23:05:38.919632 - Graha - Graha Ketu    inizializzato con Rasi: Tula    (7) Long:  6.0403 indicazione R: R
+
+2024-10-29 23:05:38.920629 - Graha - Graha Ketu    inizializzato con Rasi:  7 Long:  6.0403 indicazione R: R
+
+2024-10-29 23:05:38.921627 - Graha - *********************************************
+2024-10-29 23:05:38.922625 - Graha - ****  Graha Lagna  (AS)  Show
+2024-10-29 23:05:38.923621 - Graha - ********************************************
+2024-10-29 23:05:38.923621 - Graha - Nome graha breve: AS
+2024-10-29 23:05:38.924619 - Graha - Nome graha in sanscrito: Lagna  
+2024-10-29 23:05:38.924619 - Graha - *********************************************
+2024-10-29 23:05:38.925615 - Graha - ****  Graha Surya  (Su)  Show
+2024-10-29 23:05:38.926613 - Graha - ********************************************
+2024-10-29 23:05:38.927610 - Graha - Nome graha breve: Su
+2024-10-29 23:05:38.927610 - Graha - Nome graha in sanscrito: Surya  
+2024-10-29 23:05:38.928608 - Graha - Nel segno: (6): Vi con longitudine: 2.5301
+2024-10-29 23:05:38.929606 - Graha - Retrogado: False
+2024-10-29 23:05:38.929606 - Graha - Rasi di esaltazione = NONE (1)
+2024-10-29 23:05:38.930603 - Graha - Rasi di debilitazione = Tula   (7)
+2024-10-29 23:05:38.931600 - Graha - Rasi di domicilio 1 = Simha  (5)
+2024-10-29 23:05:38.931600 - Graha - Rasi di domicilio 2 = Simha  (5)
+2024-10-29 23:05:38.932597 - Graha - Rasi Moolatrikona = Simha  (5)
+2024-10-29 23:05:38.932597 - Graha - Longitudine di partenza Moolatrikona = 0.0
+2024-10-29 23:05:38.933596 - Graha - Longitudine di fine Moolatrikona =20.0
+2024-10-29 23:05:38.933596 - Graha - +----------+
+2024-10-29 23:05:38.934592 - Graha - |Vi        |
+2024-10-29 23:05:38.934592 - Graha - |          |
+2024-10-29 23:05:38.935589 - Graha - |   Su     |
+2024-10-29 23:05:38.936588 - Graha - |    2.5301|
+2024-10-29 23:05:38.936588 - Graha - +----------+
+2024-10-29 23:05:38.937584 - Graha - 
+2024-10-29 23:05:38.938581 - Graha - 
+
+2024-10-29 23:05:38.938581 - Graha - *********************************************
+2024-10-29 23:05:38.939580 - Graha - ****  Graha Chandra(Mo)  Show
+2024-10-29 23:05:38.939580 - Graha - ********************************************
+2024-10-29 23:05:38.940576 - Graha - Nome graha breve: Mo
+2024-10-29 23:05:38.941573 - Graha - Nome graha in sanscrito: Chandra
+2024-10-29 23:05:38.941573 - Graha - Nel segno: (12): Pi con longitudine: 16.1245
+2024-10-29 23:05:38.942571 - Graha - Retrogado: False
+2024-10-29 23:05:38.943568 - Graha - Rasi di esaltazione = Vrsabha (2)
+2024-10-29 23:05:38.943568 - Graha - Rasi di debilitazione = Vrscika(8)
+2024-10-29 23:05:38.944566 - Graha - Rasi di domicilio 1 = Karkata(4)
+2024-10-29 23:05:38.945563 - Graha - Rasi di domicilio 2 = Karkata(4)
+2024-10-29 23:05:38.946560 - Graha - Rasi Moolatrikona = Vrsabha(2)
+2024-10-29 23:05:38.946560 - Graha - Longitudine di partenza Moolatrikona = 4.0
+2024-10-29 23:05:38.947557 - Graha - Longitudine di fine Moolatrikona =30.0
+2024-10-29 23:05:38.947557 - Graha - +----------+
+2024-10-29 23:05:38.948556 - Graha - |Pi        |
+2024-10-29 23:05:38.949553 - Graha - |          |
+2024-10-29 23:05:38.949553 - Graha - |   Mo     |
+2024-10-29 23:05:38.950549 - Graha - |   16.1245|
+2024-10-29 23:05:38.950549 - Graha - +----------+
+2024-10-29 23:05:38.951547 - Graha - 
+2024-10-29 23:05:38.951547 - Graha - 
+
+2024-10-29 23:05:38.952543 - Graha - *********************************************
+2024-10-29 23:05:38.953542 - Graha - ****  Graha Mangala(Ma)  Show
+2024-10-29 23:05:38.954539 - Graha - ********************************************
+2024-10-29 23:05:38.955536 - Graha - Nome graha breve: Ma
+2024-10-29 23:05:38.955536 - Graha - Nome graha in sanscrito: Mangala
+2024-10-29 23:05:38.956536 - Graha - Nel segno: (8): Sc con longitudine: 13.1011
+2024-10-29 23:05:38.957532 - Graha - Retrogado: False
+2024-10-29 23:05:38.957532 - Graha - Rasi di esaltazione = Makara  (10)
+2024-10-29 23:05:38.958528 - Graha - Rasi di debilitazione = Karkata(4)
+2024-10-29 23:05:38.958528 - Graha - Rasi di domicilio 1 = NONE(1)
+2024-10-29 23:05:38.959525 - Graha - Rasi di domicilio 2 = Vrscika(8)
+2024-10-29 23:05:38.959525 - Graha - Rasi Moolatrikona = NONE(1)
+2024-10-29 23:05:38.960527 - Graha - Longitudine di partenza Moolatrikona = 0.0
+2024-10-29 23:05:38.961521 - Graha - Longitudine di fine Moolatrikona =12.0
+2024-10-29 23:05:38.961521 - Graha - +----------+
+2024-10-29 23:05:38.961521 - Graha - |Sc        |
+2024-10-29 23:05:38.962517 - Graha - |          |
+2024-10-29 23:05:38.963516 - Graha - |   Ma     |
+2024-10-29 23:05:38.963516 - Graha - |   13.1011|
+2024-10-29 23:05:38.964512 - Graha - +----------+
+2024-10-29 23:05:38.964512 - Graha - 
+2024-10-29 23:05:38.965510 - Graha - 
+
+2024-10-29 23:05:38.966507 - Graha - *********************************************
+2024-10-29 23:05:38.966507 - Graha - ****  Graha Budha  (Me)  Show
+2024-10-29 23:05:38.967504 - Graha - ********************************************
+2024-10-29 23:05:38.967504 - Graha - Nome graha breve: Me
+2024-10-29 23:05:38.968501 - Graha - Nome graha in sanscrito: Budha  
+2024-10-29 23:05:38.969498 - Graha - Nel segno: (6): Vi con longitudine: 22.3652
+2024-10-29 23:05:38.970496 - Graha - Retrogado: False
+2024-10-29 23:05:38.971493 - Graha - Rasi di esaltazione = Kania   (6)
+2024-10-29 23:05:38.971493 - Graha - Rasi di debilitazione = Mina   (12)
+2024-10-29 23:05:38.972490 - Graha - Rasi di domicilio 1 = Mithuna(3)
+2024-10-29 23:05:38.972490 - Graha - Rasi di domicilio 2 = Kania  (6)
+2024-10-29 23:05:38.973488 - Graha - Rasi Moolatrikona = Kania  (6)
+2024-10-29 23:05:38.973488 - Graha - Longitudine di partenza Moolatrikona = 16.0
+2024-10-29 23:05:38.974485 - Graha - Longitudine di fine Moolatrikona =20.0
+2024-10-29 23:05:38.975482 - Graha - +----------+
+2024-10-29 23:05:38.976480 - Graha - |Vi        |
+2024-10-29 23:05:38.977477 - Graha - |          |
+2024-10-29 23:05:38.980469 - Graha - |   Me     |
+2024-10-29 23:05:38.981466 - Graha - |   22.3652|
+2024-10-29 23:05:38.983462 - Graha - +----------+
+2024-10-29 23:05:38.984460 - Graha - 
+2024-10-29 23:05:38.985457 - Graha - 
+
+2024-10-29 23:05:38.990443 - Graha - *********************************************
+2024-10-29 23:05:38.996427 - Graha - ****  Graha Guru   (Jp)  Show
+2024-10-29 23:05:38.997424 - Graha - ********************************************
+2024-10-29 23:05:38.998421 - Graha - Nome graha breve: Jp
+2024-10-29 23:05:38.998421 - Graha - Nome graha in sanscrito: Guru   
+2024-10-29 23:05:38.999420 - Graha - Nel segno: (5): Le con longitudine: 1.0912
+2024-10-29 23:05:39.000417 - Graha - Retrogado: False
+2024-10-29 23:05:39.001414 - Graha - Rasi di esaltazione = Karkata (4)
+2024-10-29 23:05:39.006403 - Graha - Rasi di debilitazione = Makara (10)
+2024-10-29 23:05:39.007399 - Graha - Rasi di domicilio 1 = Dhanus (9)
+2024-10-29 23:05:39.009393 - Graha - Rasi di domicilio 2 = Mina   (12)
+2024-10-29 23:05:39.011388 - Graha - Rasi Moolatrikona = Dhanus (9)
+2024-10-29 23:05:39.011388 - Graha - Longitudine di partenza Moolatrikona = 0.0
+2024-10-29 23:05:39.012385 - Graha - Longitudine di fine Moolatrikona =10.0
+2024-10-29 23:05:39.013383 - Graha - +----------+
+2024-10-29 23:05:39.015378 - Graha - |Le        |
+2024-10-29 23:05:39.017372 - Graha - |          |
+2024-10-29 23:05:39.018370 - Graha - |   Jp     |
+2024-10-29 23:05:39.019367 - Graha - |    1.0912|
+2024-10-29 23:05:39.019367 - Graha - +----------+
+2024-10-29 23:05:39.020364 - Graha - 
+2024-10-29 23:05:39.022359 - Graha - 
+
+2024-10-29 23:05:39.023356 - Graha - *********************************************
+2024-10-29 23:05:39.025350 - Graha - ****  Graha Sukra  (Ve)  Show
+2024-10-29 23:05:39.026347 - Graha - ********************************************
+2024-10-29 23:05:39.027344 - Graha - Nome graha breve: Ve
+2024-10-29 23:05:39.028342 - Graha - Nome graha in sanscrito: Sukra  
+2024-10-29 23:05:39.029339 - Graha - Nel segno: (5): Le con longitudine: 4.1525
+2024-10-29 23:05:39.029339 - Graha - Retrogado: False
+2024-10-29 23:05:39.032331 - Graha - Rasi di esaltazione = Mina    (12)
+2024-10-29 23:05:39.032331 - Graha - Rasi di debilitazione = Kania  (6)
+2024-10-29 23:05:39.033329 - Graha - Rasi di domicilio 1 = Vrsabha(2)
+2024-10-29 23:05:39.034326 - Graha - Rasi di domicilio 2 = Tula   (7)
+2024-10-29 23:05:39.035324 - Graha - Rasi Moolatrikona = Tula   (7)
+2024-10-29 23:05:39.035324 - Graha - Longitudine di partenza Moolatrikona = 0.0
+2024-10-29 23:05:39.037318 - Graha - Longitudine di fine Moolatrikona =15.0
+2024-10-29 23:05:39.037318 - Graha - +----------+
+2024-10-29 23:05:39.038316 - Graha - |Le        |
+2024-10-29 23:05:39.039312 - Graha - |          |
+2024-10-29 23:05:39.041309 - Graha - |   Ve     |
+2024-10-29 23:05:39.044298 - Graha - |    4.1525|
+2024-10-29 23:05:39.044298 - Graha - +----------+
+2024-10-29 23:05:39.045297 - Graha - 
+2024-10-29 23:05:39.046294 - Graha - 
+
+2024-10-29 23:05:39.047292 - Graha - *********************************************
+2024-10-29 23:05:39.048290 - Graha - ****  Graha Sani   (Sa)  Show
+2024-10-29 23:05:39.049287 - Graha - ********************************************
+2024-10-29 23:05:39.049287 - Graha - Nome graha breve: Sa
+2024-10-29 23:05:39.050283 - Graha - Nome graha in sanscrito: Sani   
+2024-10-29 23:05:39.051282 - Graha - Nel segno: (12): Pi con longitudine: 16.3816
+2024-10-29 23:05:39.052279 - Graha - Retrogado: True
+2024-10-29 23:05:39.053277 - Graha - Rasi di esaltazione = Tula    (7)
+2024-10-29 23:05:39.054273 - Graha - Rasi di debilitazione = NONE(1)
+2024-10-29 23:05:39.055270 - Graha - Rasi di domicilio 1 = Makara (10)
+2024-10-29 23:05:39.056272 - Graha - Rasi di domicilio 2 = Kumbha (11)
+2024-10-29 23:05:39.057265 - Graha - Rasi Moolatrikona = Kumbha (11)
+2024-10-29 23:05:39.058263 - Graha - Longitudine di partenza Moolatrikona = 0.0
+2024-10-29 23:05:39.059259 - Graha - Longitudine di fine Moolatrikona =20.0
+2024-10-29 23:05:39.060259 - Graha - +----------+
+2024-10-29 23:05:39.061253 - Graha - |Pi        |
+2024-10-29 23:05:39.062255 - Graha - |   __     |
+2024-10-29 23:05:39.063251 - Graha - |   Sa     |
+2024-10-29 23:05:39.063251 - Graha - |   16.3816|
+2024-10-29 23:05:39.064249 - Graha - +----------+
+2024-10-29 23:05:39.065245 - Graha - 
+2024-10-29 23:05:39.066240 - Graha - 
+
+2024-10-29 23:05:39.067353 - Graha - *********************************************
+2024-10-29 23:05:39.068353 - Graha - ****  Graha Rahu   (Ra)  Show
+2024-10-29 23:05:39.068353 - Graha - ********************************************
+2024-10-29 23:05:39.069351 - Graha - Nome graha breve: Ra
+2024-10-29 23:05:39.070347 - Graha - Nome graha in sanscrito: Rahu   
+2024-10-29 23:05:39.071345 - Graha - Nel segno: (1): Ar con longitudine: 6.0403
+2024-10-29 23:05:39.072342 - Graha - Retrogado: True
+2024-10-29 23:05:39.072342 - Graha - Rasi di esaltazione = Mithuna (3)
+2024-10-29 23:05:39.074336 - Graha - Rasi di debilitazione = Dhanus (9)
+2024-10-29 23:05:39.075334 - Graha - Rasi di domicilio 1 = Kumbha (11)
+2024-10-29 23:05:39.075334 - Graha - Rasi di domicilio 2 = Kumbha (11)
+2024-10-29 23:05:39.077328 - Graha - Rasi Moolatrikona = NONE(0)
+2024-10-29 23:05:39.078327 - Graha - Longitudine di partenza Moolatrikona = 0.0
+2024-10-29 23:05:39.079323 - Graha - Longitudine di fine Moolatrikona =0.0
+2024-10-29 23:05:39.080322 - Graha - +----------+
+2024-10-29 23:05:39.081318 - Graha - |Ar        |
+2024-10-29 23:05:39.082316 - Graha - |   __     |
+2024-10-29 23:05:39.082316 - Graha - |   Ra     |
+2024-10-29 23:05:39.084310 - Graha - |    6.0403|
+2024-10-29 23:05:39.084310 - Graha - +----------+
+2024-10-29 23:05:39.085308 - Graha - 
+2024-10-29 23:05:39.086304 - Graha - 
+
+2024-10-29 23:05:39.086304 - Graha - *********************************************
+2024-10-29 23:05:39.087301 - Graha - ****  Graha Ketu   (Ke)  Show
+2024-10-29 23:05:39.088299 - Graha - ********************************************
+2024-10-29 23:05:39.089296 - Graha - Nome graha breve: Ke
+2024-10-29 23:05:39.090295 - Graha - Nome graha in sanscrito: Ketu   
+2024-10-29 23:05:39.091290 - Graha - Nel segno: (7): Li con longitudine: 6.0403
+2024-10-29 23:05:39.095282 - Graha - Retrogado: True
+2024-10-29 23:05:39.096278 - Graha - Rasi di esaltazione = Dhanus  (9)
+2024-10-29 23:05:39.097339 - Graha - Rasi di debilitazione = Mithuna(3)
+2024-10-29 23:05:39.097339 - Graha - Rasi di domicilio 1 = Vrscika(8)
+2024-10-29 23:05:39.098340 - Graha - Rasi di domicilio 2 = Vrscika(8)
+2024-10-29 23:05:39.099337 - Graha - Rasi Moolatrikona = NONE(0)
+2024-10-29 23:05:39.099337 - Graha - Longitudine di partenza Moolatrikona = 0.0
+2024-10-29 23:05:39.100332 - Graha - Longitudine di fine Moolatrikona =0.0
+2024-10-29 23:05:39.101331 - Graha - +----------+
+2024-10-29 23:05:39.101331 - Graha - |Li        |
+2024-10-29 23:05:39.102327 - Graha - |   __     |
+2024-10-29 23:05:39.103324 - Graha - |   Ke     |
+2024-10-29 23:05:39.103324 - Graha - |    6.0403|
+2024-10-29 23:05:39.104321 - Graha - +----------+
+2024-10-29 23:05:39.104321 - Graha - 
+2024-10-29 23:05:39.105319 - Graha - 
+
+2024-10-29 23:05:39.106316 - Passati: AS,  - ,  - , False
+2024-10-29 23:05:39.106316 - Passati: Su, 6, 2.5301, False
+2024-10-29 23:05:39.107314 - Aggiunto in Kania
+2024-10-29 23:05:39.108311 - Passati: Mo, 12, 16.1245, False
+2024-10-29 23:05:39.108311 - Aggiunto in Mina
+2024-10-29 23:05:39.109309 - Passati: Ma, 8, 13.1011, False
+2024-10-29 23:05:39.110305 - Aggiunto in Vriscika
+2024-10-29 23:05:39.111304 - Passati: Me, 6, 22.3652, False
+2024-10-29 23:05:39.111304 - Aggiunto in Kania
+2024-10-29 23:05:39.112301 - Passati: Jp, 5, 1.0912, False
+2024-10-29 23:05:39.113298 - Aggiunto in Simha
+2024-10-29 23:05:39.113298 - Passati: Ve, 5, 4.1525, False
+2024-10-29 23:05:39.114294 - Aggiunto in Simha
+2024-10-29 23:05:39.114294 - Passati: Sa, 12, 16.3816, True
+2024-10-29 23:05:39.115293 - Aggiunto in Mina
+2024-10-29 23:05:39.115293 - Passati: Ra, 1, 6.0403, True
+2024-10-29 23:05:39.116290 - Aggiunto in Mesa
+2024-10-29 23:05:39.117287 - Passati: Ke, 7, 6.0403, True
+2024-10-29 23:05:39.117287 - Aggiunto in Tula
+2024-10-29 23:05:39.118284 -  MAIN - +--------------------------------+
+2024-10-29 23:05:39.120279 -  MAIN - |   Verifica dei Graha in Kopa   |
+2024-10-29 23:05:39.121276 -  MAIN - +--------------------------------+
+2024-10-29 23:05:39.121276 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:39.122274 - Verifica se Chandra è in Kopa. Long. assoluta del sole: 152.53
+2024-10-29 23:05:39.123271 - Graha -  +-- Verifica se Kopa --+
+2024-10-29 23:05:39.123271 - Graha -  Long ass. del sole: 152.53
+2024-10-29 23:05:39.124268 - Graha -  Long ass. del graha: 346.12
+2024-10-29 23:05:39.124268 - Graha -  Gradi max per Kopa (Std):  12.00
+2024-10-29 23:05:39.125265 - Graha -  Gradi max per Kopa (Rtr):  12.00
+2024-10-29 23:05:39.126262 - Graha -  Differenza Long:  193.59
+2024-10-29 23:05:39.127260 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:39.127260 - Verifica se Mangala è in Kopa. Long. assoluta del sole: 152.53
+2024-10-29 23:05:39.128257 - Graha -  +-- Verifica se Kopa --+
+2024-10-29 23:05:39.128257 - Graha -  Long ass. del sole: 152.53
+2024-10-29 23:05:39.129254 - Graha -  Long ass. del graha: 223.10
+2024-10-29 23:05:39.129254 - Graha -  Gradi max per Kopa (Std):  17.00
+2024-10-29 23:05:39.130253 - Graha -  Gradi max per Kopa (Rtr):  17.00
+2024-10-29 23:05:39.131249 - Graha -  Differenza Long:  70.57
+2024-10-29 23:05:39.131249 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:39.132247 - Verifica se Budha   è in Kopa. Long. assoluta del sole: 152.53
+2024-10-29 23:05:39.132247 - Graha -  +-- Verifica se Kopa --+
+2024-10-29 23:05:39.133244 - Graha -  Long ass. del sole: 152.53
+2024-10-29 23:05:39.133244 - Graha -  Long ass. del graha: 172.37
+2024-10-29 23:05:39.134241 - Graha -  Gradi max per Kopa (Std):  14.00
+2024-10-29 23:05:39.135239 - Graha -  Gradi max per Kopa (Rtr):  12.00
+2024-10-29 23:05:39.135239 - Graha -  Differenza Long:  19.84
+2024-10-29 23:05:39.136236 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:39.136236 - Verifica se Guru    è in Kopa. Long. assoluta del sole: 152.53
+2024-10-29 23:05:39.137234 - Graha -  +-- Verifica se Kopa --+
+2024-10-29 23:05:39.138231 - Graha -  Long ass. del sole: 152.53
+2024-10-29 23:05:39.138231 - Graha -  Long ass. del graha: 121.09
+2024-10-29 23:05:39.139228 - Graha -  Gradi max per Kopa (Std):  11.00
+2024-10-29 23:05:39.139228 - Graha -  Gradi max per Kopa (Rtr):  11.00
+2024-10-29 23:05:39.140226 - Graha -  Differenza Long:  31.44
+2024-10-29 23:05:39.141223 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:39.141223 - Verifica se Sukra   è in Kopa. Long. assoluta del sole: 152.53
+2024-10-29 23:05:39.142221 - Graha -  +-- Verifica se Kopa --+
+2024-10-29 23:05:39.143217 - Graha -  Long ass. del sole: 152.53
+2024-10-29 23:05:39.143217 - Graha -  Long ass. del graha: 124.15
+2024-10-29 23:05:39.144215 - Graha -  Gradi max per Kopa (Std):  10.00
+2024-10-29 23:05:39.144215 - Graha -  Gradi max per Kopa (Rtr):   8.00
+2024-10-29 23:05:39.145212 - Graha -  Differenza Long:  28.38
+2024-10-29 23:05:39.146209 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:39.146209 - Verifica se Sani    è in Kopa. Long. assoluta del sole: 152.53
+2024-10-29 23:05:39.147207 - Graha -  +-- Verifica se Kopa --+
+2024-10-29 23:05:39.147207 - Graha -  Long ass. del sole: 152.53
+2024-10-29 23:05:39.148204 - Graha -  Long ass. del graha: 346.38
+2024-10-29 23:05:39.149201 - Graha -  Gradi max per Kopa (Std):  15.00
+2024-10-29 23:05:39.149201 - Graha -  Gradi max per Kopa (Rtr):  15.00
+2024-10-29 23:05:39.150199 - Graha -  Differenza Long:  193.85
+2024-10-29 23:05:39.150199 -  MAIN - +--------------------------------+
+2024-10-29 23:05:39.151196 -  MAIN - |   Verifica Guerra Planetaria   |
+2024-10-29 23:05:39.152195 -  MAIN - +--------------------------------+
+2024-10-29 23:05:39.152195 - Graha - Long Ass di Surya  : 152.53
+2024-10-29 23:05:39.153191 - Graha - Long Ass di Chandra: 346.12
+2024-10-29 23:05:39.153191 - Graha - Long Ass di Mangala: 223.10
+2024-10-29 23:05:39.154189 - Graha - Long Ass di Budha  : 172.37
+2024-10-29 23:05:39.155185 - Graha - Long Ass di Guru   : 121.09
+2024-10-29 23:05:39.155185 - Graha - Long Ass di Sukra  : 124.15
+2024-10-29 23:05:39.156183 - Graha - Long Ass di Sani   : 346.38
+2024-10-29 23:05:39.157181 - Graha - Long Ass di Rahu   :   6.04
+2024-10-29 23:05:39.157181 - Graha - Long Ass di Ketu   : 186.04
+2024-10-29 23:05:39.158177 - Verifica presenza di Guerre Planetarie
+2024-10-29 23:05:39.159175 - 6.04 -> 121.09
+2024-10-29 23:05:39.159175 - 121.09 -> 124.15
+2024-10-29 23:05:39.160172 - 124.15 -> 152.53
+2024-10-29 23:05:39.161169 - 152.53 -> 172.37
+2024-10-29 23:05:39.161169 - 172.37 -> 186.04
+2024-10-29 23:05:39.162169 - 186.04 -> 223.1
+2024-10-29 23:05:39.163166 - 223.1 -> 346.12
+2024-10-29 23:05:39.163166 - 346.12 -> 346.38
+2024-10-29 23:05:39.164161 - Lotta planetaria tra 3 e 8
+2024-10-29 23:05:39.164161 - Graha - Graha Mangala impostato in guerra planetaria
+2024-10-29 23:05:39.165159 - Graha - Graha Rahu    impostato in guerra planetaria
+2024-10-29 23:05:39.166156 - Inizio caricamento Carta Natale
+2024-10-29 23:05:39.167156 - [[['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]], [['Ra', 6.0403, True]], [], [], [], [['Jp', 1.0912, False], ['Ve', 4.1525, False]], [['Su', 2.5301, False], ['Me', 22.3652, False]], [['Ke', 6.0403, True]], [['Ma', 13.1011, False]], [], [], [], [['Mo', 16.1245, False], ['Sa', 16.3816, True]]]
+2024-10-29 23:05:39.167156 - Num graha in Mesa   : 1
+2024-10-29 23:05:39.168151 -    Ra - Lon = 6.0403
+2024-10-29 23:05:39.168151 -       Aggiunto in Mesa: __ 
+2024-10-29 23:05:39.169148 -       Aggiunto in Mesa: Ra 
+2024-10-29 23:05:39.170145 -       Aggiunto in Mesa: 06 
+2024-10-29 23:05:39.170145 - Num graha in Vrsabha: 0
+2024-10-29 23:05:39.171143 - Num graha in Mithuna: 0
+2024-10-29 23:05:39.171143 - Num graha in Karkata: 0
+2024-10-29 23:05:39.172140 - Num graha in Simha  : 2
+2024-10-29 23:05:39.173137 -    Jp - Lon = 1.0912
+2024-10-29 23:05:39.173137 -       Aggiunto in Simha:    
+2024-10-29 23:05:39.174135 -       Aggiunto in Simha: Jp 
+2024-10-29 23:05:39.174135 -       Aggiunto in Simha: 01 
+2024-10-29 23:05:39.175133 -    Ve - Lon = 4.1525
+2024-10-29 23:05:39.175133 -       Aggiunto in Simha:       
+2024-10-29 23:05:39.176129 -       Aggiunto in Simha: Jp Ve 
+2024-10-29 23:05:39.176129 -       Aggiunto in Simha: 01 04 
+2024-10-29 23:05:39.177127 - Num graha in Kania  : 2
+2024-10-29 23:05:39.178125 -    Su - Lon = 2.5301
+2024-10-29 23:05:39.185106 -       Aggiunto in Kania:    
+2024-10-29 23:05:39.186105 -       Aggiunto in Kania: Su 
+2024-10-29 23:05:39.186105 -       Aggiunto in Kania: 02 
+2024-10-29 23:05:39.187102 -    Me - Lon = 22.3652
+2024-10-29 23:05:39.188098 -       Aggiunto in Kania:       
+2024-10-29 23:05:39.189095 -       Aggiunto in Kania: Su Me 
+2024-10-29 23:05:39.189095 -       Aggiunto in Kania: 02 22 
+2024-10-29 23:05:39.190092 - Num graha in Tula   : 1
+2024-10-29 23:05:39.191092 -    Ke - Lon = 6.0403
+2024-10-29 23:05:39.192089 -       Aggiunto in Tula: __ 
+2024-10-29 23:05:39.193084 -       Aggiunto in Tula: Ke 
+2024-10-29 23:05:39.194082 -       Aggiunto in Tula: 06 
+2024-10-29 23:05:39.195079 - Num graha in Vrscika: 1
+2024-10-29 23:05:39.195079 -    Ma - Lon = 13.1011
+2024-10-29 23:05:39.196076 -       Aggiunto in Vriscika:    
+2024-10-29 23:05:39.197074 -       Aggiunto in Vriscika: Ma 
+2024-10-29 23:05:39.199068 -       Aggiunto in Vriscika: 13 
+2024-10-29 23:05:39.200066 - Num graha in Dhanus : 0
+2024-10-29 23:05:39.201063 - Num graha in Makara : 0
+2024-10-29 23:05:39.201063 - Num graha in Kumbha : 0
+2024-10-29 23:05:39.203059 - Num graha in Mina   : 2
+2024-10-29 23:05:39.204055 -    Mo - Lon = 16.1245
+2024-10-29 23:05:39.205052 -       Aggiunto in Mina:    
+2024-10-29 23:05:39.206052 -       Aggiunto in Mina: Mo 
+2024-10-29 23:05:39.207049 -       Aggiunto in Mina: 16 
+2024-10-29 23:05:39.207049 -    Sa - Lon = 16.3816
+2024-10-29 23:05:39.208044 -       Aggiunto in Mina:    __ 
+2024-10-29 23:05:39.209042 -       Aggiunto in Mina: Mo Sa 
+2024-10-29 23:05:39.210040 -       Aggiunto in Mina: 16 16 
+2024-10-29 23:05:39.211039 - 
 
 
-2024-10-29 16:08:32.021152 - +-----------------------+
-2024-10-29 16:08:32.021152 - |      Graha Detail     |
-2024-10-29 16:08:32.021152 - +-----------------------+
-2024-10-29 16:08:32.021152 - 
+2024-10-29 23:05:39.212036 - 
 
-2024-10-29 16:08:32.036776 - (Su)  Surya   in ( 6)  Kania   Long.:   2.5301 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
-2024-10-29 16:08:32.036776 - (Mo)  Chandra in (12)  Mina    Long.:  16.1245 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
-2024-10-29 16:08:32.036776 - (Ma)  Mangala in ( 8)  Vrscika Long.:  13.1011 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  IN DOMICILIO
-2024-10-29 16:08:32.036776 - (Me)  Budha   in ( 6)  Kania   Long.:  22.3652 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  IN ESALTAZIONE IN DOMICILIO
-2024-10-29 16:08:32.052395 - (Jp)  Guru    in ( 5)  Simha   Long.:   1.0912 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
-2024-10-29 16:08:32.052611 - (Ve)  Sukra   in ( 5)  Simha   Long.:   4.1525 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
-2024-10-29 16:08:32.052611 - (Sa)  Sani    in (12)  Mina    Long.:  16.3816 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  RETROGADO
-2024-10-29 16:08:32.052611 - (Ra)  Rahu    in ( 1)  Mesa    Long.:   6.0403 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  RETROGADO
-2024-10-29 16:08:32.052611 - (Ke)  Ketu    in ( 7)  Tula    Long.:   6.0403 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  RETROGADO
+
+2024-10-29 23:05:39.213033 - +----------------+----------------+----------------+----------------+
+2024-10-29 23:05:39.213033 - | Pi             | Ar             | Ta             | Ge             |
+2024-10-29 23:05:39.214030 - |             __ |             __ |                |                |
+2024-10-29 23:05:39.215027 - |          Mo Sa |             Ra |                |                |
+2024-10-29 23:05:39.216024 - |          16 16 |             06 |                |                |
+2024-10-29 23:05:39.217021 - +----------------+----------------+----------------+----------------+
+2024-10-29 23:05:39.218018 - | Aq             |                                 | Cn             |
+2024-10-29 23:05:39.219015 - |                |                                 |                |
+2024-10-29 23:05:39.220013 - |                |                                 |                |
+2024-10-29 23:05:39.221010 - |                |                                 |                |
+2024-10-29 23:05:39.221010 - +----------------+                                 +----------------+
+2024-10-29 23:05:39.222007 - | Cp             |                                 | Le             |
+2024-10-29 23:05:39.223006 - |                |                                 |                |
+2024-10-29 23:05:39.224001 - |                |                                 |          Jp Ve |
+2024-10-29 23:05:39.224999 - |                |                                 |          01 04 |
+2024-10-29 23:05:39.225997 - +----------------+----------------+----------------+----------------+
+2024-10-29 23:05:39.226995 - | Sg             | Sc             | Li             | Vi             |
+2024-10-29 23:05:39.227991 - |                |                |             __ |                |
+2024-10-29 23:05:39.228990 - |                |             Ma |             Ke |          Su Me |
+2024-10-29 23:05:39.228990 - |                |             13 |             06 |          02 22 |
+2024-10-29 23:05:39.229987 - +----------------+----------------+----------------+----------------+
+2024-10-29 23:05:39.230984 - 
+
+
+2024-10-29 23:05:39.231980 - Inizio Graha detail
+2024-10-29 23:05:39.231980 - +-----------------------+
+2024-10-29 23:05:39.232978 - |      Graha Detail     |
+2024-10-29 23:05:39.233976 - +-----------------------+
+2024-10-29 23:05:39.234972 - 
+
+2024-10-29 23:05:39.235970 - Graha -  DOMICILIO
+2024-10-29 23:05:39.235970 - Graha -  ESALTAZIONE
+2024-10-29 23:05:39.236967 - Graha -  DOMICILIO
+2024-10-29 23:05:39.237966 - Graha -  RETROGADO
+2024-10-29 23:05:39.238962 - Graha -  RETROGADO
+2024-10-29 23:05:39.239959 - Graha -  RETROGADO
+2024-10-29 23:05:39.240957 - (Su)  Surya   in ( 6)  Kania   Long.:   2.5301 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
+2024-10-29 23:05:39.242954 - (Mo)  Chandra in (12)  Mina    Long.:  16.1245 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
+2024-10-29 23:05:39.243948 - (Ma)  Mangala in ( 8)  Vrscika Long.:  13.1011 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  IN DOMICILIO IN GUERRA 
+2024-10-29 23:05:39.244947 - (Me)  Budha   in ( 6)  Kania   Long.:  22.3652 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  IN ESALTAZIONE IN DOMICILIO
+2024-10-29 23:05:39.246942 - (Jp)  Guru    in ( 5)  Simha   Long.:   1.0912 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
+2024-10-29 23:05:39.247939 - (Ve)  Sukra   in ( 5)  Simha   Long.:   4.1525 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] - 
+2024-10-29 23:05:39.250931 - (Sa)  Sani    in (12)  Mina    Long.:  16.3816 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  RETROGADO
+2024-10-29 23:05:39.251928 - (Ra)  Rahu    in ( 1)  Mesa    Long.:   6.0403 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  RETROGADO IN GUERRA 
+2024-10-29 23:05:39.253923 - (Ke)  Ketu    in ( 7)  Tula    Long.:   6.0403 - Bhava CP:  0 [  0.0] - Bhava CU:  0 [  0.0] -  RETROGADO

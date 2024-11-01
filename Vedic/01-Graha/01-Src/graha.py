@@ -81,8 +81,7 @@ class Graha:
             self.fGrahaLon = float(lon)
             self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " inizializzato con Rasi: " + str(self.Tab.getRasiSanscForProgr(int(self.iRasiProgr))) + " (" + str(self.iRasiProgr) + ") Long: " + str(lon) + " indicazione R: " + retro + "\n")
 
-        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + str(
-        self.szGrahaSansc) + " inizializzato con Rasi: " + rasi + " Long: " + lon + " indicazione R: " + retro + "\n")
+        self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " inizializzato con Rasi: " + rasi + " Long: " + lon + " indicazione R: " + retro + "\n")
 
     def loadGrahaParameter(self):
         self.Log.scriviLog(2, self.szMsgPrefix + "Load Graha Parameter from Tab")

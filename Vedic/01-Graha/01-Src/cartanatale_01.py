@@ -58,8 +58,9 @@ print("Lista argomenti passati", sys.argv)
 print("Nome del file di input per Carta Natale:" + sys.argv[1])
 print("Nome del file di input per Graha:" + sys.argv[2])
 print("Nome del file di input per Rasi:" + sys.argv[3])
-print("Nome del file di output:" + sys.argv[4])
-print("Livello Log:" + sys.argv[5])
+print("Nome del file di input per Bhava" + sys.argv[4])
+print("Nome del file di output:" + sys.argv[5])
+print("Livello Log:" + sys.argv[6])
 
 # Nome del file
 
@@ -67,8 +68,9 @@ print("Livello Log:" + sys.argv[5])
 inputCartaNatale  = sys.argv[1]
 confGrahaFileName = sys.argv[2]
 confRasiFileName  = sys.argv[3]
-outFileName       = sys.argv[4]
-iPrioLog          = sys.argv[5]
+confBhavaFileName = sys.argv[4]
+outFileName       = sys.argv[5]
+iPrioLog          = sys.argv[6]
 
 
 ###########################################
@@ -110,7 +112,7 @@ LoadGrahaCarta = LoadGraha(Log, inputCartaNatale)
 LoadGrahaCarta.loadGrahaFile()
 
 #creazione del tabellario
-Tab = Tabellario(Log, confGrahaFileName, confRasiFileName)
+Tab = Tabellario(Log, confGrahaFileName, confRasiFileName, confBhavaFileName)
 
 # Creazione del Graha:
 Log.scriviLog(9, szMsgPrefix + "**************************************")
@@ -140,14 +142,12 @@ for graha in lstGrahaList:
 i=0
 for graha in lstGrahaList:
     if(LoadGrahaCarta.getAscTrue()):
-        if(i>0):
+        if(i > 0):
             graha.setLonAssFromAsc(lstGrahaList[0].getLongitudeAssolute())
             graha.setBhava()
             graha.setLonAssFromAscCusp(lstGrahaList[0].getLongitudeAssolute())
             graha.setBhavaCusp()
-            #lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Fore.RED + Back.GREEN + GrahaAsc.getGrahaSmall() + Fore.WHITE + Back.BLACK, GrahaAsc.getRasi(), GrahaAsc.getLongitude())
-    if(graha.iGrahaProgr != 0):
-        lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Tab.lstGrahaSmall[i], graha.getRasi(), graha.getLongitude(), graha.bRetrogade)
+    lstCartaNatale = grahaInRasi(Log, lstCartaNatale, Tab.lstGrahaSmall[i], graha.getRasi(), graha.getLongitude(), graha.bRetrogade)
     i=i+1
 
 
@@ -174,51 +174,84 @@ lstGrahaWar = checkIsPlanetWar(Log,
                  lstGrahaList[8].getLongitudeAssolute(),
                  lstGrahaList[9].getLongitudeAssolute())
 
-print(lstGrahaWar)
+#print(lstGrahaWar)
 #scrive il primo ed il secondo in lotta, indica il promo vincente sul secondo nelle note
-'''
-for graha in lstGrahaWar:
-    print(graha[0] + " - " + graha[1])
-    match int(graha[0]):
-        case 2:
-            GrahaSun.setPlanetWar()
-        case 3:
-            GrahaMoon.setPlanetWar()
-        case 4:
-            GrahaMars.setPlanetWar()
-        case 5:
-            GrahaMercury.setPlanetWar()
-        case 6:
-            GrahaJupiter.setPlanetWar()
-        case 7:
-            GrahaVenus.setPlanetWar()
-        case 8:
-            GrahaSaturn.setPlanetWar()
-        case 9:
-            GrahaRahu.setPlanetWar()
-        case 9:
-            GrahaKetu.setPlanetWar()
 
-    match int(graha[1]):
-        case 2:
-            GrahaSun.setPlanetWar()
-        case 3:
-            GrahaMoon.setPlanetWar()
-        case 4:
-            GrahaMars.setPlanetWar()
-        case 5:
-            GrahaMercury.setPlanetWar()
-        case 6:
-            GrahaJupiter.setPlanetWar()
-        case 7:
-            GrahaVenus.setPlanetWar()
-        case 8:
-            GrahaSaturn.setPlanetWar()
-        case 9:
-            GrahaRahu.setPlanetWar()
-        case 9:
-            GrahaKetu.setPlanetWar()
-'''
+for graha in lstGrahaWar:
+    lstGrahaList[int(graha[0])].setPlanetWar()
+    lstGrahaList[int(graha[1])].setPlanetWar()
+
+if(LoadGrahaCarta.getAscTrue()):
+    Log.scriviLog(2,  "+------------------------------------------+")
+    Log.scriviLog(2,  "|   Calcolo Bhava  (Casa Piena e Cuspide)  |")
+    Log.scriviLog(2,  "+------------------------------------------+")
+
+    #inizializzazione delle Bhava
+    lstBhavaCP = []
+    lstBhavaCU = []
+    lstBhavaDataCP = []
+    lstBhavaDataCU = []
+
+    for iBhava in range(1,13):
+        lstBhavaDataCP = []
+        lstBhavaDataCU = []
+        for graha in lstGrahaList:
+            Log.scriviLog(2, szMsgPrefix + "iBhava= " + str(iBhava) + ", graha:" + str(graha.getGrahaSmall()) + "  bhava del graha (CP)" + str(graha.getBhava()) + ", bhava del graha (CU):" + str(graha.getBhavaCusp()))
+            if(int(graha.getBhava())+1 == int(iBhava)+1):
+                lstBhavaDataCP.append(graha.getGrahaProgr())
+                #print(lstBhavaDataCP)
+            if(int(graha.getBhavaCusp())+1 == int(iBhava)+1):
+                lstBhavaDataCU.append(graha.getGrahaProgr())
+        lstBhavaCP.append(lstBhavaDataCP)
+        lstBhavaCU.append(lstBhavaDataCU)
+
+    lstBhavaCP[0].append(0)
+    lstBhavaCU[0].append(0)
+
+    #Log.scriviLog(2, szMsgPrefix + "+-------------------------------------------------------+")
+    #print(lstBhavaCP)
+    #print(lstBhavaCU)
+    #Log.scriviLog(2, szMsgPrefix + "+-------------------------------------------------------+")
+
+    Log.scriviLog(9, szMsgPrefix + "      +--------------------------------------------------------+")
+    Log.scriviLog(9, szMsgPrefix + "      | Calcolo delle Bhava con il principio delle Case Piene  |")
+    Log.scriviLog(9, szMsgPrefix + "      +--------------------------------------------------------+")
+
+
+    i = 1
+    for lstGrahaInBhava in lstBhavaCP:
+        Log.scriviLog(9, szMsgPrefix + "........................ BHAVA " + str(i).rjust(2) + " ..................................")
+        for grahaInBhava in lstGrahaInBhava:
+            for graha in lstGrahaList:
+                if(int(graha.getGrahaProgr()) == int(grahaInBhava)):
+                    #Log.scriviLog(9, szMsgPrefix + "Bhava (" + str(i) + ") " + Tab.getBhavaSanscForProgr(int(i)) + " in (" + str(graha.getRasi()) + ") " + Tab.getRasiSanscForProgr(int(graha.getRasi())) + " con graha: " + graha.szGrahaSansc)
+                    Log.scriviLog(9, szMsgPrefix + "Bhava (" + str(i).rjust(2) + ") " + Tab.getBhavaSanscForProgr(
+                        int(i)).rjust(8) + " in (" + str(graha.getRasi()).rjust(2) + ") " + Tab.getRasiSanscForProgr(
+                        int(graha.getRasi())).rjust(2) + " con graha: " + str(graha.szGrahaSansc).rjust(2) + " Long: " + str(graha.getBhavaLon()))
+        i=i+1
+
+print()
+if(LoadGrahaCarta.getAscTrue()):
+    Log.scriviLog(9, szMsgPrefix + "      +--------------------------------------------------------+")
+    Log.scriviLog(9, szMsgPrefix + "      | Calcolo delle Bhava con il principio delle Cuspidi     |")
+    Log.scriviLog(9, szMsgPrefix + "      +--------------------------------------------------------+")
+
+    i = 1
+    for lstGrahaInBhava in lstBhavaCU:
+        Log.scriviLog(9, szMsgPrefix + "........................ BHAVA " + str(i).rjust(2) + " ..................................")
+        for grahaInBhava in lstGrahaInBhava:
+            for graha in lstGrahaList:
+                if(int(graha.getGrahaProgr()) == int(grahaInBhava)):
+                    Log.scriviLog(9, szMsgPrefix + "Bhava (" + str(i).rjust(2) + ") " + Tab.getBhavaSanscForProgr(
+                        int(i)).rjust(8) + " in (" + str(graha.getRasi()).rjust(2) + ") " + Tab.getRasiSanscForProgr(
+                        int(graha.getRasi())).rjust(2) + " con graha: " + str(graha.szGrahaSansc).rjust(2) + " Long:" + str(graha.getBhavaLonCusp()))
+                    #Log.scriviLog(9, szMsgPrefix + "Bhava (" + str(i) + ") " + Tab.getRasiSanscForProgr(int(i)) + " graha: " + graha.szGrahaSansc)
+
+        i=i+1
+
+
+
+
 showCartaNatale(Log, lstGrahaList[0], lstCartaNatale)
 showGrahaDetail(Log, lstGrahaList)
 
