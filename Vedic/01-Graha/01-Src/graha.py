@@ -1,5 +1,5 @@
 from logCartaNatale import LogCartaNatale
-from tabellario import Tabellario
+from Tabellario import Tabellario
 
 class Graha:
     "La classe Graha"

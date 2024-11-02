@@ -5,7 +5,7 @@ from colorama import init, Fore, Back, Style
 
 from load_graha import LoadGraha
 from graha import Graha
-from tabellario import Tabellario
+from Tabellario import Tabellario
 from logCartaNatale import LogCartaNatale
 
 from cartanatale_tools import *
