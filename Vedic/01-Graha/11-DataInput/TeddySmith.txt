@@ -1,0 +1,11 @@
+Teddy Smith|10.06.1966|12:00|Conyers - Georgia (USA)|33.6676N|-84.0177E|
+As| 1|Lagna   | - |Sc| 8|05.1253|17| 1| |
+Su| 2|Surya   |PK |Vi| 6|09.0522|12| 4| |
+Mo| 3|Chandra |AmK|Le| 5|28.0919|12| 1| |
+Ma| 4|Mangala |PiK|Ge| 3|13.3643|06| 3| |
+Me| 5|Budha   |MK |Vi| 6|17.2624|13| 3| |
+Jp| 6|Guru    |DK |Vi| 6|03.0423|12| 2| |
+Ve| 7|Sukra   |GK |Li| 7|06.5347|15| 1| |
+Sa| 8|Sani    |BK |Cp|10|18.2532|22| 3|R|
+Ra| 9|Rahu    |AK |Sg| 9|01.5025|19| 1|R|
+Ke|10|Ketu    | - |Ge| 3|01.5025| 5| 3|R|

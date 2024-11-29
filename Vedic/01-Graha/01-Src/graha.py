@@ -15,16 +15,23 @@ class Graha:
     szRasiGrahaMool   = ""
 
     iBhavaProgrCusp  = 0
+    iBhavaProgrPiene = 0
+    iBhavaProgrIntere = 0
     iBhavaProgr      = 0
     iGrahaProgr      = 0
     iRasiProgr       = 0
 
     fBhavaLon        = 0.0
     fBhavaLonCusp    = 0.0
+    fBhavaLonPiene    = 0.0
+    fBhavaLonIntere    = 0.0
     fGrahaLon        = 0.0
     fGrahaLonAss     = 0.0
+    fGrahaLonAssIntere     = 0.0
     fGrahaLonAssFromAsc = 0.0
     fGrahaLonAssFromAscCusp = 0.0
+    fGrahaLonAssFromAscPiene = 0.0
+    fGrahaLonAssFromAscIntere = 0.0
     fLonMoolFrom     = 0.0
     fLonMoolTo       = 0.0
     fKopaStd         = 0.0
@@ -77,6 +84,7 @@ class Graha:
 
         if (self.getRasi() != " - "):
             self.getLongitudeAssolute()
+            self.getLongitudeAssoluteIntere()
             self.iRasiProgr = int(rasi)
             self.fGrahaLon = float(lon)
             self.Log.scriviLog(2, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " inizializzato con Rasi: " + str(self.Tab.getRasiSanscForProgr(int(self.iRasiProgr))) + " (" + str(self.iRasiProgr) + ") Long: " + str(lon) + " indicazione R: " + retro + "\n")
@@ -255,6 +263,11 @@ class Graha:
         self.Log.scriviLog(2, self.szMsgPrefix + "Long Ass di " + str(self.szGrahaSansc) + ": " + str(self.fGrahaLonAss))
         return self.fGrahaLonAss
 
+    def getLongitudeAssoluteIntere(self):
+        self.fGrahaLonAssIntere = format(((float(self.iRasiProgr) - 1) * 30), ".2f").rjust(6)
+        self.Log.scriviLog(2, self.szMsgPrefix + "Long Ass da inizio del segno di " + str(self.szGrahaSansc) + ": " + str(self.fGrahaLonAssFromAscIntere))
+        return self.fGrahaLonAssIntere
+
     def getKopaDef(self):
         self.fKopaStd=self.Tab.getLongKopaStd(self.iGrahaProgr)
 
@@ -273,7 +286,15 @@ class Graha:
     def getIsWar(self):
         return self.bWar
 
-    def setLonAssFromAsc(self, fAscLonAssFromAsc):
+    def setLonAssFromAscIntere(self, fAscLonAssFromAsc):
+        self.Log.scriviLog(5, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " calcolo Longitudine (Case Intere) da " + str(fAscLonAssFromAsc) + " da ASC")
+        if(float(self.getLongitudeAssolute()) > float(fAscLonAssFromAsc)):
+            self.fGrahaLonAssFromAsc = format(float(self.getLongitudeAssolute()) - float(fAscLonAssFromAsc), ".2f")
+        else:
+            self.fGrahaLonAssFromAsc = format((float(self.getLongitudeAssolute())+360) - float(fAscLonAssFromAsc), ".2f")
+        self.Log.scriviLog(5, self.szMsgPrefix + "Longitudine Assoluta da ASC: " + str(self.fGrahaLonAssFromAsc))
+
+    def setLonAssFromAscPiene(self, fAscLonAssFromAsc):
         self.Log.scriviLog(5, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " calcolo Longitudine (Case Piene) da " + str(fAscLonAssFromAsc) + " da ASC")
         if(float(self.getLongitudeAssolute()) > float(fAscLonAssFromAsc)):
             self.fGrahaLonAssFromAsc = format(float(self.getLongitudeAssolute()) - float(fAscLonAssFromAsc), ".2f")
@@ -294,11 +315,17 @@ class Graha:
             self.bBhavaCuspNeg = True
             self.Log.scriviLog(2, self.szMsgPrefix + "Calcolo con ASC Cuspide risulta negativo. Settato il flag bBhavaCuspNeg a:" + str(self.bBhavaCuspNeg))
 
-    def setBhava(self):
-        self.Log.scriviLog(5, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " calcolo Bhava con Case Piene da " + str(self.fGrahaLonAssFromAsc) + " da ASC")
-        self.iBhavaProgr = int(float(self.fGrahaLonAssFromAsc)/30)+1
-        self.fBhavaLon = format(float(self.fGrahaLonAssFromAsc)-(self.iBhavaProgr-1)*30, ".2f")
-        self.Log.scriviLog(5, self.szMsgPrefix + "Bhava di " + str(self.szGrahaSansc) + ": " + str(self.iBhavaProgr) + " e Long: " + str(self.fBhavaLon))
+    def setBhavaIntere(self):
+        self.Log.scriviLog(5, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " calcolo Bhava con Case Intere da " + str(self.fGrahaLonAssFromAscIntere) + " da ASC")
+        self.iBhavaIntereProgr = int(float(self.fGrahaLonAssFromAscIntere)/30)+1
+        self.fBhavaIntereLon = format(float(self.fGrahaLonAssFromAscIntere)-(self.iBhavaProgr-1)*30, ".2f")
+        self.Log.scriviLog(5, self.szMsgPrefix + "Bhava di " + str(self.szGrahaSansc) + ": " + str(self.iBhavaIntereProgr) + " e Long: " + str(self.fBhavaIntereLon))
+
+    def setBhavaPiene(self):
+        self.Log.scriviLog(5, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " calcolo Bhava con Case Piene da " + str(self.fGrahaLonAssFromAscPiene) + " da ASC")
+        self.iBhavaPieneProgr = int(float(self.fGrahaLonAssFromAscPiene)/30)+1
+        self.fBhavaPieneLon = format(float(self.fGrahaLonAssFromAscPiene)-(self.iBhavaProgrPiene-1)*30, ".2f")
+        self.Log.scriviLog(5, self.szMsgPrefix + "Bhava di " + str(self.szGrahaSansc) + ": " + str(self.iBhavaProgrPiene) + " e Long: " + str(self.fBhavaLonPiene))
 
     def setBhavaCusp(self):
         self.Log.scriviLog(5, self.szMsgPrefix + "Graha " + str(self.szGrahaSansc) + " calcolo Bhava con Cuspide da " + str(self.fGrahaLonAssFromAscCusp) + " da ASC")
@@ -313,17 +340,23 @@ class Graha:
                 self.Log.scriviLog(2, self.szMsgPrefix + "il progressivo della Bhava è zero. Lo setto a 12")
                 self.iBhavaProgrCusp = 12
 
-    def getBhava(self):
-        return str(self.iBhavaProgr).rjust(2)
+    def getBhavaPiene(self):
+        return str(self.iBhavaProgrPiene).rjust(2)
 
-    def getBhavaLon(self):
-        return str(self.fBhavaLon).rjust(5)
+    def getBhavaLonPiene(self):
+        return str(self.fBhavaLonPiene).rjust(5)
 
     def getBhavaCusp(self):
         return str(self.iBhavaProgrCusp).rjust(2)
 
     def getBhavaLonCusp(self):
         return str(self.fBhavaLonCusp).rjust(5)
+
+    def getBhavaIntere(self):
+        return str(self.iBhavaProgrIntere).rjust(2)
+
+    def getBhavaLonIntere(self):
+        return str(self.fBhavaLonIntere).rjust(5)
 
     def setGrahaExalt(self):
         self.iRasiGrahaExalt = int(self.Tab.getRasiGrahaExaltProgr(self.iGrahaProgr))

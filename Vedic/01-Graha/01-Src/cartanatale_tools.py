@@ -359,7 +359,7 @@ def showGrahaDetail(Log, lstGrahaList):
 
     for graha in lstGrahaList:
         graha.createNote()
-        if(graha.iGrahaProgr == 0):
+        if(graha.iGrahaProgr == 1):
             if (graha.getRasi() != " - "):
                 szLine = "(" + graha.Tab.lstGrahaSmall[graha.iGrahaProgr] + ") "  \
                              + graha.Tab.lstGrahaSansc[graha.iGrahaProgr].rjust(8) + " in (" + str(graha.getRasi()).rjust(2) + ") " \
@@ -371,7 +371,7 @@ def showGrahaDetail(Log, lstGrahaList):
                        + graha.Tab.lstGrahaSansc[graha.iGrahaProgr].rjust(8) + " in (" + str(graha.getRasi()).rjust(2) + ") "  \
                        + graha.getRasiGrahaInSansc(graha.getRasi()).rjust(8) \
                        + " Long.: " + str(graha.getLongitude()).rjust(8)  \
-                       + " - Bhava CP: " + graha.getBhava() + " [" + graha.getBhavaLon() + "]"  \
+                       + " - Bhava CP: " + graha.getBhavaIntere() + " [" + graha.getBhavaLonIntere() + "]"  \
                        + " - Bhava CU: " + graha.getBhavaCusp() + " [" + graha.getBhavaLonCusp() + "] - " \
                        + graha.getNote()
             lstLinetoPrint.append(szLine)
@@ -379,6 +379,7 @@ def showGrahaDetail(Log, lstGrahaList):
     for line in lstLinetoPrint:
         Log.scriviLog(9, line)
 
+    
 def checkIsKopa(Log, GrahaToCheck, fSunLonAss):
     Log.scriviLog(2, "Verifica se " + str(GrahaToCheck.szGrahaSansc) + " è in Kopa. Long. assoluta del sole: " + fSunLonAss)
     GrahaToCheck.checkIsKopa(fSunLonAss)
