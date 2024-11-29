@@ -25,6 +25,11 @@ from cartanatale_tools import *
 #  Campo  9: Reggente Nakshatra
 #  Campo 10: Pada
 
+
+###########################################
+# 01.00 - OPERAZIONI PRELIMINARI
+###########################################
+
 #help_utente()
 
 '''
@@ -74,15 +79,14 @@ iPrioLog          = sys.argv[6]
 
 
 ###########################################
-# 011. Creazione file di Output
+# 01.01 - Creazione file di Output
 ###########################################
-
 Log = LogCartaNatale(outFileName, iPrioLog)
 
 
-###########################################
-# 01. Verifica presenza del file di input
-###########################################
+###############################################
+# 01.02 Verifica presenza dei file di input
+###############################################
 if checkFilePresence(Log, inputCartaNatale, 1001):
    exit(1001)
 if checkFilePresence(Log, confGrahaFileName, 1002):
@@ -98,16 +102,18 @@ Log.scriviLog(9, szMsgPrefix + "------------------------------------------------
 Log.scriviLog(9, szMsgPrefix + "                      Carta Natale")
 Log.scriviLog(9, szMsgPrefix + "**************************************************************")
 
-#showCartaNatale(Log)
 ###########################################
-# 02. Inizializzazione del Graha
+# 02.00 -  Inizializzazione del Graha
 ###########################################
 
 Log.scriviLog(9, szMsgPrefix + "***********************************************************")
-Log.scriviLog(9, szMsgPrefix + "  01.00 - Caricamento dei dati relativi alla Carta Natale  ")
+Log.scriviLog(9, szMsgPrefix + "  02.01 - Caricamento dei dati relativi alla Carta Natale  ")
 Log.scriviLog(9, szMsgPrefix + "***********************************************************")
-#Caricamento dei GRAHA della carta natale passata
-# Il caricamento viene effettuato nella lista lstGrahaCarta
+
+###########################################################
+# 02.01 - Caricamento dei GRAHA della carta natale passata
+#         effettuato nella lista lstGrahaCarta
+###########################################################
 LoadGrahaCarta = LoadGraha(Log, inputCartaNatale)
 LoadGrahaCarta.loadGrahaFile()
 

@@ -35,10 +35,10 @@ class LoadGraha:
         self.inputFileName = szInputFileName
         self.Log = passLog
         print("Nome del file di input: " + self.inputFileName)
-        self.Log.scriviLog(2, self.szMsgPrefix + " - istanziata con file di input: " + self.inputFileName)
+        self.Log.scriviLog(2, self.szMsgPrefix + " Costruttore  - istanziata con file di input: " + self.inputFileName)
 
     def loadGrahaFile(self):
-
+        methode_name = "loadGrahaFile - "
         file_input = open(self.inputFileName, "r", encoding='utf-8')
 
         #Benedetto|10.06.1966|01:35|Catania|37.4716N|14.8473E|
@@ -52,17 +52,17 @@ class LoadGraha:
         self.szCittaLat = header_content[4]
         self.szCittaLon = header_content[5]
 
-        self.Log.scriviLog(9, self.szMsgPrefix + "\n\n")
-        self.Log.scriviLog(9, self.szMsgPrefix + "-----------------------------------------------------------------------------------------")
-        self.Log.scriviLog(9, self.szMsgPrefix + " -                    Lettura dati di nascita di: " + self.szName)
-        self.Log.scriviLog(9, self.szMsgPrefix + " -     Nato il: " + self.szData + " alle ore: " + self.szOra + " a " + self.szCitta + " (" + self.szCittaLat + " - " + self.szCittaLon + ")")
-        self.Log.scriviLog(9, self.szMsgPrefix + "-----------------------------------------------------------------------------------------")
+        self.Log.scriviLog(9, self.szMsgPrefix + methode_name)
+        self.Log.scriviLog(9, self.szMsgPrefix + methode_name + " -----------------------------------------------------------------------------------------")
+        self.Log.scriviLog(9, self.szMsgPrefix + methode_name + " -                    Lettura dati di nascita di: " + self.szName)
+        self.Log.scriviLog(9, self.szMsgPrefix + methode_name + " -     Nato il: " + self.szData + " alle ore: " + self.szOra + " a " + self.szCitta + " (" + self.szCittaLat + " - " + self.szCittaLon + ")")
+        self.Log.scriviLog(9, self.szMsgPrefix + methode_name + "-----------------------------------------------------------------------------------------")
 
-
+        #Caricamento delle liste leggendo riga per riga il file
         i = 1
         for line in file_input.readlines():
-            self.Log.scriviLog(2, self.szMsgPrefix + "--------- Input File ------------")
-            self.Log.scriviLog(2, self.szMsgPrefix + "Riga " + str(i) + ": " + line)
+            self.Log.scriviLog(2, self.szMsgPrefix + methode_name + "--------- Input File ------------")
+            self.Log.scriviLog(2, self.szMsgPrefix + methode_name + "Riga " + str(i) + ": " + line)
             line_content = line.split("|")
             #print(line_content)
             #Caricamento lista GrahaSmall
@@ -78,20 +78,17 @@ class LoadGraha:
             #self.lstNakReg.append(line_content[9])
             self.lstNakPada.append(line_content[8])
             self.lstRetrogade.append(line_content[9])
-
-
             i=i+1
         file_input.close()
-        self.Log.scriviLog(2, self.szMsgPrefix + " - Dati presenti nel file di input caricati nelle liste: lstGrahaSmall, lstGrahaProgr, lstGrahaSansc, lstTipoAK, lstRasiSmall, lstRasiProgr, lstGrahaLng, lstNakProgr, lstNakPada, lstRetrogade ")
-        self.Log.scriviLog(2, self.szMsgPrefix + " - Caricamento Graha presenti in " + self.inputFileName + " --> PASSED\n")
+        self.Log.scriviLog(2, self.szMsgPrefix + methode_name + " - Dati presenti nel file di input caricati nelle liste: lstGrahaSmall, lstGrahaProgr, lstGrahaSansc, lstTipoAK, lstRasiSmall, lstRasiProgr, lstGrahaLng, lstNakProgr, lstNakPada, lstRetrogade ")
+        self.Log.scriviLog(2, self.szMsgPrefix + methode_name + " - Caricamento Graha presenti in " + self.inputFileName + " --> PASSED\n")
 
-
-
+        #Verifica se ha o non ha l'ora di nascita per calcolo ascendente
         if(self.szOra == "XX:XX"):
-            self.Log.scriviLog(9, self.szMsgPrefix + " - Ora di nascita ignota - Ascendente e Case non calcolate")
-            self.lstRasiSmall[0]=" - "
-            self.lstRasiProgr[0]=" - "
-            self.lstGrahaLng[0]=" - "
+            self.Log.scriviLog(9, self.szMsgPrefix + methode_name + " - Ora di nascita ignota - Ascendente e Case non calcolate")
+            self.lstRasiSmall[0] = " - "
+            self.lstRasiProgr[0] = " - "
+            self.lstGrahaLng[0]  = " - "
             #self.lstNakName.append(line_content[7])
             self.lstNakProgr[0]=" - "
             #self.lstNakReg.append(line_content[9])

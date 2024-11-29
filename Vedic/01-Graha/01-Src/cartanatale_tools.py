@@ -97,6 +97,10 @@ def showCartaNatale(Log, GrahaAsc, lstCartaNatale):
     szMinaGrahaSmall = ""
     szMinaGrahaLon = ""
 
+
+    #####################################################
+    #
+    #####################################################
     for rasi in range(12):
         Log.scriviLog(5, "Num graha in " + GrahaAsc.Tab.lstRasiSansc[rasi] + ": " + str(len(lstCartaNatale[rasi])))
         for graha in lstCartaNatale[rasi]:
